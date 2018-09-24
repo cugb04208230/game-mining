@@ -1,0 +1,58 @@
+﻿@using BaseClasses.Extensions
+@using WebAdmin.Models
+@model WebAdmin.Models.AdminModel.SlagRefiningEquipmentViewModel
+@{
+	ViewBag.CurrentMenuLabel = new LeftMenuModel
+	{
+		Label = "用户",
+		Children = new List<LeftMenuModel>
+{
+	new LeftMenuModel
+	{
+		Label = "用户精炼设备",
+		Url = "SlagRefiningEquipment"
+	}
+}
+	};
+}
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<form id="searchForm">
+					<input name="text" style="height: 40px; padding: 10px; margin: 30px 30px 10px 50px;" value="@Model.Text" placeholder="请输入名称" />
+					<button class="btn btn-warning btn-fill btn-wd" type="submit">搜索</button>
+				</form>
+				<table class="table">
+					<thead>
+						<tr>
+							<td class="text-center">用户名</td>
+							<td class="text-center">收益百分比</td>
+							<td class="text-center">有效截止日期</td>
+							<td class="text-center">最后一次采集时间</td>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model.SlagRefiningEquipments.List)
+						{
+							<tr>
+								<td class="text-center">@item.MemberUserName</td>
+								<td class="text-center">@item.Percentage</td>
+								<td class="text-center">@item.ValidityTerm</td>
+								<td class="text-center">@item.LastRefiningAt</td>
+							</tr>
+						}
+					</tbody>
+					<tfoot>
+						<tr>
+							<th colspan="9">
+								@Html.PageRender(Model.PageIndex, Model.PageSize, Model.SlagRefiningEquipments.Count)
+							</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

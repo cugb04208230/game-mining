@@ -1,0 +1,118 @@
+﻿@using WebAdmin.Models
+@{
+	var menus = new List<LeftMenuModel>
+	{
+		new LeftMenuModel
+		{
+			Label = "系统",
+			Children = new List<LeftMenuModel>
+			{
+				new LeftMenuModel
+				{
+					Label = "系统配置",
+					Url = "ConfigRecord"
+				},
+				new LeftMenuModel
+				{
+					Label = "留言板",
+					Url = "MessageBoard"
+				},
+				new LeftMenuModel
+				{
+					Label = "通知",
+					Url = "Notice"
+				}
+			}
+		},
+
+		new LeftMenuModel
+		{
+			Label = "用户",
+			Children = new List<LeftMenuModel>
+			{
+				new LeftMenuModel
+				{
+					Label = "用户列表",
+					Url = "Member"
+				},
+				new LeftMenuModel
+				{
+					Label = "合作伙伴",
+					Url = "MemberPartner"
+				},
+				new LeftMenuModel
+				{
+					Label = "收益列表",
+					Url = "MemberIncome"
+				},
+				new LeftMenuModel
+				{
+					Label = "用户转账管理",
+					Url = "TransferBill"
+				},
+				new LeftMenuModel
+				{
+					Label = "用户设备",
+					Url = "MemberMiningEquipment"
+				},
+				new LeftMenuModel
+				{
+					Label = "用户精炼设备",
+					Url = "SlagRefiningEquipment"
+				}
+			}
+		},
+
+		new LeftMenuModel
+		{
+			Label = "设备",
+			Children = new List<LeftMenuModel>
+			{
+				new LeftMenuModel
+				{
+					Label = "系统设备",
+					Url = "MiningEquipment"
+				}
+			}
+		}
+	};
+	var currentMenu = ViewBag.CurrentMenuLabel as LeftMenuModel;
+	var firstLabel = currentMenu?.Label ?? "";
+	var secondLabel = currentMenu?.Children?.FirstOrDefault()?.Label ?? "";
+}
+
+
+<div class="sidebar" data-color="orange" >
+	<div class="sidebar-wrapper">
+		<div class="logo">
+			<a href="javascript:void(0);" class="logo-text">
+				金矿大亨
+			</a>
+		</div>
+
+		<ul class="nav">
+			@foreach (var menu in menus)
+			{
+				var index = menus.FindIndex(0, e => e.Label == menu.Label);
+				var id = $"menu_{index}";
+				<li class="@(firstLabel==menu.Label?"active":"")">
+					<a data-toggle="collapse" href="#@id" aria-expanded="@(firstLabel==menu.Label?"true":"false")" class="@(firstLabel==menu.Label?"":"collapsed")">
+						<i class="pe-7s-plugin"></i>
+						<p>
+							@menu.Label
+							<b class="caret"></b>
+						</p>
+					</a>
+					<div class="collapse @(firstLabel==menu.Label?"in":"")" id="@id">
+						<ul class="nav">
+							@foreach (var childMenu in menu.Children)
+							{
+								<li  class="@(secondLabel==childMenu.Label?"active":"")"><a href="@childMenu.Url"> @childMenu.Label</a></li>
+							}
+						</ul>
+					</div>
+				</li>
+			}
+		</ul>
+	</div>
+</div>

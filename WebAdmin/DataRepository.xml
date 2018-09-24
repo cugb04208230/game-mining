@@ -1,0 +1,1635 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataRepository</name>
+    </assembly>
+    <members>
+        <member name="T:DataRepository.En">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.AccountBalanceNotEnough">
+            <summary>
+              查找类似 Balance is not enough 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.AccountIsFreezing">
+            <summary>
+              查找类似 Account has been frozen, please contact the administrator. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.AccountIsLocking">
+            <summary>
+              查找类似 Account has been locked, please contact the administrator. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.AccountIsSealUp">
+            <summary>
+              查找类似 Account has been sealed, please contact the administrator. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.AccountIsUnActived">
+            <summary>
+              查找类似 Account has not been activated, temporarily unable to log on. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.AmountCanNotBeEmpty">
+            <summary>
+              查找类似 The Amount can not be empty. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.AmountTypeError">
+            <summary>
+              查找类似 The amount can only be an integral multiple of 50 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.AuthFailed">
+            <summary>
+              查找类似 Auth failed,please login again. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.BankcardNoCanNotBeEmpty">
+            <summary>
+              查找类似 The bankcard number code can not be empty. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.BankNameCanNotBeEmpty">
+            <summary>
+              查找类似 The bank name code can not be empty. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.BusinessHoursError">
+            <summary>
+              查找类似 Business hours are from 6:00 to 23:00. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.CurrentToBuyTimeLimit">
+            <summary>
+              查找类似 The current number of purchase times reaches the upper limit. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.DailyMessageboardCountLimit">
+            <summary>
+              查找类似 The number of letters per day reaches the upper limit. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.DangerousContent">
+            <summary>
+              查找类似 dangerous content 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.EquipmentCountLimit">
+            <summary>
+              查找类似 The number of equipment reaches the upper limit. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.ErrorCancelStatus">
+            <summary>
+              查找类似 It&apos;s gone beyond recall. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.ErrorId">
+            <summary>
+              查找类似 Invalid number 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.ErrorInvitRelationship">
+            <summary>
+              查找类似 Invalid Inviting relationship 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.ErrorUserNameOrPassword">
+            <summary>
+              查找类似 Invalid username or password! 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.ErrorValueType">
+            <summary>
+              查找类似 Error value type 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.GiveTimeLimit">
+            <summary>
+              查找类似 The maximum number of giving times 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.GlobalAreaCodeCanNotBeEmpty">
+            <summary>
+              查找类似 The international code can not be empty. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.InvalidVerificationCode">
+            <summary>
+              查找类似 Invalid verification code 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.InviterAccountBalanceNotEnough">
+            <summary>
+              查找类似 Inviter balance is not enough 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.InviterError">
+            <summary>
+              查找类似 Inviter is not existed 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.LogicError">
+            <summary>
+              查找类似 Logic Error 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.MiningEquipmentCollectError">
+            <summary>
+              查找类似 Equipment can not be collected,because of error status. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.MobileCanNotBeEmpty">
+            <summary>
+              查找类似 Password can not be empty. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.MobileIsExisted">
+            <summary>
+              查找类似 Mobile is existed 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.MobileRegexError">
+            <summary>
+              查找类似 The phone number is not correct. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.MustBuyMiningEquipment">
+            <summary>
+              查找类似 It is necessary to purchase mining equipment before purchasing. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.PasswordCanNotBeEmpty">
+            <summary>
+              查找类似 Password can not be empty. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.PasswordNotMatch">
+            <summary>
+              查找类似 The password and confirmation password do not match. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.PasswordRegexError">
+            <summary>
+              查找类似 Passwords with a length of 6-20 bits and uppercase letters must contain uppercase letters, lowercase letters and digits. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.PropertyNameInvalid">
+            <summary>
+              查找类似 Invalid parameters 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.RefiningTooBusy">
+            <summary>
+              查找类似 Has refined today 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.SundayToRest">
+            <summary>
+              查找类似 Stay out of business 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.SystemError">
+            <summary>
+              查找类似 System is error now ,please try it later! 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.ToBuyTimeLimit">
+            <summary>
+              查找类似 The purchase times
+            reaches the upper limit. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.TransferBillFromMemberError">
+            <summary>
+              查找类似 Invalid buyer 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.TransferBillStatusError">
+            <summary>
+              查找类似 Invalid trade status 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.TransferBillToMemberError">
+            <summary>
+              查找类似 Invalid seller 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.TransferBillTypeError">
+            <summary>
+              查找类似 Invalid trading type 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.UserIsActived">
+            <summary>
+              查找类似 Account has been activated 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.UserNameCanNotBeEmpty">
+            <summary>
+              查找类似 Username can not be empty. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.UserNameIsExisted">
+            <summary>
+              查找类似 Username is existed 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.UserNameIsNotExisted">
+            <summary>
+              查找类似 Username is not existed 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.UserNameIsNotMatchName">
+            <summary>
+              查找类似 Invalid username or name! 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.UserNameLengthError">
+            <summary>
+              查找类似 The length of the user name is 6-20 digit, upper case and lowercase letter. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.VerifyCodeError">
+            <summary>
+              查找类似 Verification code error 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.En.WalletCanNotBeEmpty">
+            <summary>
+              查找类似 Wallet can not be empty. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.ConfigRecord">
+            <inheritdoc />
+            <summary>
+            配置记录
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecord.Catalog">
+            <summary>
+            目录
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecord.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecord.FriendlyName">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecord.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecord.ValueTypeCode">
+            <summary>
+            类型码,用于输入控制
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecord.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecordQuery.Catalog">
+            <summary>
+            目录
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecordQuery.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecordQuery.FriendlyName">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecordQuery.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecordQuery.ValueTypeCode">
+            <summary>
+            类型码,用于输入控制
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.ConfigRecordQuery.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.Member">
+            <inheritdoc />
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.Alipay">
+            <summary>
+            支付宝账号
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.WeChat">
+            <summary>
+            微信账号
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.BitCoin">
+            <summary>
+            比特币账号
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.Status">
+            <summary>
+            用户状态
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.HeadPic">
+            <summary>
+            头像-选项
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.RecommendUserName">
+            <summary>
+            推荐人用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.Chain">
+            <summary>
+            用户关系链
+            $"{RecommendUser.Chain}->{RecommendUserName}"
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.RawStoneBalance">
+            <summary>
+            账户总额
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.GoldBalance">
+            <summary>
+            金账户余额-交易赠送/转银和铜
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.SilverBalance">
+            <summary>
+            银账户余额-购买挖矿装备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.CopperBalance">
+            <summary>
+            铜账户余额-招募玩家
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.SlagBalance">
+            <summary>
+            矿渣账户余额-用于精炼
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.CollectAmount">
+            <summary>
+            历次采集数量
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.DiamondBalance">
+            <summary>
+            钻石余额
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.FeedBackAmount">
+            <summary>
+            用户邀请回馈
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.FeedBackGoldAmount">
+            <summary>
+            用户邀请回馈金
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.FeedBackSlagAmount">
+            <summary>
+            用户邀请回馈矿渣
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.Level">
+            <summary>
+            员工级别
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.ExpiredAt">
+            <summary>
+            用户查封账户时间
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.Honor">
+            <summary>
+            荣誉值
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.GlobalAreaCode">
+            <summary>
+            国际区号
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.BankName">
+            <summary>
+            银行名称
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.BankCode">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.Member.MemberType">
+            <summary>
+            会员类型
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MemberQuery">
+            <inheritdoc />
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.Status">
+            <summary>
+            用户状态
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.UserNameEqual">
+            <summary>
+            用户名完全匹配
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.Chain">
+            <summary>
+            推荐人用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.Members">
+            <summary>
+            用户列表
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.GoldBalanceFrom">
+            <summary>
+            金账户余额-交易赠送/转银和铜
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.SilverBalanceFrom">
+            <summary>
+            银账户余额-购买挖矿装备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.CopperBalanceFrom">
+            <summary>
+            铜账户余额-招募玩家
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.SlagBalanceFrom">
+            <summary>
+            矿渣账户余额-用于精炼
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.GoldBalanceTo">
+            <summary>
+            金账户余额-交易赠送/转银和铜
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.SilverBalanceTo">
+            <summary>
+            银账户余额-购买挖矿装备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.CopperBalanceTo">
+            <summary>
+            铜账户余额-招募玩家
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberQuery.SlagBalanceTo">
+            <summary>
+            矿渣账户余额-用于精炼
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MemberIncomeRecord">
+            <inheritdoc />
+            <summary>
+            用户每日挖矿收益记录
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecord.MemberUserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecord.Amount">
+            <summary>
+            总产量
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecord.GoldAmount">
+            <summary>
+            金账户金额-交易赠送/转银和铜
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecord.SilverAmount">
+            <summary>
+            银账户金额-购买挖矿装备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecord.CopperAmount">
+            <summary>
+            铜账户金额-招募玩家
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecord.SlagAmount">
+            <summary>
+            矿渣账户金额-用于精炼
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecord.DiamondAmount">
+            <summary>
+            钻石数量
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecord.SlagToGoldAmount">
+            <summary>
+            矿渣转金金额
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecord.Type">
+            <summary>
+            收益类型
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecord.ReferenceMemberUsername">
+            <summary>
+            关联用户Id
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MemberIncomeRecordQuery">
+            <inheritdoc />
+            <summary>
+            用户收益查询
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecordQuery.MemberUserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberIncomeRecordQuery.MemberUserNameEqual">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MemberMiningEquipment">
+            <inheritdoc />
+            <summary>
+            用户采矿设备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipment.MemberUserName">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipment.Type">
+            <summary>
+            挖矿设备类型
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipment.PurchasePrice">
+            <summary>
+            设备采购价格
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipment.Percentage">
+            <summary>
+            收益百分比
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipment.ValidityTerm">
+            <summary>
+            有效截止日期
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipment.LastCollectAt">
+            <summary>
+            最后一次采集时间
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipment.OverDueTime">
+            <summary>
+            逾期未收取次数
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipment.Status">
+            <summary>
+            挖矿设备状态
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipment.LockedAt">
+            <summary>
+            锁定时间
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MemberMiningEquipmentQuery">
+            <inheritdoc />
+            <summary>
+            用户采矿设备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipmentQuery.MemberUserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipmentQuery.MemberUserNameEqual">
+            <summary>
+            用户名完全匹配
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipmentQuery.Type">
+            <summary>
+            挖矿设备类型
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipmentQuery.Status">
+            <summary>
+            挖矿设备状态
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipmentQuery.ValidityTermFrom">
+            <summary>
+            有效截止日期
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipmentQuery.ValidityTermTo">
+            <summary>
+            有效截止日期
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipmentQuery.LastCollectAtFrom">
+            <summary>
+            最后一次采集时间-开始
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberMiningEquipmentQuery.LastCollectAtTo">
+            <summary>
+            最后一次采集时间-结束
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MessageBoard">
+            <inheritdoc />
+            <summary>
+            留言板
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoard.MemberUserName">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoard.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoard.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoard.Reply">
+            <summary>
+            回复
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoard.RepliedAt">
+            <summary>
+            回复时间
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MessageBoardQuery">
+            <inheritdoc />
+            <summary>
+            留言板
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoardQuery.MemberUserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoardQuery.MemberUserNameEqual">
+            <summary>
+            用户名完全匹配
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoardQuery.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoardQuery.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoardQuery.RepliedAtFrom">
+            <summary>
+            回复时间
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MessageBoardQuery.RepliedAtTo">
+            <summary>
+            回复时间
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MiningEquipment">
+            <inheritdoc />
+            <summary>
+            采矿设备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MiningEquipment.Type">
+            <summary>
+            描述
+            1.矿工，2.选金厂，3.冶炼厂
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MiningEquipment.Price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MiningEquipment.ExpirationDay">
+            <summary>
+            产品有效期
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MiningEquipment.Percentage">
+            <summary>
+            收益百分比
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MiningEquipmentQuery">
+            <inheritdoc />
+            <summary>
+            采矿设备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MiningEquipmentChangeRecord.Type">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MiningEquipmentChangeRecord.Price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MiningEquipmentChangeRecord.ExpirationDay">
+            <summary>
+            产品有效期
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MiningEquipmentChangeRecord.Percentage">
+            <summary>
+            收益百分比
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MiningEquipmentChangeRecordQuery">
+            <inheritdoc />
+            <summary>
+            采矿设备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MiningEquipmentChangeRecordQuery.Type">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.Notice">
+            <inheritdoc />
+            <summary>
+            系统通知
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.NoticeQuery">
+            <inheritdoc />
+            <summary>
+            系统通知
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.SlagRefiningEquipment">
+            <inheritdoc />
+            <summary>
+            矿渣精炼设备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.SlagRefiningEquipment.MemberUserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.SlagRefiningEquipment.Percentage">
+            <summary>
+            收益百分比
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.SlagRefiningEquipment.SourceType">
+            <summary>
+            设备来源
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.SlagRefiningEquipment.ValidityTerm">
+            <summary>
+            有效截止日期
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.SlagRefiningEquipment.LastRefiningAt">
+            <summary>
+            最后精炼时间
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.SlagRefiningEquipmentQuery">
+            <inheritdoc />
+            <summary>
+            矿渣精炼设备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.SlagRefiningEquipmentQuery.MemberUserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.SlagRefiningEquipmentQuery.ValidityTermFrom">
+            <summary>
+            有效截至时间
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.SlagRefiningEquipmentQuery.SourceType">
+            <summary>
+            设备来源
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.TransferBill">
+            <inheritdoc />
+            <summary>
+            转账单（由卖家发起-买家确认-卖家确认并支付）卖家发起时冻结卖家金额，买家确认并支付时扣除买家余额，并增加
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.TransferBillType">
+            <summary>
+            转账单类型
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.FromMemberUserName">
+            <summary>
+            出账账户用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.FromAccountType">
+            <summary>
+            出账账户类型
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.ToMemberUserName">
+            <summary>
+            入账账户用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.ToAccountType">
+            <summary>
+            入账账户类型
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.Amount">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.Status">
+            <summary>
+            转账状态-用户之间转账时需要
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.ExpiredAt">
+            <summary>
+            求购过期时间
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.ServiceCharge">
+            <summary>
+            转账手续费
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.FromMember">
+            <summary>
+            赠送者
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.ToMember">
+            <summary>
+            求购者
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.ToBuyAt">
+            <summary>
+            求购时间
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.GivedAt">
+            <summary>
+            赠送时间
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.ReceivedAt">
+            <summary>
+            接收时间
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBill.CompletedAt">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.TransferBillQuery">
+            <inheritdoc />
+            <summary>
+            转账单（由卖家发起-买家确认-卖家确认并支付）卖家发起时冻结卖家金额，买家确认并支付时扣除买家余额，并增加
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBillQuery.TransferBillType">
+            <summary>
+            转账单类型
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBillQuery.FromMemberUserName">
+            <summary>
+            出账账户用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBillQuery.ToMemberUserName">
+            <summary>
+            入账账户用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBillQuery.MemberUserName">
+            <summary>
+            账户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBillQuery.Status">
+            <summary>
+            转账状态-用户之间转账时需要
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBillQuery.ExpiredAtFrom">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.TransferBillQuery.ToMemberUserNameNot">
+            <summary>
+            入账账户用户名
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.AccountType">
+            <summary>
+            余额账户类型
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.AccountType.RawStone">
+            <summary>
+            原石账号
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.AccountType.Gold">
+            <summary>
+            金账号
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.AccountType.Silver">
+            <summary>
+            银账号
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.AccountType.Copper">
+            <summary>
+            铜账号
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.AccountType.Slag">
+            <summary>
+            矿渣账号
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.LanguageType">
+            <summary>
+            语言类型
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.LanguageType.SimplifiedChinese">
+            <summary>
+            中文
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.LanguageType.English">
+            <summary>
+            英语
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.MemberIncomeType">
+            <summary>
+            用户收益类型
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberIncomeType.Collect">
+            <summary>
+            采集
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberIncomeType.Refining">
+            <summary>
+            精炼
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberIncomeType.InviteFeedback">
+            <summary>
+            邀请回馈
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberIncomeType.InviteActive">
+            <summary>
+            好友激活
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberIncomeType.EquipmentBuyFeedback">
+            <summary>
+            购买设备
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberIncomeType.InviteActiveCost">
+            <summary>
+            激活好友扣除
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberIncomeType.ToBuyReward">
+            <summary>
+            每月求购奖励
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.MemberLoginType">
+            <summary>
+            用户登录类型
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberLoginType.UserNameAndPassword">
+            <summary>
+            用户名密码
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberLoginType.AuthWeChat">
+            <summary>
+            授权微信
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.MemberStatus">
+            <summary>
+            用户账号状态
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberStatus.Actived">
+            <summary>
+            正常
+            排队矿主
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberStatus.Locking">
+            <summary>
+            锁定
+            新用户{10}天不开工
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberStatus.Freezing">
+            <summary>
+            冻结
+            新用户{30}天不开工
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberStatus.UnActived">
+            <summary>
+            未激活
+            排队矿主
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MemberStatus.InUse">
+            <summary>
+            努力挖矿中
+            矿主
+            </summary>
+        </member>
+        <!-- 对于成员“F:DataRepository.Enums.MemberStatus.SealUp”忽略有格式错误的 XML 注释 -->
+        <member name="T:DataRepository.Enums.MiningEquipmentType">
+            <summary>
+            3、设备劳工、全半矿机名字改成采矿工、选金厂、冶炼厂（每种设备的收益比例都可以后台调整，每天的收益可能都有变动，是全局变量）。系统要做个定时任务，记录三种类型的旷工每天的收益比例（用户收矿的时候按这个收益去算的）
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MiningEquipmentType.Miner">
+            <summary>
+            100-375-0.8
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MiningEquipmentType.GoldFactory">
+            <summary>
+            500-300-1.2
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.MiningEquipmentType.Smelter">
+            <summary>
+            1000-200-1.5
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.NoticeType">
+            <summary>
+            通知类型
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.SlagRefiningEquipmentSourceType">
+            <summary>
+            矿渣精炼设备来源
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.SlagRefiningEquipmentSourceType.InvitingAwards">
+            <summary>
+            邀请奖励
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.SlagRefiningEquipmentSourceType.SystemGift">
+            <summary>
+            系统赠送
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.TradeItemType">
+            <summary>
+            交易单明细类型
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.TradeType">
+            <summary>
+            交易单类型
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.TransferBillStatus">
+            <summary>
+            转账单状态
+            买家求购->卖家确认赠送扣除卖家金额->买家确认增加买家余额（扣除手续费后）/买家取消卖家余额增加
+            new 交易的流程： 1. 求购者发起求购 ->2.赠送者赠送->3.求购者确认接收->4.赠送者结束交易 （在求购者没有确认接收前都可以取消交易，走到第四步，才会将黄金真正打到求购者账户）
+            </summary>
+        </member>
+        <member name="T:DataRepository.Enums.TransferBillType">
+            <summary>
+            转账单类型
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.TransferBillType.Active">
+            <summary>
+            A的铜账户转到B的金账户
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.TransferBillType.GoldTransfer">
+            <summary>
+            A的金账户转到B的金账户
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.TransferBillType.GoldToSilver">
+            <summary>
+            A的金账户转到A的银账户
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.TransferBillType.GoldToCopper">
+            <summary>
+            A的金账户转到B的铜账户
+            </summary>
+        </member>
+        <member name="F:DataRepository.Enums.TransferBillType.SlagRefine">
+            <summary>
+            A的矿渣账户转到A的金账户
+            </summary>
+        </member>
+        <member name="M:DataRepository.Hibernate.AbstractDataBase.#ctor(System.String)">
+            <summary>
+            配置节点的名称
+            </summary>
+            <param name="sectionName"></param>
+        </member>
+        <member name="M:DataRepository.Hibernate.AbstractDataBase.Query``1(BaseClasses.Data.BaseQuery{``0})">
+            <inheritdoc />
+            <summary>
+            查询
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataRepository.Hibernate.AbstractDataBase.Count``1(BaseClasses.Data.BaseQuery{``0})">
+            <inheritdoc />
+            <summary>
+            数量
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataRepository.Hibernate.AbstractDataBase.Select``1(BaseClasses.Data.BaseQuery{``0},NHibernate.ISession)">
+            <inheritdoc />
+            <summary>
+            模型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataRepository.Hibernate.AbstractDataBase.Where``1(BaseClasses.Data.BaseQuery{``0})">
+            <inheritdoc />
+            <summary>
+            条件
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataRepository.Hibernate.AbstractDataBase.OrderBy``1(System.Linq.IQueryable{``0},BaseClasses.Data.BaseQuery{``0})">
+            <inheritdoc />
+            <summary>
+            排序
+            </summary>
+            <param name="queryable"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataRepository.IDataBase.Query``1(BaseClasses.Data.BaseQuery{``0})">
+            <summary>
+            查询
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataRepository.IDataBase.Count``1(BaseClasses.Data.BaseQuery{``0})">
+            <summary>
+            数量
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataRepository.IDataBase.Select``1(BaseClasses.Data.BaseQuery{``0},NHibernate.ISession)">
+            <summary>
+            模型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataRepository.IDataBase.Where``1(BaseClasses.Data.BaseQuery{``0})">
+            <summary>
+            条件
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataRepository.IDataBase.OrderBy``1(System.Linq.IQueryable{``0},BaseClasses.Data.BaseQuery{``0})">
+            <summary>
+            排序
+            </summary>
+            <param name="queryable"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DataRepository.ZhCn">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.AccountBalanceNotEnough">
+            <summary>
+              查找类似 账户余额不足 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.AccountIsFreezing">
+            <summary>
+              查找类似 账号已冻结，请联系管理人员 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.AccountIsLocking">
+            <summary>
+              查找类似 账号已锁定，请联系管理人员 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.AccountIsSealUp">
+            <summary>
+              查找类似 账号已查封，请联系管理人员 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.AccountIsUnActived">
+            <summary>
+              查找类似 账号还未激活，暂时无法登陆 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.AmountCanNotBeEmpty">
+            <summary>
+              查找类似 请输入金额 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.AmountTypeError">
+            <summary>
+              查找类似 金额只能是50的整数倍 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.AuthFailed">
+            <summary>
+              查找类似 授权信息失败，请重新登录 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.BankcardNoCanNotBeEmpty">
+            <summary>
+              查找类似 银行卡号不能为空 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.BankNameCanNotBeEmpty">
+            <summary>
+              查找类似 银行名称不能为空 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.BusinessHoursError">
+            <summary>
+              查找类似 营业时间为每日6：00-23：00 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.CurrentToBuyTimeLimit">
+            <summary>
+              查找类似 当前求购次数达到上限 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.DailyMessageboardCountLimit">
+            <summary>
+              查找类似 每日站内信数量达到上限 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.DangerousContent">
+            <summary>
+              查找类似 危险的提交内容 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.EquipmentCountLimit">
+            <summary>
+              查找类似 设备数量达到上限 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.ErrorCancelStatus">
+            <summary>
+              查找类似 该状态不能够取消 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.ErrorId">
+            <summary>
+              查找类似 错误的编号 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.ErrorInvitRelationship">
+            <summary>
+              查找类似 邀请关系有误 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.ErrorUserNameOrPassword">
+            <summary>
+              查找类似 无效的用户名或者密码 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.ErrorValueType">
+            <summary>
+              查找类似 错误的值类型 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.GiveTimeLimit">
+            <summary>
+              查找类似 赠送次数达到上限 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.GlobalAreaCodeCanNotBeEmpty">
+            <summary>
+              查找类似 国际区号不能为空 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.InvalidVerificationCode">
+            <summary>
+              查找类似 验证码错误 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.InviterAccountBalanceNotEnough">
+            <summary>
+              查找类似 邀请人账户余额不足 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.InviterError">
+            <summary>
+              查找类似 邀请用户信息错误 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.LogicError">
+            <summary>
+              查找类似 业务逻辑错误 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.MiningEquipmentCollectError">
+            <summary>
+              查找类似 该设备还不能收取 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.MobileCanNotBeEmpty">
+            <summary>
+              查找类似 手机号不能缺少 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.MobileIsExisted">
+            <summary>
+              查找类似 手机号已存在 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.MobileRegexError">
+            <summary>
+              查找类似 手机号格式不正确 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.MustBuyMiningEquipment">
+            <summary>
+              查找类似 必须购买完采矿设备才可以发起求购 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.PasswordCanNotBeEmpty">
+            <summary>
+              查找类似 请输入密码 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.PasswordNotMatch">
+            <summary>
+              查找类似 密码和确认密码不匹配 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.PasswordRegexError">
+            <summary>
+              查找类似 密码长度为6-20位的数字和大小写字母,必须包含大写字母，小写字母和数字 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.PropertyNameInvalid">
+            <summary>
+              查找类似 参数名不合法 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.RefiningTooBusy">
+            <summary>
+              查找类似 一天只能精炼一次 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.SundayToRest">
+            <summary>
+              查找类似 周日哦，休息中 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.SystemError">
+            <summary>
+              查找类似 服务器打了个盹~ 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.ToBuyTimeLimit">
+            <summary>
+              查找类似 每日求购次数达到上限 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.TransferBillFromMemberError">
+            <summary>
+              查找类似 交易单买家信息不正确 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.TransferBillStatusError">
+            <summary>
+              查找类似 交易单状态错误 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.TransferBillToMemberError">
+            <summary>
+              查找类似 交易单卖家信息不正确 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.TransferBillTypeError">
+            <summary>
+              查找类似 交易单类型不合法 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.UserIsActived">
+            <summary>
+              查找类似 用户已激活 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.UserNameCanNotBeEmpty">
+            <summary>
+              查找类似 请输入用户名 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.UserNameIsExisted">
+            <summary>
+              查找类似 该用户名已存在 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.UserNameIsNotExisted">
+            <summary>
+              查找类似 该用户名不存在 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.UserNameIsNotMatchName">
+            <summary>
+              查找类似 账号和姓名不匹配 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.UserNameLengthError">
+            <summary>
+              查找类似 用户名长度为6-20位的数字和大小写字母 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.VerifyCodeError">
+            <summary>
+              查找类似 验证码错误 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.WalletCanNotBeEmpty">
+            <summary>
+              查找类似 钱包不能为空 的本地化字符串。
+            </summary>
+        </member>
+    </members>
+</doc>

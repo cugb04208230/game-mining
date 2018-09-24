@@ -1,0 +1,97 @@
+﻿@model WebApp.Models.UserLoginViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "用户登录";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Resource/css/style.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Resource/css/color.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Resource/css/framework.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Resource/css/yellowtips.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Resource/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Resource/css/mycss.css" rel="stylesheet" type="text/css">
+
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+   
+</head>
+<body style="">
+
+    <div class="wrapBox">
+        <header>
+            <div class="headBox">
+                <h2>@ViewBag.Title</h2>
+                <a class="aBlock aBack" href="javascript:history.back()"><i class="fa fa-chevron-left"></i></a>
+                <!--
+                <a class="aBlock aHome" href="#"><i class="fa fa-home"></i></a>
+                -->
+            </div>
+        </header>
+       
+
+        <div class="main" style="margin-top: 80px">
+            <div class="content">
+                <div class="container">
+                    @Html.ValidationSummary(true)
+                    <form action="/Member/Login" method="post">
+                        @Html.AntiForgeryToken()
+                        <div align="center">
+                            <table class="formTable">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label>登录用户名</label>
+                                            @Html.TextBoxFor(model => model.UserId, new { @placeholder = "请输入登录用户名" })
+                                            @Html.ValidationMessageFor(model => model.UserId)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>登录密码</label>
+                                            @Html.PasswordFor(model => model.Password, new { @placeholder = "请输入登录密码" })
+                                            @Html.ValidationMessageFor(model => model.Password)
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="submit" class="buttonWrap button button-green buttonLong" value="立即登录">
+                                        </td>
+                                    </tr>
+                                    <!--
+                                    <tr>
+                                        <td>
+                                            <a href="/Member/Register"
+                                               class="buttonWrap button button-blue buttonLong">未有账号，免费注册</a>
+                                        </td>
+                                    </tr>
+                                    -->
+                                    <tr>
+                                        <td>
+                                            <a href="/Member/GetPassword"
+                                               class="buttonWrap button button-red buttonLong">忘记密码，找回密码</a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

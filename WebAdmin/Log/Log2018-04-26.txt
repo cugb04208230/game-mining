@@ -1,0 +1,3 @@
+记录时间：2018-04-26 16:22:02,895 线程ID:[8] 日志级别：INFO  操作类：DefaultLog property:[(null)] - 日志描述：GetCanOutOrderUserList Exception:Session is closed!
+对象名:“ISession”。
+记录时间：2018-04-26 16:26:50,317 线程ID:[5] 日志级别：INFO  操作类：DefaultLog property:[(null)] - 日志描述：GetCanOutOrderUserList Exception:could not insert: [DataRepository.Entity.CanOutOrderUser][SQL: INSERT INTO tbl_canoutorderuser (UserId, createtime) VALUES (?, ?); select SCOPE_IDENTITY()]

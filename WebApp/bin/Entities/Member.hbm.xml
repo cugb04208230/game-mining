@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DataRepository" namespace="DataRepository.Entities" default-lazy="false">
+  <class name="DataRepository.Entities.Member, DataRepository" table="Members">
+    <id name="Id" type="Int64">
+      <column name="Id" sql-type="bigint" not-null="true" />
+      <generator class="native"/>
+    </id>
+    <property name="IsEnabled" type="Boolean">
+      <column name="IsEnabled"  sql-type="tinyint"  not-null="true"/>
+    </property>
+    <property name="CreatedAt" type="DateTime">
+      <column name="CreatedAt" sql-type="datetime" not-null="true"/>
+    </property>
+    <property name="LastModifiedAt" type="DateTime">
+      <column name="LastModifiedAt" sql-type="datetime" not-null="true"/>
+    </property>
+
+    <property name="UserName" type="String">
+      <column name="UserName" sql-type="nvarchar(max)" not-null="true"/>
+    </property>
+    <property name="Password" type="String">
+      <column name="Password" sql-type="nvarchar(max)" not-null="true"/>
+    </property>
+    <property name="WeChat" type="String">
+      <column name="WeChat" sql-type="nvarchar(max)" />
+    </property>
+    <property name="Alipay" type="String">
+      <column name="Alipay" sql-type="nvarchar(max)" />
+    </property>
+    <property name="BitCoin" type="String">
+      <column name="BitCoin" sql-type="nvarchar(max)" />
+    </property>
+    <property name="Status" type="Int32">
+      <column name="Status" sql-type="int" not-null="true"/>
+    </property>
+    <property name="Name" type="String">
+      <column name="Name" sql-type="nvarchar(max)" not-null="true"/>
+    </property>
+    <property name="NickName" type="String">
+      <column name="NickName" sql-type="nvarchar(max)" not-null="true"/>
+    </property>
+    <property name="Mobile" type="String">
+      <column name="Mobile" sql-type="nvarchar(max)" not-null="true"/>
+    </property>
+    <property name="HeadPic" type="Int32">
+      <column name="HeadPic" sql-type="int" not-null="true"/>
+    </property>
+    <property name="RecommendUserName" type="String">
+      <column name="RecommendUserName" sql-type="nvarchar(max)" not-null="true"/>
+    </property>
+    <property name="Chain" type="String">
+      <column name="Chain" sql-type="nvarchar(max)" not-null="true"/>
+    </property>
+    <property name="GoldBalance" type="Decimal">
+      <column name="GoldBalance" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="SilverBalance" type="Decimal">
+      <column name="SilverBalance" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="CopperBalance" type="Decimal">
+      <column name="CopperBalance" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="SlagBalance" type="Decimal">
+      <column name="SlagBalance" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="DiamondBalance" type="Decimal">
+      <column name="DiamondBalance" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="Level" type="Int32">
+      <column name="Level" sql-type="int" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

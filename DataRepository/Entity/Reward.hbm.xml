@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DataRepository" namespace="DataRepository.Entity" default-lazy="false">
+  <class name="DataRepository.Entity.Reward, DataRepository" table="tbl_reward">
+    <id name="Id" type="Int32">
+      <column name="id" sql-type="int" not-null="true" unique="true"/>
+      <generator class="native" />
+    </id>
+    <property name="UserId" type="String">
+      <column name="userid" length="32" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="Remark" type="String">
+      <column name="remark" length="256" sql-type="varchar" not-null="false" />
+    </property>
+    
+    <property name="RewardType" type="Int32">
+      <column name="rewardtype" sql-type="int"   not-null="true"/>
+    </property>
+
+    <property name="Status" type="Int32">
+      <column name="status" sql-type="int"  not-null="true"/>
+    </property>
+    
+    <property name="CreateTime" type="DateTime">
+      <column name="createtime" sql-type="datetime" not-null="true"/>
+    </property>
+    
+    <property name="Amount" type="Decimal">
+      <column name="amount"  sql-type="decimal" not-null="true" />
+    </property>
+    
+  </class>
+</hibernate-mapping>

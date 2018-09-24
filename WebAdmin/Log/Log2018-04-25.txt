@@ -1,0 +1,4 @@
+记录时间：2018-04-25 16:44:51,715 线程ID:[6] 日志级别：INFO  操作类：DefaultLog property:[(null)] - 日志描述：ChangeBalance:update UserInfo set Balance=Balance-100 where UserId='4df23f'
+记录时间：2018-04-25 16:45:27,709 线程ID:[5] 日志级别：INFO  操作类：DefaultLog property:[(null)] - 日志描述：ChangeBalance:update UserInfo set Balance=Balance+300 where UserId='4df23f'
+记录时间：2018-04-25 16:45:40,337 线程ID:[6] 日志级别：INFO  操作类：DefaultLog property:[(null)] - 日志描述：ChangeBalance:update UserInfo set Balance=Balance-200 where UserId='4df23f'
+记录时间：2018-04-25 16:48:19,542 线程ID:[5] 日志级别：INFO  操作类：DefaultLog property:[(null)] - 日志描述：ChangeGrade:update UserInfo set Grade = 2 where UserId = '4df23f'

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DataRepository" namespace="DataRepository.Entity" default-lazy="false">
+  <class name="DataRepository.Entity.SmsVerifyCode, DataRepository" table="tbl_verifycode">
+    <id name="Id" type="Int32">
+      <column name="id" sql-type="int" not-null="true" unique="true"/>
+      <generator class="native" />
+    </id>
+    <property name="CodeType" type="Int32">
+      <column name="codetype" sql-type="int" not-null="true"/>
+    </property>
+    <property name="Mobile" type="String">
+      <column name="mobile" length="32" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="CurrentDate" type="String">
+      <column name="currentdate" length="32"  sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="SendAmount" type="Int32">
+      <column name="sendamount"  sql-type="int" not-null="true"/>
+    </property>
+    <property name="IsUsed" type="Boolean">
+      <column name="isused"  sql-type="tinyint"  not-null="true"/>
+    </property>
+    <property name="Code" type="String">
+      <column name="code" length="16"  sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="TimeOut" type="Int64">
+      <column name="timeout" sql-type="bigint" not-null="true"/>
+    </property>
+    <property name="NextSendTime" type="Int64">
+      <column name="nextsendtime" sql-type="bigint" not-null="true"/>
+    </property>
+    <property name="CreateDate" type="DateTime">
+      <column name="createdate" sql-type="datetime" not-null="true"/>
+    </property>
+    <property name="UpdateDate" type="DateTime">
+      <column name="updatedate" sql-type="datetime" not-null="true"/>
+    </property>
+
+  </class>
+</hibernate-mapping>

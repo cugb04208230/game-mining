@@ -1,0 +1,59 @@
+﻿@model WebApp.Models.ChooseRewardViewModel
+@{
+    ViewBag.Title = "选择奖励类型";
+}
+@section css
+{
+   
+}
+<div class="main" style="margin-top: 80px">
+    <div class="content">
+        <div class="container">
+            @Html.ValidationSummary(true)
+            <form action="/Member/ChooseReward" method="post">
+                @Html.AntiForgeryToken()
+                <div align="center">
+                    <table class="formTable">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>我的登录名</label>
+                                    @Html.TextBoxFor(model => model.UserId, new { @placeholder = "请输入登录名" ,Readonly="True"})
+                                    @Html.ValidationMessageFor(model => model.UserId)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @{
+                                        var defaultReceiveType = ViewBag.ReceiveType;
+                                        //0 - 默认 1 - 6000现金，2 - 团购1.5元产品，3 - 5万积分
+                                        var grade = new List<SelectListItem>                      ();
+                                        grade.Add(new SelectListItem { Text = "1.5万元产品团购金（分期）", Value = "2" });
+                                        grade.Add(new SelectListItem { Text = "5万云联惠白积分（送复投）", Value = "3" });
+                                        grade.Add(new SelectListItem { Text = "6000元产品团购金（全额）", Value = "1" });
+                                        grade.Add(new SelectListItem { Text = "7500元产品团购金（全额）", Value = "4",Selected=(defaultReceiveType == 4) });
+                                    }
+                                    
+                                    <label>请选择奖励类型</label>
+                                    @Html.DropDownListFor(model => model.ReceiveType,grade,new { @class= "form-control",Readonly= ViewBag.ReadonlyStr })
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="submit" class="buttonWrap button button-green buttonLong" value="确认操作">
+                                </td>
+                            </tr>
+                            
+
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@section scripts
+{
+
+}

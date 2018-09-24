@@ -1,0 +1,2080 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAdmin</name>
+    </assembly>
+    <members>
+        <member name="T:WebAdmin.FilterConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebAdmin.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)">
+            <summary>
+            
+            </summary>
+            <param name="filters"></param>
+        </member>
+        <member name="T:WebAdmin.ExceptionAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebAdmin.ExceptionAttribute.OnException(System.Web.Mvc.ExceptionContext)">
+            <inheritdoc />
+            <summary>
+            异常
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="T:WebAdmin.Startup">
+            <summary>
+            启动
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Startup.Configuration(Owin.IAppBuilder)">
+            <summary>
+            任务
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:WebAdmin.Startup.HangfireRegist">
+            <summary>
+            注册jobmanager中的
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Startup.HangfireRegist(System.String,System.Reflection.MethodInfo,System.String,System.TimeZoneInfo,System.String)">
+            <summary>
+            Register RecurringJob via <see cref="T:System.Reflection.MethodInfo"/>.
+            </summary>
+            <param name="recurringJobId">The identifier of the RecurringJob</param>
+            <param name="method">the specified method</param>
+            <param name="cron">Cron expressions</param>
+            <param name="timeZone"><see cref="T:System.TimeZoneInfo"/></param>
+            <param name="queue">Queue name</param>
+        </member>
+        <member name="T:WebAdmin.Controllers.AppController">
+            <inheritdoc />
+            <summary>
+            APP接口
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Controllers.AppController.Member">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Controllers.AppController.MiddleTier">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.#ctor">
+            <inheritdoc />
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.Login(WebAdmin.Models.AppModel.LoginModel)">
+            <summary>
+            登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.Logout">
+            <summary>
+            退出登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.Register(WebAdmin.Models.AppModel.RegisterModel)">
+            <summary>
+            注册
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.ForgotPassword(WebAdmin.Models.AppModel.ForgotPasswordModel)">
+            <summary>
+            忘记密码--用户登录前
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.ResetPassword(WebAdmin.Models.AppModel.ResetPasswordModel)">
+            <summary>
+            重置密码-用户登录后
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.Index">
+            <summary>
+            首页信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.Partner(WebAdmin.Models.AppModel.PartnerViewModel)">
+            <summary>
+            获取合伙人列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.ActivePartner(WebAdmin.Models.AppModel.ActivePartnerViewModel)">
+            <summary>
+            激活合伙人
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberToBuy(WebAdmin.Models.AppModel.MemberToBuyModel)">
+            <summary>
+            我要求购 - 用户发布求购
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.ToBuyList(WebAdmin.Models.AppModel.ToBuyListModel)">
+            <summary>
+            求购中心-所有用户求购列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberToBuyList(WebAdmin.Models.AppModel.MemberToBuyListModel)">
+            <summary>
+            我的求购列表：就是只显示自己的求购信息。
+            状态为3卖家已确认的时候，可以确认
+            状态为1（初始状态），3（卖家已确认）时可以取消
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberGiveList(WebAdmin.Models.AppModel.MemberGiveListModel)">
+            <summary>
+            赠送列表：就是看到别人的求购信息，然后点击赠送之后，就出现在该列表中，赠送也要加个限制，这个规则跟求购类似。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberCancelToBuy(WebAdmin.Models.AppModel.MemberToBuyCancelModel)">
+            <summary>
+            用户取消求购
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberEnsureToBuy(WebAdmin.Models.AppModel.MemberToBuyEnsureModel)">
+            <summary>
+            用户确认求购
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberToBuyCollect">
+            <summary>
+            用户求购记录统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MiningEquipment">
+            <summary>
+            资源中心
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberBuyMiningEquipment(WebAdmin.Models.AppModel.MemberBuyMiningEquipmentModel)">
+            <summary>
+            用户购买采矿设备
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberMiningEquipment(WebAdmin.Models.AppModel.MemberMiningEquipmentModel)">
+            <summary>
+            用户挖矿设备分页
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberCollect(WebAdmin.Models.AppModel.MemberCollectModel)">
+            <summary>
+            用户采集
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberMessageBoard(WebAdmin.Models.AppModel.MemberMessageBoardModel)">
+            <summary>
+            用户留言板数据分页
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberSubMessageBoard(WebAdmin.Models.AppModel.MemberMessageBoardSubModel)">
+            <summary>
+            用户提交留言板
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberSelectHeadPic(WebAdmin.Models.AppModel.MemberHeadPicViewModel)">
+            <summary>
+            用户修改头像
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberTransfer(WebAdmin.Models.AppModel.MemberTransferModel)">
+            <summary>
+            用户黄金转换
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberTransferList(WebAdmin.Models.AppModel.MemberTransferListModel)">
+            <summary>
+            转换记录查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberIncomeList(WebAdmin.Models.AppModel.MemberIncomeListViewModel)">
+            <summary>
+            用户收益记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.UpdateUserInfo(WebAdmin.Models.AppModel.MemberInfoUpdateViewModel)">
+            <summary>
+            更新个人信息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.MemberInfo">
+            <summary>
+            获取个人信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.SelectLanguage(WebAdmin.Models.AppModel.SelectLanguageModel)">
+            <summary>
+            修改语言
+            </summary>
+            <param name="language">1.中文，2.英文</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.AppController.GetCaptcha">
+            <summary>
+            生成验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebAdmin.Controllers.BaseController">
+            <inheritdoc />
+            <summary>
+            Ctor.
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Controllers.BaseController.MiddleTier">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Controllers.BaseController.Initialize(System.Web.Routing.RequestContext)">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <param name="requestContext"></param>
+        </member>
+        <member name="T:WebAdmin.Controllers.HomeController">
+            <inheritdoc />
+            <summary>
+            管理后台
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.Login">
+            <summary>
+            登陆页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.Login(WebAdmin.Models.AdminModel.AdminLoginModel)">
+            <summary>
+            登录
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.LogOut">
+            <summary>
+            登出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.Index">
+            <summary>
+            首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.ConfigRecord(WebAdmin.Models.ConfigRecordViewModel)">
+            <summary>
+            配置页
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.ConfigRecord(WebAdmin.Models.ConfigRecordUpdateModel)">
+            <summary>
+            配置更新
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.Synchronize">
+            <summary>
+            初始化配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MessageBoard(WebAdmin.Models.AdminModel.MessageBoardViewModel)">
+            <summary>
+            留言板页
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MessageBoard(WebAdmin.Models.AdminModel.MessageBoardReplyModel)">
+            <summary>
+            留言回复
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.Notice(WebAdmin.Models.AdminModel.NoticeViewModel)">
+            <summary>
+            系统通知页
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.Notice(WebAdmin.Models.AdminModel.NoticePostModel)">
+            <summary>
+            发布系统通知
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.NoticeDelete(System.Int64)">
+            <summary>
+            删除通知
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.Member(WebAdmin.Models.AdminModel.MemberViewModel)">
+            <summary>
+            用户列表页
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.Member(WebAdmin.Models.AdminModel.MemberPostModel)">
+            <summary>
+            用户新增
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MemberResetPassword(WebAdmin.Models.AdminModel.MemberResetPasswordModel)">
+            <summary>
+            用户重置密码
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MemberUpdateInfo(WebAdmin.Models.AdminModel.MemberUpdateInfoModel)">
+            <summary>
+            用户更新信息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MemberRelieve(System.String)">
+            <summary>
+            用户解除状态
+            锁定，冻结，查封
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MemberSealUp(System.String)">
+            <summary>
+            查封用户解除状态
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MemberPartner(WebAdmin.Models.AdminModel.MemberPartnerViewModel)">
+            <summary>
+            用户合伙人
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.ManageMemberPartner(WebAdmin.Models.AdminModel.MemberPartnerManageModel)">
+            <summary>
+            控制合伙人金余额
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MemberIncome(WebAdmin.Models.AdminModel.MemberIncomeViewModel)">
+            <summary>
+            用户每日收益页
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.TransferBill(WebAdmin.Models.AdminModel.TransferBillViewModel)">
+            <summary>
+            预约单页面
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MemebrToBuyReward">
+            <summary>
+            用户求购奖励，每月28日可用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MemberMiningEquipment(WebAdmin.Models.AdminModel.MemberMiningEquipmentViewModel)">
+            <summary>
+            用户采矿设备页
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MiningEquipment(WebAdmin.Models.AdminModel.MiningEquipmentViewModel)">
+            <summary>
+            采矿设备页
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MiningEquipment(WebAdmin.Models.AdminModel.MiningEquipmentPostModel)">
+            <summary>
+            采矿设备更新
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.SlagRefiningEquipment(WebAdmin.Models.AdminModel.SlagRefiningEquipmentViewModel)">
+            <summary>
+            精炼设备页
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.Error">
+            <summary>
+            错误页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebAdmin.Filter.AllowCrossSiteJsonAttribute">
+            <inheritdoc />
+            <summary>
+            跨域属性
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Filter.AllowCrossSiteJsonAttribute.#ctor(System.String)">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <param name="domain"></param>
+        </member>
+        <member name="M:WebAdmin.Filter.AllowCrossSiteJsonAttribute.#ctor(System.String[])">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <param name="domains"></param>
+        </member>
+        <member name="M:WebAdmin.Filter.AllowCrossSiteJsonAttribute.#ctor">
+            <inheritdoc />
+            <summary>
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Filter.AllowCrossSiteJsonAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="T:WebAdmin.Filter.ModelCheckFilter">
+            <inheritdoc />
+            <summary>
+            模型校验
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Filter.ModelCheckFilter.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="T:WebAdmin.Filter.MyAuthorizeAttribute">
+            <inheritdoc />
+            <summary>
+            我的校验模型
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Filter.MyAuthorizeAttribute.OnAuthorization(System.Web.Mvc.AuthorizationContext)">
+            <inheritdoc />
+            <summary>
+            OnAuthorization
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="M:WebAdmin.Filter.MyAuthorizeAttribute.AuthorizeCore(System.Web.HttpContextBase)">
+            <inheritdoc />
+            <summary>
+            AuthorizeCore
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Filter.MyAuthorizeAttribute.HandleUnauthorizedRequest(System.Web.Mvc.AuthorizationContext)">
+            <inheritdoc />
+            <summary>
+            HandleUnauthorizedRequest
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="T:WebAdmin.Filter.MyApiAuthorizeAttribute">
+            <inheritdoc />
+            <summary>
+            我的Api校验模型
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Filter.MyApiAuthorizeAttribute.OnAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <inheritdoc />
+            <summary>
+            校验模型
+            </summary>
+            <param name="actionContext"></param>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.AdminLoginModel">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.AdminLoginModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.AdminLoginModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MemberIncomeViewModel">
+            <summary>
+            用户收入查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberIncomeViewModel.Text">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberIncomeViewModel.CreatedAtFrom">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberIncomeViewModel.CreatedAtTo">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberIncomeViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberIncomeViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberIncomeViewModel.MemberIncomeRecords">
+            <summary>
+            用户收入列表
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MemberViewModel">
+            <summary>
+            用户列表查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.Chain">
+            <summary>
+            推荐人用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.CreatedAtFrom">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.CreatedAtTo">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.Members">
+            <summary>
+            用户列表
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.GoldBalanceFrom">
+            <summary>
+            金账户余额-交易赠送/转银和铜
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.SilverBalanceFrom">
+            <summary>
+            银账户余额-购买挖矿装备
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.CopperBalanceFrom">
+            <summary>
+            铜账户余额-招募玩家
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.SlagBalanceFrom">
+            <summary>
+            矿渣账户余额-用于精炼
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.GoldBalanceTo">
+            <summary>
+            金账户余额-交易赠送/转银和铜
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.SilverBalanceTo">
+            <summary>
+            银账户余额-购买挖矿装备
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.CopperBalanceTo">
+            <summary>
+            铜账户余额-招募玩家
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberViewModel.SlagBalanceTo">
+            <summary>
+            矿渣账户余额-用于精炼
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MemberPostModel">
+            <summary>
+            细致用户
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPostModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPostModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPostModel.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MemberResetPasswordModel">
+            <summary>
+            用户重置密码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberResetPasswordModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberResetPasswordModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberResetPasswordModel.MemberType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MemberUpdateInfoModel">
+            <summary>
+            用户重置密码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.MemberType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPartnerViewModel.RecommendUserName">
+            <summary>
+            推荐人用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPartnerViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPartnerViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPartnerViewModel.Gold">
+            <summary>
+            黄金余额基数
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPartnerViewModel.Members">
+            <summary>
+            用户列表
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPartnerManageModel.RecommendUserName">
+            <summary>
+            推荐人用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPartnerManageModel.Gold">
+            <summary>
+            黄金余额基数
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPartnerManageModel.Percent">
+            <summary>
+            扣减百分比
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MiningEquipmentViewModel">
+            <summary>
+            系统采矿设备查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MiningEquipmentViewModel.Text">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MiningEquipmentViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MiningEquipmentViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MiningEquipmentViewModel.MiningEquipments">
+            <summary>
+            系统采矿设备列表
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MiningEquipmentPostModel">
+            <summary>
+            挖矿设备更新
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MiningEquipmentPostModel.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MiningEquipmentPostModel.Price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MiningEquipmentPostModel.ExpirationDay">
+            <summary>
+            产品有效期
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MiningEquipmentPostModel.Percentage">
+            <summary>
+            收益百分比
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.SlagRefiningEquipmentViewModel">
+            <summary>
+            精炼设备查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.SlagRefiningEquipmentViewModel.Text">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.SlagRefiningEquipmentViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.SlagRefiningEquipmentViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.SlagRefiningEquipmentViewModel.SlagRefiningEquipments">
+            <summary>
+            精炼设备列表
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.TransferBillViewModel">
+            <summary>
+            交易单查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.TransferBillViewModel.Text">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.TransferBillViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.TransferBillViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.TransferBillViewModel.TransferBills">
+            <summary>
+            交易单列表
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.NoticeViewModel">
+            <summary>
+            系统通知页
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.NoticeViewModel.Text">
+            <summary>
+            查询关键字
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.NoticeViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.NoticeViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.NoticeViewModel.Notices">
+            <summary>
+            通知列表
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.NoticePostModel">
+            <summary>
+            获取系统通知
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.NoticePostModel.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.NoticePostModel.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.NoticePostModel.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MessageBoardViewModel">
+            <summary>
+            留言板页面查询模型
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MessageBoardViewModel.Text">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MessageBoardViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MessageBoardViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MessageBoardViewModel.MessageBoards">
+            <summary>
+            留言板列表
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MessageBoardReplyModel">
+            <summary>
+            留言板回复
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MessageBoardReplyModel.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MessageBoardReplyModel.Reply">
+            <summary>
+            回复内容
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MemberMiningEquipmentViewModel">
+            <summary>
+            用户采矿设备查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberMiningEquipmentViewModel.Text">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberMiningEquipmentViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberMiningEquipmentViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberMiningEquipmentViewModel.MemberMiningEquipments">
+            <summary>
+            用户采矿设备列表
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.AppModelUtil">
+            <summary>
+            客户端模型
+            </summary>
+        </member>
+        <member name="M:WebAdmin.Models.AppModel.AppModelUtil.ToContent(DataRepository.Entities.MemberIncomeRecord)">
+            <summary>
+            
+            </summary>
+            <param name="record"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.PartnerQueryResult">
+            <inheritdoc />
+            <summary>
+            合伙人返回结果
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.PartnerQueryResult.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.PartnerModel">
+            <summary>
+            用户合伙人
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.PartnerModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.PartnerModel.Status">
+            <summary>
+            用户状态
+            1.激活，2.锁定，3.冻结，4.未激活，5.努力挖矿中，6.查封中
+            未激活状态才可以激活
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.PartnerModel.StatusDesc">
+            <summary>
+            用户状态描述
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.PartnerModel.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.PartnerModel.HeadPic">
+            <summary>
+            头像-选项
+            1-7,默认七个头像，按客户端的图片命名来
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.PartnerModel.EquipmentCount">
+            <summary>
+            劳工数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.PartnerModel.ActiveCost">
+            <summary>
+            激活消耗的铜的数量
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.ToBuyModel">
+            <summary>
+            求购中心
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.FromMemberUserName">
+            <summary>
+            入账账户用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.ToMemberUserName">
+            <summary>
+            入账账户用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.Amount">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.Status">
+            <summary>
+            状态
+            1.初始，3.卖家确认，4.已完成，5.已撤销，6.已过期
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.StatusDesc">
+            <summary>
+            状态描述
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.CreatedAt">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.Honor">
+            <summary>
+            荣誉值
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.IsSelf">
+            <summary>
+            是否是自己
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.From">
+            <summary>
+            赠送者
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.To">
+            <summary>
+            求购者
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.ToBuyAt">
+            <summary>
+            求购时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.GivedAt">
+            <summary>
+            赠送时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.ReceivedAt">
+            <summary>
+            接收时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyModel.CompletedAt">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.TransferMemberModel">
+            <summary>
+            求购用户模型
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferMemberModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferMemberModel.Alipay">
+            <summary>
+            支付宝账号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferMemberModel.WeChat">
+            <summary>
+            微信账号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferMemberModel.BitCoin">
+            <summary>
+            比特币账号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferMemberModel.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferMemberModel.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferMemberModel.Honor">
+            <summary>
+            荣誉值
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferMemberModel.GlobalAreaCode">
+            <summary>
+            国际区号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferMemberModel.BankName">
+            <summary>
+            银行名称
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferMemberModel.BankCode">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MiningEquipmentModel">
+            <summary>
+            资源中心，挖矿设备
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MiningEquipmentModel.Type">
+            <summary>
+            设备类型
+            1.矿工，2.选金厂，3.冶炼厂
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MiningEquipmentModel.TypeDesc">
+            <summary>
+            挖矿设备描述
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MiningEquipmentModel.Price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MiningEquipmentModel.ExpirationDay">
+            <summary>
+            产品有效期
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MiningEquipmentModel.Percentage">
+            <summary>
+            收益百分比
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel">
+            <summary>
+            个人挖矿设备模型
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.CreatedAt">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.Type">
+            <summary>
+            挖矿设备类型
+            1.矿工，2.选金厂，3.冶炼厂
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.TypeDesc">
+            <summary>
+            挖矿设备描述
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.PurchasePrice">
+            <summary>
+            设备采购价格
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.Percentage">
+            <summary>
+            收益百分比
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.ValidityTerm">
+            <summary>
+            有效截止日期
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.UsedDay">
+            <summary>
+            已经使用的天数
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.LeftDay">
+            <summary>
+            剩余使用的天数
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.Yield">
+            <summary>
+            预计每日产量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.LastCollectAt">
+            <summary>
+            最后一次采集时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.OverDueTime">
+            <summary>
+            逾期未收取次数
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.Status">
+            <summary>
+            挖矿设备状态
+            1.挖矿中，2.锁定中,3.可采集
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMiningEquipmentItemModel.LockedAt">
+            <summary>
+            锁定时间
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.ToBuyCollectModel">
+            <summary>
+            求购统计
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyCollectModel.TotalAmount">
+            <summary>
+            所有求购成交额
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyCollectModel.MonthAmount">
+            <summary>
+            本月求购成交额
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.EuipmentViewModel">
+            <summary>
+            矿场中心设备模型
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.EquipmentType">
+            <summary>
+            设备类型
+            1.矿工，2.选金厂，3.冶炼厂,4.精炼设备
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.CreatedAt">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.PurchasePrice">
+            <summary>
+            设备采购价格
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.Percentage">
+            <summary>
+            收益百分比
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.ValidityTerm">
+            <summary>
+            有效截止日期
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.UsedDay">
+            <summary>
+            已经使用的天数
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.LeftDay">
+            <summary>
+            剩余使用的天数
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.Yield">
+            <summary>
+            产量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.LastCollectAt">
+            <summary>
+            最后一次采集时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.EuipmentViewModel.Status">
+            <summary>
+            挖矿设备状态
+            1.准备中，2.锁定中,3.可采集
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.ForgotPasswordModel">
+            <summary>
+            忘记密码
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberHeadPicViewModel">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberHeadPicViewModel.Option">
+            <summary>
+            头像选项
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.HomeViewModel">
+            <summary>
+            首页用户
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewModel.Member">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewModel.InUseMemberCount">
+            <summary>
+            矿主数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewModel.ActiveMemberCount">
+            <summary>
+            排队用户
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewModel.EquipmentCount">
+            <summary>
+            设备数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewModel.Notices">
+            <summary>
+            通知
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewModel.QrCode">
+            <summary>
+            我的邀请二维码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewModel.GlobalGoldPrice">
+            <summary>
+            全球金价
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.HomeViewMemberModel">
+            <summary>
+            首页用户模型
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.WeChatId">
+            <summary>
+            微信Id，预留
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.Status">
+            <summary>
+            用户状态
+            1.已激活，2.锁定，3.冻结，4.未激活，5.努力挖矿中，6.查封中
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.HeadPic">
+            <summary>
+            头像-选项
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.RawStoneBalance">
+            <summary>
+            账户总额
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.GoldBalance">
+            <summary>
+            金账户余额-交易赠送/转银和铜
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.SilverBalance">
+            <summary>
+            银账户余额-购买挖矿装备
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.CopperBalance">
+            <summary>
+            铜账户余额-招募玩家
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.SlagBalance">
+            <summary>
+            矿渣账户余额-用于精炼
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.DiamondBalance">
+            <summary>
+            钻石余额
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.CollectAmount">
+            <summary>
+            历次采集数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.FeedBackAmount">
+            <summary>
+            邀请回馈
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.FeedBackGoldAmount">
+            <summary>
+            用户邀请回馈金
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.FeedBackSlagAmount">
+            <summary>
+            用户邀请回馈矿渣
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.Level">
+            <summary>
+            员工级别
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.Honor">
+            <summary>
+            荣誉值
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.GlobalAreaCode">
+            <summary>
+            国际区号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.BankName">
+            <summary>
+            银行名称
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.BankCode">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.BitCoin">
+            <summary>
+            比特币账号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.MemberType">
+            <summary>
+            会员类型
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.HomeViewMemberModel.MemberTypeDesc">
+            <summary>
+            会员类型描述
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.LoginModel">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.LoginModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.LoginModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.LoginModel.Code">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberIncomeListViewModel">
+            <summary>
+            收益记录查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberIncomeListViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberIncomeListViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberIncomeListItemModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberIncomeListItemModel.Type">
+            <summary>
+            收益类型枚举
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberIncomeListItemModel.TypeDesc">
+            <summary>
+            收益类型描述
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberIncomeListItemModel.CreatedAt">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberIncomeListItemModel.Content">
+            <summary>
+            详情
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberInfoUpdateViewModel">
+            <summary>
+            更新个人信息
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberInfoUpdateViewModel.BitCoin">
+            <summary>
+            比特币账号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberInfoUpdateViewModel.GlobalAreaCode">
+            <summary>
+            国际区号
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberTransferModel">
+            <summary>
+            用户转账
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberTransferModel.TransferBillType">
+            <summary>
+            转账类型
+            3.黄金转银 4.黄金转铜
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberTransferModel.Amount">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberTransferListModel">
+            <summary>
+            转换记录查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberTransferListModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberTransferListModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberTransferItemModel">
+            <summary>
+            用户转换记录
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberTransferItemModel.CreatedAt">
+            <summary>
+            转换时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberTransferItemModel.TransferBillType">
+            <summary>
+            转换类型
+            3.黄金转银 4.黄金转铜
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberTransferItemModel.Amount">
+            <summary>
+            转换金额
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberMessageBoardModel">
+            <summary>
+            留言板-查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMessageBoardModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMessageBoardModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberMessageBoardSubModel">
+            <summary>
+            留言板-提交
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMessageBoardSubModel.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberMessageBoardSubModel.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MiningEquipmentViewModel">
+            <summary>
+            设备列表
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MiningEquipmentViewModel.List">
+            <summary>
+            列表
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberBuyMiningEquipmentModel">
+            <summary>
+            设备购买
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberBuyMiningEquipmentModel.MiningEquipmentType">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberMiningEquipmentModel">
+            <summary>
+            用户设备查询
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberCollectModel">
+            <summary>
+            设备采集
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberCollectModel.Id">
+            <summary>
+            用户编号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberCollectModel.EquipmentType">
+            <summary>
+            设备类型
+            1.矿工，2.选金厂，3.冶炼厂,4.精炼设备
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.PartnerViewModel">
+            <summary>
+            合伙人
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.PartnerViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.PartnerViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.ActivePartnerViewModel">
+            <summary>
+            激活合伙人
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ActivePartnerViewModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ActivePartnerViewModel.Name">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.RegisterViewModel">
+            <summary>
+            注册
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterViewModel.RecommondUserName">
+            <summary>
+            推荐人用户名
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.RegisterModel">
+            <summary>
+            注册模型
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.ConfirmPassword">
+            <summary>
+            确认密码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.RecommondUserName">
+            <summary>
+            推荐人用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.Name">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.Alipay">
+            <summary>
+            支付宝账号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.WeChat">
+            <summary>
+            微信账号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.BitCoin">
+            <summary>
+            钱包地址
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.GlobalAreaCode">
+            <summary>
+            国际区号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.BankName">
+            <summary>
+            银行名称
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.BankCode">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.RegisterModel.Code">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.ResetPasswordModel">
+            <summary>
+            重置密码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ResetPasswordModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ResetPasswordModel.ConfirmPassword">
+            <summary>
+            密码确认
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberSlagRefiningEquipmentViewModel">
+            <summary>
+            用户精炼设备查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberSlagRefiningEquipmentViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberSlagRefiningEquipmentViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberRefiningModel">
+            <summary>
+            用户精炼
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberRefiningModel.Id">
+            <summary>
+            精炼设备编号
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberToBuyModel">
+            <summary>
+            用户预购
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberToBuyModel.Amount">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberToBuyListModel">
+            <summary>
+            用户求购列表
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberToBuyListModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberToBuyListModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.ToBuyListModel">
+            <summary>
+            用户求购列表
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyListModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.ToBuyListModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberGiveListModel">
+            <summary>
+            用户赠送列表
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberGiveListModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberGiveListModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberToBuyCancelModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberToBuyCancelModel.Id">
+            <summary>
+            取消Id
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.MemberToBuyEnsureModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.MemberToBuyEnsureModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.TransferListViewModel">
+            <summary>
+            求购列表
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferListViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferListViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AppModel.TransferBillEnsureModel">
+            <summary>
+            确认求购单
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AppModel.TransferBillEnsureModel.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.ConfigRecordViewModel">
+            <summary>
+            配置页面查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.ConfigRecordViewModel.Text">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.ConfigRecordViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.ConfigRecordViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.ConfigRecordViewModel.ConfigRecords">
+            <summary>
+            配置列表
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.ConfigRecordUpdateModel">
+            <summary>
+            配置更新
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.ConfigRecordUpdateModel.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.ConfigRecordUpdateModel.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.LeftMenuModel">
+            <summary>
+            菜单栏模型
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.LeftMenuModel.Label">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.LeftMenuModel.Url">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.LeftMenuModel.Children">
+            <summary>
+            子菜单
+            </summary>
+        </member>
+    </members>
+</doc>

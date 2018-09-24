@@ -1,0 +1,90 @@
+﻿@using BaseClasses.Extensions
+@using WebAdmin.Models
+@model WebAdmin.Models.AdminModel.MemberIncomeViewModel
+
+@{
+	ViewBag.CurrentMenuLabel = new LeftMenuModel
+	{
+		Label = "用户",
+		Children = new List<LeftMenuModel>
+		{
+			new LeftMenuModel
+			{
+				Label = "收益列表",
+				Url = "MemberIncome"
+			}
+		}
+	};
+}
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<form id="searchForm">
+					<input name="text" style="height: 40px; padding: 10px; margin: 30px 30px 10px 50px;" value="@Model.Text" placeholder="请输入用户名" />
+					时间：<input name="CreatedAtFrom" style="height: 40px; padding: 10px; margin: 30px 0px 10px 0px;" value="@(Model.CreatedAtFrom)" type="text" class="datetimepicker" placeholder="开始时间">
+					-<input name="CreatedAtTo"  style="height: 40px; padding: 10px; margin: 30px 30px 10px 0px;" value="@Model.CreatedAtTo" type="text" class="datetimepicker" placeholder="结束时间">
+					<button class="btn btn-warning btn-fill btn-wd" type="submit">搜索</button>
+				</form>
+				<table class="table">
+					<thead>
+						<tr>
+							<td class="text-center">用户名</td>
+							<td class="text-center">时间</td>
+							<td class="text-center">收益类型</td>
+							<td class="text-center">金</td>
+							<td class="text-center">银</td>
+							<td class="text-center">铜</td>
+							<td class="text-center">矿渣</td>
+							<td class="text-center">钻石</td>
+						</tr>
+					</thead>
+					<tbody>
+					@foreach (var item in Model.MemberIncomeRecords.List)
+					{
+						<tr>
+							<td class="text-center">@item.MemberUserName</td>
+							<td class="text-center">@item.CreatedAt</td>
+							<td class="text-center">@item.Type.GetDescription()</td>
+							<td class="text-center">@item.GoldAmount</td>
+							<td class="text-center">@item.SilverAmount</td>
+							<td class="text-center">@item.CopperAmount</td>
+							<td class="text-center">@item.SlagAmount</td>
+							<td class="text-center">@item.SlagToGoldAmount</td>
+						</tr>
+					}
+					</tbody>
+					<tfoot>
+					<tr>
+						<th colspan="8">
+							@Html.PageRender(Model.PageIndex, Model.PageSize, Model.MemberIncomeRecords.Count)
+						</th>
+					</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section Scripts
+{
+	<script type="text/javascript">
+		$('.datetimepicker').datetimepicker({
+			format: 'YYYY-MM-DD HH:mm:ss',
+			icons: {
+				time: "fa fa-clock-o",
+				date: "fa fa-calendar",
+				up: "fa fa-chevron-up",
+				down: "fa fa-chevron-down",
+				previous: 'fa fa-chevron-left',
+				next: 'fa fa-chevron-right',
+				today: 'fa fa-screenshot',
+				clear: 'fa fa-trash',
+				close: 'fa fa-remove'
+			}
+		});
+	</script>
+
+}

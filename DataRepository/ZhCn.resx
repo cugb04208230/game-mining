@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountBalanceNotEnough" xml:space="preserve">
+    <value>账户余额不足</value>
+    <comment>Balance is not enough</comment>
+  </data>
+  <data name="AccountIsFreezing" xml:space="preserve">
+    <value>账号已冻结，请联系管理人员</value>
+    <comment>Account has been frozen, please contact the administrator.</comment>
+  </data>
+  <data name="AccountIsLocking" xml:space="preserve">
+    <value>账号已锁定，请联系管理人员</value>
+    <comment>Account has been locked, please contact the administrator.</comment>
+  </data>
+  <data name="AccountIsSealUp" xml:space="preserve">
+    <value>账号已查封，请联系管理人员</value>
+    <comment>Account has been sealed, please contact the administrator.</comment>
+  </data>
+  <data name="AccountIsUnActived" xml:space="preserve">
+    <value>账号还未激活，暂时无法登陆</value>
+    <comment>Account has not been activated, temporarily unable to log on.</comment>
+  </data>
+  <data name="AmountCanNotBeEmpty" xml:space="preserve">
+    <value>请输入金额</value>
+    <comment>The Amount can not be empty.</comment>
+  </data>
+  <data name="AmountTypeError" xml:space="preserve">
+    <value>金额只能是50的整数倍</value>
+    <comment>The amount can only be an integral multiple of 50</comment>
+  </data>
+  <data name="AuthFailed" xml:space="preserve">
+    <value>授权信息失败，请重新登录</value>
+    <comment>Auth failed,please login again.</comment>
+  </data>
+  <data name="BankcardNoCanNotBeEmpty" xml:space="preserve">
+    <value>银行卡号不能为空</value>
+    <comment>The bankcard number code can not be empty.</comment>
+  </data>
+  <data name="BankNameCanNotBeEmpty" xml:space="preserve">
+    <value>银行名称不能为空</value>
+    <comment>The bank name code can not be empty.</comment>
+  </data>
+  <data name="BusinessHoursError" xml:space="preserve">
+    <value>营业时间为每日6：00-23：00</value>
+    <comment>Business hours are from 6:00 to 23:00.</comment>
+  </data>
+  <data name="CurrentToBuyTimeLimit" xml:space="preserve">
+    <value>当前求购次数达到上限</value>
+    <comment>The current number of purchase times reaches the upper limit.</comment>
+  </data>
+  <data name="DailyMessageboardCountLimit" xml:space="preserve">
+    <value>每日站内信数量达到上限</value>
+    <comment>The number of letters per day reaches the upper limit.</comment>
+  </data>
+  <data name="DangerousContent" xml:space="preserve">
+    <value>危险的提交内容</value>
+    <comment>dangerous content</comment>
+  </data>
+  <data name="EquipmentCountLimit" xml:space="preserve">
+    <value>设备数量达到上限</value>
+    <comment>The number of equipment reaches the upper limit.</comment>
+  </data>
+  <data name="ErrorCancelStatus" xml:space="preserve">
+    <value>该状态不能够取消</value>
+    <comment>It's gone beyond recall.</comment>
+  </data>
+  <data name="ErrorId" xml:space="preserve">
+    <value>错误的编号</value>
+    <comment>Invalid number</comment>
+  </data>
+  <data name="ErrorInvitRelationship" xml:space="preserve">
+    <value>邀请关系有误</value>
+    <comment>Invalid Inviting relationship</comment>
+  </data>
+  <data name="ErrorUserNameOrPassword" xml:space="preserve">
+    <value>无效的用户名或者密码</value>
+    <comment>Invalid username or password!</comment>
+  </data>
+  <data name="ErrorValueType" xml:space="preserve">
+    <value>错误的值类型</value>
+    <comment>Error value type</comment>
+  </data>
+  <data name="GiveTimeLimit" xml:space="preserve">
+    <value>赠送次数达到上限</value>
+    <comment>The maximum number of giving times</comment>
+  </data>
+  <data name="GlobalAreaCodeCanNotBeEmpty" xml:space="preserve">
+    <value>国际区号不能为空</value>
+    <comment>The international code can not be empty.</comment>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>验证码错误</value>
+    <comment>Invalid verification code</comment>
+  </data>
+  <data name="InviterAccountBalanceNotEnough" xml:space="preserve">
+    <value>邀请人账户余额不足</value>
+    <comment>Inviter balance is not enough</comment>
+  </data>
+  <data name="InviterError" xml:space="preserve">
+    <value>邀请用户信息错误</value>
+    <comment>Inviter is not existed</comment>
+  </data>
+  <data name="LogicError" xml:space="preserve">
+    <value>业务逻辑错误</value>
+    <comment>Logic Error</comment>
+  </data>
+  <data name="MiningEquipmentCollectError" xml:space="preserve">
+    <value>该设备还不能收取</value>
+    <comment>Equipment can not be collected,because of error status.</comment>
+  </data>
+  <data name="MobileCanNotBeEmpty" xml:space="preserve">
+    <value>手机号不能缺少</value>
+    <comment>Password can not be empty.</comment>
+  </data>
+  <data name="MobileIsExisted" xml:space="preserve">
+    <value>手机号已存在</value>
+    <comment>Mobile is existed</comment>
+  </data>
+  <data name="MobileRegexError" xml:space="preserve">
+    <value>手机号格式不正确</value>
+    <comment>The phone number is not correct.</comment>
+  </data>
+  <data name="MustBuyMiningEquipment" xml:space="preserve">
+    <value>必须购买完采矿设备才可以发起求购</value>
+    <comment>It is necessary to purchase mining equipment before purchasing.</comment>
+  </data>
+  <data name="PasswordCanNotBeEmpty" xml:space="preserve">
+    <value>请输入密码</value>
+    <comment>Password can not be empty.</comment>
+  </data>
+  <data name="PasswordNotMatch" xml:space="preserve">
+    <value>密码和确认密码不匹配</value>
+    <comment>The password and confirmation password do not match.</comment>
+  </data>
+  <data name="PasswordRegexError" xml:space="preserve">
+    <value>密码长度为6-20位的数字和大小写字母,必须包含大写字母，小写字母和数字</value>
+    <comment>Passwords with a length of 6-20 bits and uppercase letters must contain uppercase letters, lowercase letters and digits.</comment>
+  </data>
+  <data name="PropertyNameInvalid" xml:space="preserve">
+    <value>参数名不合法</value>
+    <comment>Invalid parameters</comment>
+  </data>
+  <data name="RefiningTooBusy" xml:space="preserve">
+    <value>一天只能精炼一次</value>
+    <comment>Has refined today</comment>
+  </data>
+  <data name="SundayToRest" xml:space="preserve">
+    <value>周日哦，休息中</value>
+    <comment>Stay out of business</comment>
+  </data>
+  <data name="SystemError" xml:space="preserve">
+    <value>服务器打了个盹~</value>
+    <comment>System is error now ,please try it later!</comment>
+  </data>
+  <data name="ToBuyTimeLimit" xml:space="preserve">
+    <value>每日求购次数达到上限</value>
+    <comment>The purchase times
+ reaches the upper limit.</comment>
+  </data>
+  <data name="TransferBillFromMemberError" xml:space="preserve">
+    <value>交易单买家信息不正确</value>
+    <comment>Invalid buyer</comment>
+  </data>
+  <data name="TransferBillStatusError" xml:space="preserve">
+    <value>交易单状态错误</value>
+    <comment>Invalid trade status</comment>
+  </data>
+  <data name="TransferBillToMemberError" xml:space="preserve">
+    <value>交易单卖家信息不正确</value>
+    <comment>Invalid seller</comment>
+  </data>
+  <data name="TransferBillTypeError" xml:space="preserve">
+    <value>交易单类型不合法</value>
+    <comment>Invalid trading type</comment>
+  </data>
+  <data name="UserIsActived" xml:space="preserve">
+    <value>用户已激活</value>
+    <comment>Account has been activated</comment>
+  </data>
+  <data name="UserNameCanNotBeEmpty" xml:space="preserve">
+    <value>请输入用户名</value>
+    <comment>Username can not be empty.</comment>
+  </data>
+  <data name="UserNameIsExisted" xml:space="preserve">
+    <value>该用户名已存在</value>
+    <comment>Username is existed</comment>
+  </data>
+  <data name="UserNameIsNotExisted" xml:space="preserve">
+    <value>该用户名不存在</value>
+    <comment>Username is not existed</comment>
+  </data>
+  <data name="UserNameIsNotMatchName" xml:space="preserve">
+    <value>账号和姓名不匹配</value>
+    <comment>Invalid username or name!</comment>
+  </data>
+  <data name="UserNameLengthError" xml:space="preserve">
+    <value>用户名长度为6-20位的数字和大小写字母</value>
+    <comment>The length of the user name is 6-20 digit, upper case and lowercase letter.</comment>
+  </data>
+  <data name="VerifyCodeError" xml:space="preserve">
+    <value>验证码错误</value>
+    <comment>Verification code error</comment>
+  </data>
+  <data name="WalletCanNotBeEmpty" xml:space="preserve">
+    <value>钱包不能为空</value>
+    <comment>Wallet can not be empty.</comment>
+  </data>
+</root>

@@ -1,0 +1,130 @@
+﻿@using BaseClasses.Extensions
+@using WebAdmin.Models
+@model WebAdmin.Models.AdminModel.MiningEquipmentViewModel
+
+@{
+	ViewBag.CurrentMenuLabel = new LeftMenuModel
+	{
+		Label = "设备",
+		Children = new List<LeftMenuModel>
+{
+new LeftMenuModel
+{
+Label = "系统设备",
+Url = "MiningEquipment"
+}
+}
+	};
+}
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				@*				<form id="searchForm">*@
+				@*					<input name="text" style="height: 40px; padding: 10px; margin: 30px 30px 10px 50px;" value="@Model.Text" placeholder="请输入名称" />*@
+				@*					<button class="btn btn-warning btn-fill btn-wd" type="submit">搜索</button>*@
+				@*				</form>*@
+				<table class="table">
+					<thead>
+						<tr>
+							<td class="text-center">名称</td>
+							<td class="text-center">价格</td>
+							<td class="text-center">产品有效期（天）</td>
+							<td class="text-center">收益百分比</td>
+							<td class="text-center">操作</td>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model.MiningEquipments.List)
+						{
+							<tr>
+								<td class="text-center">@item.Type.GetDescription()</td>
+								<td class="text-center">@item.Price</td>
+								<td class="text-center">@item.ExpirationDay</td>
+								<td class="text-center">@item.Percentage</td>
+								<td><a href="#" data-toggle="modal" data-target="#updateModal" data-id="@(item.Id)" data-name="@(item.Type.GetDescription())" data-price="@(item.Price)" data-expirationday="@(item.ExpirationDay)" data-percentage="@(item.Percentage)">编辑</a></td>
+							</tr>
+						}
+					</tbody>
+					<tfoot>
+						<tr>
+							<th colspan="8">
+								@Html.PageRender(Model.PageIndex, Model.PageSize, Model.MiningEquipments.Count)
+							</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">
+					编辑
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form id="updateForm">
+					<input type="hidden" name="id" id="id" />
+					<div class="form-group">
+						<label for="name">名称</label>
+						<input type="text" class="form-control" id="name" name="name" readonly="readonly">
+					</div>
+					<div class="form-group">
+						<label for="price">价格</label>
+						<input type="text" class="form-control" id="price" name="price" >
+					</div>
+					<div class="form-group">
+						<label for="expirationday">产品有效期（天）</label>
+						<input type="text" class="form-control" id="expirationday" name="expirationday" >
+					</div>
+					<div class="form-group">
+						<label for="percentage">收益百分比</label>
+						<input type="text" class="form-control" id="percentage" name="percentage" >
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary" id="updateModalSub">提交更改</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+@section Scripts
+{
+	<script type="text/javascript">
+
+		$('#updateModal').on('show.bs.modal',
+			function (event) {
+				var btnThis = $(event.relatedTarget); //触发事件的按钮
+				var modal = $(this); //当前模态框
+				modal.find('#id').val(btnThis.data('id'));
+				modal.find('#name').val(btnThis.data('name'));
+				modal.find('#price').val(btnThis.data('price'));
+				modal.find('#expirationday').val(btnThis.data('expirationday'));
+				modal.find('#percentage').val(btnThis.data('percentage'));
+			});
+
+		$("#updateModalSub").on("click",
+			function () {
+				$rpc("/home/MiningEquipment",
+					$("#updateForm").serializeArray(),
+					function () {
+						$('#updateModal').modal('hide');
+						window.location.reload();
+					},
+					function (data) {
+						swal(data.Message);
+					});
+			});
+	</script>
+}

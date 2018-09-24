@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountBalanceNotEnough" xml:space="preserve">
+    <value>Balance is not enough</value>
+  </data>
+  <data name="AccountIsFreezing" xml:space="preserve">
+    <value>Account has been frozen, please contact the administrator.</value>
+  </data>
+  <data name="AccountIsLocking" xml:space="preserve">
+    <value>Account has been locked, please contact the administrator.</value>
+  </data>
+  <data name="AccountIsSealUp" xml:space="preserve">
+    <value>Account has been sealed, please contact the administrator.</value>
+  </data>
+  <data name="AccountIsUnActived" xml:space="preserve">
+    <value>Account has not been activated, temporarily unable to log on.</value>
+  </data>
+  <data name="AmountCanNotBeEmpty" xml:space="preserve">
+    <value>The Amount can not be empty.</value>
+  </data>
+  <data name="AmountTypeError" xml:space="preserve">
+    <value>The amount can only be an integral multiple of 50</value>
+  </data>
+  <data name="AuthFailed" xml:space="preserve">
+    <value>Auth failed,please login again.</value>
+  </data>
+  <data name="BankcardNoCanNotBeEmpty" xml:space="preserve">
+    <value>The bankcard number code can not be empty.</value>
+  </data>
+  <data name="BankNameCanNotBeEmpty" xml:space="preserve">
+    <value>The bank name code can not be empty.</value>
+  </data>
+  <data name="BusinessHoursError" xml:space="preserve">
+    <value>Business hours are from 6:00 to 23:00.</value>
+  </data>
+  <data name="CurrentToBuyTimeLimit" xml:space="preserve">
+    <value>The current number of purchase times reaches the upper limit.</value>
+  </data>
+  <data name="DailyMessageboardCountLimit" xml:space="preserve">
+    <value>The number of letters per day reaches the upper limit.</value>
+  </data>
+  <data name="DangerousContent" xml:space="preserve">
+    <value>dangerous content</value>
+  </data>
+  <data name="EquipmentCountLimit" xml:space="preserve">
+    <value>The number of equipment reaches the upper limit.</value>
+  </data>
+  <data name="ErrorCancelStatus" xml:space="preserve">
+    <value>It's gone beyond recall.</value>
+  </data>
+  <data name="ErrorId" xml:space="preserve">
+    <value>Invalid number</value>
+  </data>
+  <data name="ErrorInvitRelationship" xml:space="preserve">
+    <value>Invalid Inviting relationship</value>
+  </data>
+  <data name="ErrorUserNameOrPassword" xml:space="preserve">
+    <value>Invalid username or password!</value>
+  </data>
+  <data name="ErrorValueType" xml:space="preserve">
+    <value>Error value type</value>
+  </data>
+  <data name="GiveTimeLimit" xml:space="preserve">
+    <value>The maximum number of giving times</value>
+  </data>
+  <data name="GlobalAreaCodeCanNotBeEmpty" xml:space="preserve">
+    <value>The international code can not be empty.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Invalid verification code</value>
+  </data>
+  <data name="InviterAccountBalanceNotEnough" xml:space="preserve">
+    <value>Inviter balance is not enough</value>
+  </data>
+  <data name="InviterError" xml:space="preserve">
+    <value>Inviter is not existed</value>
+  </data>
+  <data name="LogicError" xml:space="preserve">
+    <value>Logic Error</value>
+  </data>
+  <data name="MiningEquipmentCollectError" xml:space="preserve">
+    <value>Equipment can not be collected,because of error status.</value>
+  </data>
+  <data name="MobileCanNotBeEmpty" xml:space="preserve">
+    <value>Password can not be empty.</value>
+  </data>
+  <data name="MobileIsExisted" xml:space="preserve">
+    <value>Mobile is existed</value>
+  </data>
+  <data name="MobileRegexError" xml:space="preserve">
+    <value>The phone number is not correct.</value>
+  </data>
+  <data name="MustBuyMiningEquipment" xml:space="preserve">
+    <value>It is necessary to purchase mining equipment before purchasing.</value>
+  </data>
+  <data name="PasswordCanNotBeEmpty" xml:space="preserve">
+    <value>Password can not be empty.</value>
+  </data>
+  <data name="PasswordNotMatch" xml:space="preserve">
+    <value>The password and confirmation password do not match.</value>
+  </data>
+  <data name="PasswordRegexError" xml:space="preserve">
+    <value>Passwords with a length of 6-20 bits and uppercase letters must contain uppercase letters, lowercase letters and digits.</value>
+  </data>
+  <data name="PropertyNameInvalid" xml:space="preserve">
+    <value>Invalid parameters</value>
+  </data>
+  <data name="RefiningTooBusy" xml:space="preserve">
+    <value>Has refined today</value>
+  </data>
+  <data name="SundayToRest" xml:space="preserve">
+    <value>Stay out of business</value>
+  </data>
+  <data name="SystemError" xml:space="preserve">
+    <value>System is error now ,please try it later!</value>
+  </data>
+  <data name="ToBuyTimeLimit" xml:space="preserve">
+    <value>The purchase times
+ reaches the upper limit.</value>
+  </data>
+  <data name="TransferBillFromMemberError" xml:space="preserve">
+    <value>Invalid buyer</value>
+  </data>
+  <data name="TransferBillStatusError" xml:space="preserve">
+    <value>Invalid trade status</value>
+  </data>
+  <data name="TransferBillToMemberError" xml:space="preserve">
+    <value>Invalid seller</value>
+  </data>
+  <data name="TransferBillTypeError" xml:space="preserve">
+    <value>Invalid trading type</value>
+  </data>
+  <data name="UserIsActived" xml:space="preserve">
+    <value>Account has been activated</value>
+  </data>
+  <data name="UserNameCanNotBeEmpty" xml:space="preserve">
+    <value>Username can not be empty.</value>
+  </data>
+  <data name="UserNameIsExisted" xml:space="preserve">
+    <value>Username is existed</value>
+  </data>
+  <data name="UserNameIsNotExisted" xml:space="preserve">
+    <value>Username is not existed</value>
+  </data>
+  <data name="UserNameIsNotMatchName" xml:space="preserve">
+    <value>Invalid username or name!</value>
+  </data>
+  <data name="UserNameLengthError" xml:space="preserve">
+    <value>The length of the user name is 6-20 digit, upper case and lowercase letter.</value>
+  </data>
+  <data name="VerifyCodeError" xml:space="preserve">
+    <value>Verification code error</value>
+  </data>
+  <data name="WalletCanNotBeEmpty" xml:space="preserve">
+    <value>Wallet can not be empty.</value>
+  </data>
+</root>

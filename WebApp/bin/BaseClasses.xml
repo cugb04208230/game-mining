@@ -1,0 +1,892 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BaseClasses</name>
+    </assembly>
+    <members>
+        <member name="T:BaseClasses.Attributes.ConfigTypeCodeAttribute">
+            <inheritdoc />
+            <summary>
+            配置类型属性
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Attributes.ConfigTypeCodeAttribute.#ctor(System.String)">
+            <inheritdoc />
+            <summary>
+            ctor.
+            </summary>
+            <param name="typeCode"></param>
+        </member>
+        <member name="P:BaseClasses.Attributes.ConfigTypeCodeAttribute.TypeCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Attributes.ConfigTypeCodeAttribute.OptionType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Attributes.MiningEquipmentAttribute.Price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Attributes.MiningEquipmentAttribute.ExpirationDay">
+            <summary>
+            产品有效期
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Attributes.MiningEquipmentAttribute.Percentage">
+            <summary>
+            收益百分比
+            </summary>
+        </member>
+        <member name="M:BaseClasses.CypherUtility.DecryptDES(System.String,System.String)">
+            <summary>
+            DES解密字符串
+            </summary>
+            <param name="decryptString">待解密的字符串</param>
+            <param name="decryptKey">解密密钥,要求为8位,和加密密钥相同</param>
+            <returns>解密成功返回解密后的字符串，失败返源串</returns>
+        </member>
+        <member name="M:BaseClasses.CypherUtility.EncryptDES(System.String,System.String)">
+            <summary>
+            DES加密字符串
+            </summary>
+            <param name="encryptString">待加密的字符串</param>
+            <param name="encryptKey">加密密钥,要求为8位</param>
+            <returns>加密成功返回加密后的字符串，失败返回源串</returns>
+        </member>
+        <member name="T:BaseClasses.Data.BaseQuery">
+            <summary>
+            represents query conditions object against a entity
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Data.BaseQuery.#ctor">
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.Ids">
+            <summary>
+            represents query if contains BaseEntity.Id
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.IsEnabled">
+            <summary>
+            是否有效
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.CreatedAtFrom">
+            <summary>
+            创建时间范围
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.CreatedAtTo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.LastModifiedAtFrom">
+            <summary>
+            更新时间范围
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.LastModifiedAtTo">
+            <summary>
+            更新时间范围
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.PageIndex">
+            <summary>
+            页码（参数）
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.PageSize">
+            <summary>
+            页大小（参数）
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.Take">
+            <summary>
+            take for 
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.Skip">
+            <summary>
+            skip number
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.OrderBys">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.Includes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery.DirectionList">
+            <summary>
+            方向列表
+            </summary>
+        </member>
+        <member name="T:BaseClasses.Data.OrderField">
+            <summary>
+            排序对象
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.OrderField.OrderBy">
+            <summary>
+            order field
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.OrderField.OrderDirection">
+            <summary>
+            order direction
+            </summary>
+        </member>
+        <member name="T:BaseClasses.Data.BaseQuery`1">
+            <inheritdoc />
+            <summary>
+            查询条件
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="P:BaseClasses.Data.BaseQuery`1.EntityType">
+            <summary>
+            typeof(TEntity)
+            </summary>
+        </member>
+        <member name="T:BaseClasses.Data.CommonResult">
+            <summary>
+            通用数据返回模型
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.CommonResult.Success">
+            <summary>
+            请求结果是否成功
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.CommonResult.Message">
+            <summary>
+            请求返回描述信息
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.CommonResult.Code">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.CommonResult.Data">
+            <summary>
+            请求返回的数据模型
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Data.CommonResult.#ctor">
+            <inheritdoc />
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Data.CommonResult.#ctor(System.Boolean)">
+            <inheritdoc />
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Data.CommonResult.#ctor(System.Boolean,System.String)">
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Data.CommonResult.#ctor(System.Object)">
+            <inheritdoc />
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="T:BaseClasses.Data.CommonResult`1">
+            <inheritdoc />
+            <summary>
+            通用泛型数据返回模型
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:BaseClasses.Data.CommonResult`1.Data">
+            <summary>
+            请求返回的数据模型
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.CommonResult`1.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Data.CommonResult`1.#ctor">
+            <inheritdoc />
+            <summary>
+            ctor
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Data.CommonResult`1.#ctor(System.Boolean)">
+            <inheritdoc />
+            <summary>
+            ctor
+            </summary>
+            <param name="success"></param>
+        </member>
+        <member name="M:BaseClasses.Data.CommonResult`1.#ctor(System.Boolean,System.String)">
+            <inheritdoc />
+            <summary>
+            ctor
+            </summary>
+            <param name="success"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:BaseClasses.Data.CommonResult`1.#ctor(`0)">
+            <inheritdoc />
+            <summary>
+            ctor
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:BaseClasses.Data.CustomJson">
+            <inheritdoc />
+            <summary>
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Data.CustomJson.#ctor(System.Object)">
+            <inheritdoc />
+            <summary>
+            ctor.
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:BaseClasses.Data.BaseEntity">
+            <inheritdoc />
+            <summary>
+            业务模型基类
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseEntity.IsEnabled">
+            <summary>
+            是否逻辑删除
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseEntity.CreatedAt">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.BaseEntity.LastModifiedAt">
+            <summary>
+            最后更新时间
+            </summary>
+        </member>
+        <member name="T:BaseClasses.Data.EntityBase`1">
+            <summary>
+            模型基类，只包含主键
+            </summary>
+            <typeparam name="TPrimaryKey">主键类型</typeparam>
+        </member>
+        <member name="P:BaseClasses.Data.EntityBase`1.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="T:BaseClasses.Data.OrderDirection">
+            <summary>
+            order direction
+            for linq or sql orlambda
+            </summary>
+        </member>
+        <member name="F:BaseClasses.Data.OrderDirection.Asc">
+            <summary>
+            升序
+            </summary>
+        </member>
+        <member name="F:BaseClasses.Data.OrderDirection.Desc">
+            <summary>
+            降序
+            </summary>
+        </member>
+        <member name="T:BaseClasses.Data.QueryResult`1">
+            <summary>
+            列表查询返回
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="P:BaseClasses.Data.QueryResult`1.Query">
+            <summary>
+            查询参数
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.QueryResult`1.List">
+            <summary>
+            返回数据列表
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Data.QueryResult`1.Count">
+            <summary>
+            总数量
+            </summary>
+        </member>
+        <member name="M:BaseClasses.DateUtility.GetTime(System.Int64)">
+            <summary>
+            时间戳转为C#格式时间
+            </summary>
+            <param name="timeStamp">Unix时间戳格式</param>
+            <returns>C#格式时间</returns>
+        </member>
+        <member name="M:BaseClasses.DateUtility.ConvertDateTimeLong(System.DateTime)">
+            <summary>
+            DateTime时间格式转换为Unix时间戳格式
+            </summary>
+            <param name="dateTime"> DateTime时间格式</param>
+            <returns>Unix时间戳格式</returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ApiControllerExtension.Success(System.Web.Http.ApiController)">
+            <summary>
+            
+            </summary>
+            <param name="me"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ApiControllerExtension.Success``1(System.Web.Http.ApiController,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="me"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ApiControllerExtension.PageSuccess``1(System.Web.Http.ApiController,``0,System.Int32)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="me"></param>
+            <param name="data"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ApiControllerExtension.Fail(System.Web.Http.ApiController,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="me"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ApiControllerExtension.Result(System.Web.Http.ApiController,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="me"></param>
+            <param name="success"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ApiControllerExtension.Result(System.Web.Http.ApiController,System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="me"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ApiControllerExtension.Result``1(System.Web.Http.ApiController,System.Boolean,System.String,``0,System.Int32)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="me"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ApiControllerExtension.PageResult``1(System.Web.Http.ApiController,System.Boolean,System.String,``0,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="me"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <param name="count"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseClasses.Extensions.ControllerExtension">
+            <summary>
+            控制器扩展函数
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Extensions.ControllerExtension.Success(System.Web.Mvc.Controller)">
+            <summary>
+            
+            </summary>
+            <param name="me"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ControllerExtension.Success``1(System.Web.Mvc.Controller,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="me"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ControllerExtension.PageSuccess``1(System.Web.Mvc.Controller,``0,System.Int32)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="me"></param>
+            <param name="data"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ControllerExtension.Fail(System.Web.Mvc.Controller,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="me"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ControllerExtension.Result(System.Web.Mvc.Controller,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="me"></param>
+            <param name="success"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ControllerExtension.Result(System.Web.Mvc.Controller,System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="me"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ControllerExtension.Result``1(System.Web.Mvc.Controller,System.Boolean,System.String,``0,System.Int32)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="me"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ControllerExtension.PageResult``1(System.Web.Mvc.Controller,System.Boolean,System.String,``0,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="me"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <param name="count"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.EnumExtension.GetDescription(System.Enum)">
+            <summary>
+            返回枚举项的描述信息。
+            </summary>
+            <param name="value">要获取描述信息的枚举项。</param>
+            <returns>枚举想的描述信息。</returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.EnumExtension.GetErrorCodeNextAction(System.Enum)">
+            <summary>
+            返回枚举项的描述信息。
+            </summary>
+            <param name="value">要获取描述信息的枚举项。</param>
+            <returns>枚举想的描述信息。</returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.EnumExtension.GetErrorCodeAlert(System.Enum)">
+            <summary>
+            返回枚举项的描述信息。
+            </summary>
+            <param name="value">要获取描述信息的枚举项。</param>
+            <returns>枚举想的描述信息。</returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.EnumExtension.GetTradeSummaryFrom(System.Enum)">
+            <summary>
+            返回枚举项的描述信息。
+            </summary>
+            <param name="value">要获取描述信息的枚举项。</param>
+            <returns>枚举想的描述信息。</returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.EnumExtension.GetTradeSummaryTo(System.Enum)">
+            <summary>
+            返回枚举项的描述信息。
+            </summary>
+            <param name="value">要获取描述信息的枚举项。</param>
+            <returns>枚举想的描述信息。</returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.EnumExtension.GetDescription(System.Type)">
+            <summary>
+            返回对象的描述信息。
+            </summary>
+            <param name="type">要获取描述信息项。</param>
+            <returns>枚举想的描述信息。</returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.EnumExtension.GetDescription(System.Reflection.PropertyInfo)">
+            <summary>
+            返回属性的描述信息。
+            </summary>
+            <param name="type">要获取描述信息项。</param>
+            <returns>枚举想的描述信息。</returns>
+        </member>
+        <member name="T:BaseClasses.Extensions.ExpressionExtension">
+            <summary>
+            表达式扩展函数
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Extensions.ExpressionExtension.Compose``1(System.Linq.Expressions.Expression{``0},System.Linq.Expressions.Expression{``0},System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})">
+            <summary>
+            组合
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="first"></param>
+            <param name="second"></param>
+            <param name="merge"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ExpressionExtension.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            与
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="first"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ExpressionExtension.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            或
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="first"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseClasses.Extensions.ParameterRebinder">
+            <inheritdoc />
+            <summary>
+            参数表达式遍历
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Extensions.ParameterRebinder.#ctor(System.Collections.Generic.Dictionary{System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.ParameterExpression})">
+            <inheritdoc />
+            <summary>
+            ctor.
+            </summary>
+            <param name="map"></param>
+        </member>
+        <member name="M:BaseClasses.Extensions.ParameterRebinder.ReplaceParameters(System.Collections.Generic.Dictionary{System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.Expression)">
+            <summary>
+            
+            </summary>
+            <param name="map"></param>
+            <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.ParameterRebinder.VisitParameter(System.Linq.Expressions.ParameterExpression)">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseClasses.Extensions.QueryableExtension">
+            <summary>
+            Queryable=>Expression
+            Enumerable=>Func
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.Order``1(System.Linq.IQueryable{``0},System.Collections.Generic.List{BaseClasses.Data.OrderField})">
+            <summary>
+            排序
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="orders"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.OrderDefault``1(System.Linq.IQueryable{``0},System.Collections.Generic.List{BaseClasses.Data.OrderField})">
+            <summary>
+            排序
+            </summary>
+            <param name="queryable"></param>
+            <param name="orders"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.OrderBy``1(System.Linq.IQueryable{``0},System.String)">
+            <summary>
+            正序
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.OrderByDescending``1(System.Linq.IQueryable{``0},System.String)">
+            <summary>
+            倒序
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.ThenBy``1(System.Linq.IOrderedQueryable{``0},System.String)">
+            <summary>
+            ThenBy
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.ThenByDescending``1(System.Linq.IOrderedQueryable{``0},System.String)">
+            <summary>
+            ThenByDescending
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.InternalOrder``1(System.Linq.IQueryable{``0},System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="propertyName"></param>
+            <param name="methodName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.InternalOrder``1(System.Linq.IQueryable{``0},System.Collections.Generic.List{BaseClasses.Data.OrderField})">
+            <summary>
+            排序表达式
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="orders"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.InternalOrderBy``1(System.Linq.IQueryable{``0},System.Collections.Generic.List{BaseClasses.Data.OrderField})">
+            <summary>
+            排序
+            </summary>
+            <param name="queryable"></param>
+            <param name="orders"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.Where``1(BaseClasses.Data.BaseQuery{``0})">
+            <summary>
+            Query to Where Expression
+            </summary>
+            <typeparam name="TEntity">Query Data Type</typeparam>
+            <param name="query">
+            query can be divided into two categories
+            1.Nullable =>{long,int,Enum,DateTime} ExpressionType:GreaterThanOrEqual,LessThanOrEqual,Equal; Name can use Regular Name or use Suffix like (From or To)
+            2.NotNullable=>{String,Array} Method Contains
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.NullablePropertyExpression``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Reflection.PropertyInfo,System.Object,System.Type)">
+            <summary>
+            可为空对象的表达式生成
+            {long,int,Enum,DateTime} ExpressionType:GreaterThanOrEqual,LessThanOrEqual,Equal; Name can use Regular Name or use Suffix like (From or To)
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="defaultExpr"></param>
+            <param name="queryTypeProperty"></param>
+            <param name="queryTypePropertyValue"></param>
+            <param name="entityType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.QueryableExtension.NotNullablePropertyExpression``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Reflection.PropertyInfo,System.Object,System.Type)">
+            <summary>
+            NotNullable=>{String,Array} Method Contains
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="defaultExpr"></param>
+            <param name="queryTypeProperty"></param>
+            <param name="queryTypePropertyValue"></param>
+            <param name="entityType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseClasses.Extensions.StringExtension">
+            <summary>
+            字符串的扩展函数
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Extensions.StringExtension.ToSingular(System.String)">
+            <summary>
+            单词变成单数形式
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.StringExtension.ToPlural(System.String)">
+            <summary>
+            单词变成复数形式
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.StringExtension.To``1(System.Object,``0)">
+            <summary>
+            转换
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="me"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.StringExtension.Nullable``1(System.Object,System.Nullable{``0})">
+            <summary>
+            转换
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="me"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.StringExtension.IsNullOrEmpty(System.String)">
+            <summary>
+            是否为空
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.StringExtension.IsNotNullOrEmpty(System.String)">
+            <summary>
+            是否不为空
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.StringExtension.Formats(System.String,System.Object[])">
+            <summary>
+            格式化输出
+            </summary>
+            <param name="value"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.StringExtension.UrlEncode(System.String)">
+            <summary>
+            Url编码
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClasses.Extensions.StringExtension.UrlDecode(System.String)">
+            <summary>
+            Url解码
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseClasses.Filters.PlatformException">
+            <inheritdoc />
+            <summary>
+            全局错误
+            </summary>
+        </member>
+        <member name="P:BaseClasses.Filters.PlatformException.ErrorCode">
+            <summary>
+            error code
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Filters.PlatformException.#ctor(BaseClasses.ErrorCode)">
+            <inheritdoc />
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Filters.PlatformException.#ctor(System.String)">
+            <inheritdoc />
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="M:BaseClasses.Util.RandomUtil.GenerateVerfiyCode(System.Int64)">
+            <summary>
+            生成随机验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Common.Util.ModelMapUtil">
+            <summary>
+            模型转换
+            </summary>
+        </member>
+        <member name="M:Common.Util.ModelMapUtil.AutoMap``2(``0,``1)">
+            <summary>
+            模型转换
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="orignalModel"></param>
+            <param name="targetModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Util.ModelMapUtil.AutoMap``2(``0,``1,System.String[])">
+            <summary>
+            模型转换
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="orignalModel"></param>
+            <param name="targetModel"></param>
+            <param name="ignoreItems"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Common.Util.TypeFinder">
+            <summary>
+            Type帮助工具
+            </summary>
+        </member>
+        <member name="M:Common.Util.TypeFinder.SetScope(System.Reflection.Assembly[])">
+            <summary>
+            获取程序集
+            </summary>
+            <param name="assemblies"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Util.TypeFinder.Where(System.Func{System.Type,System.Boolean})">
+            <summary>
+            Type-Where
+            </summary>
+            <param name="selector"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

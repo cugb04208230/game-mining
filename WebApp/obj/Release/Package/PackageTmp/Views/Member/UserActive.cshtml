@@ -1,0 +1,50 @@
+﻿@model WebApp.Models.UserActiveViewModel
+@{
+    ViewBag.Title = "用户激活";
+}
+@section css
+{
+
+}
+<div class="main" style="margin-top: 80px">
+    <div class="content">
+        <div class="container">
+            @Html.ValidationSummary(true)
+            <form action="/Member/UserActive" method="post">
+                @Html.AntiForgeryToken()
+                <div align="center">
+                    <table class="formTable">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>被激活人登录用户名</label>
+                                    @Html.TextBoxFor(model => model.FriendUserId, new { @placeholder = "请输入被激活人的登录用户名" })
+                                    @Html.ValidationMessageFor(model => model.FriendUserId)
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <label>被激活人姓名</label>
+                                    @Html.TextBoxFor(model => model.FriendUserName, new { @placeholder = "请输入被激活人的真实姓名" })
+                                    @Html.ValidationMessageFor(model => model.FriendUserName)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit" class="buttonWrap button button-green buttonLong" value="确认操作">
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@section scripts
+{
+
+}

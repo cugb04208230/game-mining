@@ -1,0 +1,957 @@
+记录时间：2018-04-29 18:04:01,059 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Environment property:[(null)] - 日志描述：NHibernate 4.0.2.GA (assembly 4.0.0.4000)
+记录时间：2018-04-29 18:04:01,080 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Environment property:[(null)] - 日志描述：hibernate-configuration section not found in application configuration file
+记录时间：2018-04-29 18:04:01,081 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Environment property:[(null)] - 日志描述：Bytecode provider name : lcg
+记录时间：2018-04-29 18:04:01,083 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Environment property:[(null)] - 日志描述：Using reflection optimizer
+记录时间：2018-04-29 18:04:01,116 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：connection.driver_class=NHibernate.Driver.SqlClientDriver
+记录时间：2018-04-29 18:04:01,116 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：dialect=NHibernate.Dialect.MsSql2008Dialect
+记录时间：2018-04-29 18:04:01,116 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：show_sql=true
+记录时间：2018-04-29 18:04:01,116 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：connection.connection_string=Server=120.26.135.102;Database=maoyi;User ID=maoyi12345;Password=yiA9c7bo82n6v3M1z
+记录时间：2018-04-29 18:04:01,116 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：hbm2ddl.keywords=none
+记录时间：2018-04-29 18:04:01,116 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：<-DataRepository
+记录时间：2018-04-29 18:04:01,117 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：Searching for mapped documents in assembly: DataRepository
+记录时间：2018-04-29 18:04:01,118 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：Mapping resource: DataRepository.Entity.UserInfo.hbm.xml
+记录时间：2018-04-29 18:04:01,577 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Dialect.Dialect property:[(null)] - 日志描述：Using dialect: NHibernate.Dialect.MsSql2008Dialect
+记录时间：2018-04-29 18:04:01,643 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapping class: DataRepository.Entity.UserInfo -> tbl_userinfo
+记录时间：2018-04-29 18:04:01,672 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Id -> id, type: Int32
+记录时间：2018-04-29 18:04:01,696 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: RecommendUserId -> recommenduserid, type: String
+记录时间：2018-04-29 18:04:01,696 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: UserId -> userid, type: String
+记录时间：2018-04-29 18:04:01,697 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: UserName -> username, type: String
+记录时间：2018-04-29 18:04:01,697 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Password -> password, type: String
+记录时间：2018-04-29 18:04:01,697 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Mobile -> mobile, type: String
+记录时间：2018-04-29 18:04:01,697 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: YlMobile -> ylmobile, type: String
+记录时间：2018-04-29 18:04:01,697 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: BankName -> bankname, type: String
+记录时间：2018-04-29 18:04:01,697 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: CardId -> cardid, type: String
+记录时间：2018-04-29 18:04:01,697 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Grade -> grade, type: Int32
+记录时间：2018-04-29 18:04:01,697 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: GPNo -> gpno, type: String
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: OrderTime -> ordertime, type: DateTime
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: UpgradeTime -> upgradetime, type: DateTime
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: CreateTime -> createtime, type: DateTime
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Status -> status, type: Int32
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: ReceiveType -> receivetype, type: Int32
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: FriendCount -> friendcount, type: Int32
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: ValidFriendCount -> validfriendcount, type: Int32
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Balance -> balance, type: Decimal
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: QrcodeUrl -> qrcodeurl, type: String
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: YlUserId -> yluserid, type: String
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: DirectBusCount -> directbuscount, type: Int32
+记录时间：2018-04-29 18:04:01,700 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: DirectBusCount1 -> directbuscount1, type: Int32
+记录时间：2018-04-29 18:04:01,707 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：Mapping resource: DataRepository.Entity.Reward.hbm.xml
+记录时间：2018-04-29 18:04:01,708 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Dialect.Dialect property:[(null)] - 日志描述：Using dialect: NHibernate.Dialect.MsSql2008Dialect
+记录时间：2018-04-29 18:04:01,708 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapping class: DataRepository.Entity.Reward -> tbl_reward
+记录时间：2018-04-29 18:04:01,709 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Id -> id, type: Int32
+记录时间：2018-04-29 18:04:01,709 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: UserId -> userid, type: String
+记录时间：2018-04-29 18:04:01,709 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Remark -> remark, type: String
+记录时间：2018-04-29 18:04:01,709 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: RewardType -> rewardtype, type: Int32
+记录时间：2018-04-29 18:04:01,709 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Status -> status, type: Int32
+记录时间：2018-04-29 18:04:01,709 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: CreateTime -> createtime, type: DateTime
+记录时间：2018-04-29 18:04:01,709 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Amount -> amount, type: Decimal
+记录时间：2018-04-29 18:04:01,709 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：Mapping resource: DataRepository.Entity.SmsVerifyCode.hbm.xml
+记录时间：2018-04-29 18:04:01,709 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Dialect.Dialect property:[(null)] - 日志描述：Using dialect: NHibernate.Dialect.MsSql2008Dialect
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapping class: DataRepository.Entity.SmsVerifyCode -> tbl_verifycode
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Id -> id, type: Int32
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: CodeType -> codetype, type: Int32
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Mobile -> mobile, type: String
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: CurrentDate -> currentdate, type: String
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: SendAmount -> sendamount, type: Int32
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: IsUsed -> isused, type: Boolean
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Code -> code, type: String
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: TimeOut -> timeout, type: Int64
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: NextSendTime -> nextsendtime, type: Int64
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: CreateDate -> createdate, type: DateTime
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: UpdateDate -> updatedate, type: DateTime
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：Mapping resource: DataRepository.Entity.UserTree.hbm.xml
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Dialect.Dialect property:[(null)] - 日志描述：Using dialect: NHibernate.Dialect.MsSql2008Dialect
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapping class: DataRepository.Entity.UserTree -> tbl_userchain
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Id -> id, type: Int32
+记录时间：2018-04-29 18:04:01,710 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: UserChain -> userchain, type: String
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: UserId -> userid, type: String
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: PreviousUserId -> previoususerid, type: String
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: IsLeaf -> isleaf, type: Boolean
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: CreateTime -> createtime, type: DateTime
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：Mapping resource: DataRepository.Entity.UserOrderSummay.hbm.xml
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Dialect.Dialect property:[(null)] - 日志描述：Using dialect: NHibernate.Dialect.MsSql2008Dialect
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapping class: DataRepository.Entity.UserOrderSummary -> tbl_userordersummary
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Id -> id, type: Int32
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: TotalConfirmOrderUserCount -> TotalConfirmOrderUserCount, type: Int32
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: OutOrderUserCount -> OutOrderUserCount, type: Int32
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: OutOrderUserCount1 -> OutOrderUserCount1, type: Int32
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：Mapping resource: DataRepository.Entity.CanOutOrderUser.hbm.xml
+记录时间：2018-04-29 18:04:01,711 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Dialect.Dialect property:[(null)] - 日志描述：Using dialect: NHibernate.Dialect.MsSql2008Dialect
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapping class: DataRepository.Entity.CanOutOrderUser -> tbl_canoutorderuser
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Id -> id, type: Int32
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: UserId -> UserId, type: String
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: UserName -> UserName, type: String
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: GPNO -> GPNO, type: String
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: OrderTime -> OrderTime, type: DateTime
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: CreateTime -> createtime, type: DateTime
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：Mapping resource: DataRepository.Entity.SystemLog.hbm.xml
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Dialect.Dialect property:[(null)] - 日志描述：Using dialect: NHibernate.Dialect.MsSql2008Dialect
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapping class: DataRepository.Entity.SystemLog -> tbl_systemlog
+记录时间：2018-04-29 18:04:01,712 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Id -> id, type: Int32
+记录时间：2018-04-29 18:04:01,713 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Ip -> ip, type: String
+记录时间：2018-04-29 18:04:01,713 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: Action -> action, type: String
+记录时间：2018-04-29 18:04:01,713 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.XmlHbmBinding.Binder property:[(null)] - 日志描述：Mapped property: CreateTime -> createtime, type: DateTime
+记录时间：2018-04-29 18:04:01,713 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：properties: System.Collections.Generic.Dictionary`2[System.String,System.String]
+记录时间：2018-04-29 18:04:01,716 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：checking mappings queue
+记录时间：2018-04-29 18:04:01,717 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：processing one-to-many association mappings
+记录时间：2018-04-29 18:04:01,717 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：processing one-to-one association property references
+记录时间：2018-04-29 18:04:01,717 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：processing foreign key constraints
+记录时间：2018-04-29 18:04:01,719 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.Configuration property:[(null)] - 日志描述：processing filters (second pass)
+记录时间：2018-04-29 18:04:01,733 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Dialect.Dialect property:[(null)] - 日志描述：Using dialect: NHibernate.Dialect.MsSql2008Dialect
+记录时间：2018-04-29 18:04:01,742 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Dialect.Dialect property:[(null)] - 日志描述：Using dialect: NHibernate.Dialect.MsSql2008Dialect
+记录时间：2018-04-29 18:04:01,819 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Exceptions.SQLExceptionConverterFactory property:[(null)] - 日志描述：Using dialect defined converter
+记录时间：2018-04-29 18:04:01,819 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Generate SQL with comments: disabled
+记录时间：2018-04-29 18:04:01,820 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Connection.ConnectionProvider property:[(null)] - 日志描述：Configuring ConnectionProvider
+记录时间：2018-04-29 18:04:01,822 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+记录时间：2018-04-29 18:04:01,822 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Optimize cache for minimal puts: False
+记录时间：2018-04-29 18:04:01,823 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Connection release mode: auto
+记录时间：2018-04-29 18:04:01,823 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Default batch fetch size: 1
+记录时间：2018-04-29 18:04:01,823 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：echoing all SQL to stdout
+记录时间：2018-04-29 18:04:01,823 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Statistics: disabled
+记录时间：2018-04-29 18:04:01,823 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Deleted entity synthetic identifier rollback: disabled
+记录时间：2018-04-29 18:04:01,823 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+记录时间：2018-04-29 18:04:01,826 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+记录时间：2018-04-29 18:04:01,826 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+记录时间：2018-04-29 18:04:01,827 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Order SQL inserts for batching: enabled
+记录时间：2018-04-29 18:04:01,827 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Wrap result sets: disabled
+记录时间：2018-04-29 18:04:01,828 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+记录时间：2018-04-29 18:04:01,828 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Default entity-mode: Poco
+记录时间：2018-04-29 18:04:01,828 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Named query checking : enabled
+记录时间：2018-04-29 18:04:01,828 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Cfg.SettingsFactory property:[(null)] - 日志描述：Ignoring exceptions in BeforeTransactionCompletion : disabled
+记录时间：2018-04-29 18:04:01,847 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Impl.SessionFactoryImpl property:[(null)] - 日志描述：building session factory
+记录时间：2018-04-29 18:04:01,847 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionFactoryImpl property:[(null)] - 日志描述：Session factory constructed with filter configurations : {}
+记录时间：2018-04-29 18:04:01,848 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionFactoryImpl property:[(null)] - 日志描述：instantiating session factory with properties: {'use_reflection_optimizer'='True', 'connection.driver_class'='NHibernate.Driver.SqlClientDriver', 'dialect'='NHibernate.Dialect.MsSql2008Dialect', 'show_sql'='true', 'connection.connection_string'='Server=120.26.135.102;Database=maoyi;User ID=maoyi12345;Password=yiA9c7bo82n6v3M1z', 'hbm2ddl.keywords'='none'}
+记录时间：2018-04-29 18:04:01,919 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.UserInfo
+记录时间：2018-04-29 18:04:01,923 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.UserInfo
+记录时间：2018-04-29 18:04:01,936 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.PocoEntityTuplizer property:[(null)] - 日志描述：Create Instantiator using optimizer for:DataRepository.Entity.UserInfo
+记录时间：2018-04-29 18:04:01,966 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.Reward
+记录时间：2018-04-29 18:04:01,966 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.Reward
+记录时间：2018-04-29 18:04:01,966 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.PocoEntityTuplizer property:[(null)] - 日志描述：Create Instantiator using optimizer for:DataRepository.Entity.Reward
+记录时间：2018-04-29 18:04:01,966 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.SmsVerifyCode
+记录时间：2018-04-29 18:04:01,967 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.SmsVerifyCode
+记录时间：2018-04-29 18:04:01,967 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.PocoEntityTuplizer property:[(null)] - 日志描述：Create Instantiator using optimizer for:DataRepository.Entity.SmsVerifyCode
+记录时间：2018-04-29 18:04:01,967 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.UserTree
+记录时间：2018-04-29 18:04:01,967 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.UserTree
+记录时间：2018-04-29 18:04:01,968 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.PocoEntityTuplizer property:[(null)] - 日志描述：Create Instantiator using optimizer for:DataRepository.Entity.UserTree
+记录时间：2018-04-29 18:04:01,968 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.UserOrderSummary
+记录时间：2018-04-29 18:04:01,968 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.UserOrderSummary
+记录时间：2018-04-29 18:04:01,968 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.PocoEntityTuplizer property:[(null)] - 日志描述：Create Instantiator using optimizer for:DataRepository.Entity.UserOrderSummary
+记录时间：2018-04-29 18:04:01,968 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.CanOutOrderUser
+记录时间：2018-04-29 18:04:01,968 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.CanOutOrderUser
+记录时间：2018-04-29 18:04:01,969 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.PocoEntityTuplizer property:[(null)] - 日志描述：Create Instantiator using optimizer for:DataRepository.Entity.CanOutOrderUser
+记录时间：2018-04-29 18:04:01,969 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.SystemLog
+记录时间：2018-04-29 18:04:01,969 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.AbstractEntityTuplizer property:[(null)] - 日志描述：No custom accessors found for entity: DataRepository.Entity.SystemLog
+记录时间：2018-04-29 18:04:01,969 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Tuple.Entity.PocoEntityTuplizer property:[(null)] - 日志描述：Create Instantiator using optimizer for:DataRepository.Entity.SystemLog
+记录时间：2018-04-29 18:04:02,019 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Static SQL for entity: DataRepository.Entity.UserInfo
+记录时间：2018-04-29 18:04:02,019 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Version select: SELECT id FROM tbl_userinfo WHERE id = ?
+记录时间：2018-04-29 18:04:02,020 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Snapshot select: SELECT userinfo_.id, userinfo_.recommenduserid as recommen2_0_, userinfo_.userid as userid0_, userinfo_.username as username0_, userinfo_.password as password0_, userinfo_.mobile as mobile0_, userinfo_.ylmobile as ylmobile0_, userinfo_.bankname as bankname0_, userinfo_.cardid as cardid0_, userinfo_.grade as grade0_, userinfo_.gpno as gpno0_, userinfo_.ordertime as ordertime0_, userinfo_.upgradetime as upgrade13_0_, userinfo_.createtime as createtime0_, userinfo_.status as status0_, userinfo_.receivetype as receive16_0_, userinfo_.friendcount as friendc17_0_, userinfo_.validfriendcount as validfr18_0_, userinfo_.balance as balance0_, userinfo_.qrcodeurl as qrcodeurl0_, userinfo_.yluserid as yluserid0_, userinfo_.directbuscount as directb22_0_, userinfo_.directbuscount1 as directb23_0_ FROM tbl_userinfo userinfo_ WHERE userinfo_.id=?
+记录时间：2018-04-29 18:04:02,020 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Insert 0: INSERT INTO tbl_userinfo (recommenduserid, userid, username, password, mobile, ylmobile, bankname, cardid, grade, gpno, ordertime, upgradetime, createtime, status, receivetype, friendcount, validfriendcount, balance, qrcodeurl, yluserid, directbuscount, directbuscount1, id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+记录时间：2018-04-29 18:04:02,020 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Update 0: UPDATE tbl_userinfo SET recommenduserid = ?, userid = ?, username = ?, password = ?, mobile = ?, ylmobile = ?, bankname = ?, cardid = ?, grade = ?, gpno = ?, ordertime = ?, upgradetime = ?, createtime = ?, status = ?, receivetype = ?, friendcount = ?, validfriendcount = ?, balance = ?, qrcodeurl = ?, yluserid = ?, directbuscount = ?, directbuscount1 = ? WHERE id = ?
+记录时间：2018-04-29 18:04:02,020 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Delete 0: DELETE FROM tbl_userinfo WHERE id = ?
+记录时间：2018-04-29 18:04:02,020 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Identity insert: INSERT INTO tbl_userinfo (recommenduserid, userid, username, password, mobile, ylmobile, bankname, cardid, grade, gpno, ordertime, upgradetime, createtime, status, receivetype, friendcount, validfriendcount, balance, qrcodeurl, yluserid, directbuscount, directbuscount1) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()
+记录时间：2018-04-29 18:04:02,069 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserInfo: SELECT userinfo0_.id as id0_0_, userinfo0_.recommenduserid as recommen2_0_0_, userinfo0_.userid as userid0_0_, userinfo0_.username as username0_0_, userinfo0_.password as password0_0_, userinfo0_.mobile as mobile0_0_, userinfo0_.ylmobile as ylmobile0_0_, userinfo0_.bankname as bankname0_0_, userinfo0_.cardid as cardid0_0_, userinfo0_.grade as grade0_0_, userinfo0_.gpno as gpno0_0_, userinfo0_.ordertime as ordertime0_0_, userinfo0_.upgradetime as upgrade13_0_0_, userinfo0_.createtime as createtime0_0_, userinfo0_.status as status0_0_, userinfo0_.receivetype as receive16_0_0_, userinfo0_.friendcount as friendc17_0_0_, userinfo0_.validfriendcount as validfr18_0_0_, userinfo0_.balance as balance0_0_, userinfo0_.qrcodeurl as qrcodeurl0_0_, userinfo0_.yluserid as yluserid0_0_, userinfo0_.directbuscount as directb22_0_0_, userinfo0_.directbuscount1 as directb23_0_0_ FROM tbl_userinfo userinfo0_ WHERE userinfo0_.id=?
+记录时间：2018-04-29 18:04:02,069 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserInfo: SELECT userinfo0_.id as id0_0_, userinfo0_.recommenduserid as recommen2_0_0_, userinfo0_.userid as userid0_0_, userinfo0_.username as username0_0_, userinfo0_.password as password0_0_, userinfo0_.mobile as mobile0_0_, userinfo0_.ylmobile as ylmobile0_0_, userinfo0_.bankname as bankname0_0_, userinfo0_.cardid as cardid0_0_, userinfo0_.grade as grade0_0_, userinfo0_.gpno as gpno0_0_, userinfo0_.ordertime as ordertime0_0_, userinfo0_.upgradetime as upgrade13_0_0_, userinfo0_.createtime as createtime0_0_, userinfo0_.status as status0_0_, userinfo0_.receivetype as receive16_0_0_, userinfo0_.friendcount as friendc17_0_0_, userinfo0_.validfriendcount as validfr18_0_0_, userinfo0_.balance as balance0_0_, userinfo0_.qrcodeurl as qrcodeurl0_0_, userinfo0_.yluserid as yluserid0_0_, userinfo0_.directbuscount as directb22_0_0_, userinfo0_.directbuscount1 as directb23_0_0_ FROM tbl_userinfo userinfo0_ WHERE userinfo0_.id=?
+记录时间：2018-04-29 18:04:02,069 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserInfo: SELECT userinfo0_.id as id0_0_, userinfo0_.recommenduserid as recommen2_0_0_, userinfo0_.userid as userid0_0_, userinfo0_.username as username0_0_, userinfo0_.password as password0_0_, userinfo0_.mobile as mobile0_0_, userinfo0_.ylmobile as ylmobile0_0_, userinfo0_.bankname as bankname0_0_, userinfo0_.cardid as cardid0_0_, userinfo0_.grade as grade0_0_, userinfo0_.gpno as gpno0_0_, userinfo0_.ordertime as ordertime0_0_, userinfo0_.upgradetime as upgrade13_0_0_, userinfo0_.createtime as createtime0_0_, userinfo0_.status as status0_0_, userinfo0_.receivetype as receive16_0_0_, userinfo0_.friendcount as friendc17_0_0_, userinfo0_.validfriendcount as validfr18_0_0_, userinfo0_.balance as balance0_0_, userinfo0_.qrcodeurl as qrcodeurl0_0_, userinfo0_.yluserid as yluserid0_0_, userinfo0_.directbuscount as directb22_0_0_, userinfo0_.directbuscount1 as directb23_0_0_ FROM tbl_userinfo userinfo0_ with (updlock, rowlock) WHERE userinfo0_.id=?
+记录时间：2018-04-29 18:04:02,069 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserInfo: SELECT userinfo0_.id as id0_0_, userinfo0_.recommenduserid as recommen2_0_0_, userinfo0_.userid as userid0_0_, userinfo0_.username as username0_0_, userinfo0_.password as password0_0_, userinfo0_.mobile as mobile0_0_, userinfo0_.ylmobile as ylmobile0_0_, userinfo0_.bankname as bankname0_0_, userinfo0_.cardid as cardid0_0_, userinfo0_.grade as grade0_0_, userinfo0_.gpno as gpno0_0_, userinfo0_.ordertime as ordertime0_0_, userinfo0_.upgradetime as upgrade13_0_0_, userinfo0_.createtime as createtime0_0_, userinfo0_.status as status0_0_, userinfo0_.receivetype as receive16_0_0_, userinfo0_.friendcount as friendc17_0_0_, userinfo0_.validfriendcount as validfr18_0_0_, userinfo0_.balance as balance0_0_, userinfo0_.qrcodeurl as qrcodeurl0_0_, userinfo0_.yluserid as yluserid0_0_, userinfo0_.directbuscount as directb22_0_0_, userinfo0_.directbuscount1 as directb23_0_0_ FROM tbl_userinfo userinfo0_ with (updlock, rowlock, nowait) WHERE userinfo0_.id=?
+记录时间：2018-04-29 18:04:02,069 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserInfo: SELECT userinfo0_.id as id0_0_, userinfo0_.recommenduserid as recommen2_0_0_, userinfo0_.userid as userid0_0_, userinfo0_.username as username0_0_, userinfo0_.password as password0_0_, userinfo0_.mobile as mobile0_0_, userinfo0_.ylmobile as ylmobile0_0_, userinfo0_.bankname as bankname0_0_, userinfo0_.cardid as cardid0_0_, userinfo0_.grade as grade0_0_, userinfo0_.gpno as gpno0_0_, userinfo0_.ordertime as ordertime0_0_, userinfo0_.upgradetime as upgrade13_0_0_, userinfo0_.createtime as createtime0_0_, userinfo0_.status as status0_0_, userinfo0_.receivetype as receive16_0_0_, userinfo0_.friendcount as friendc17_0_0_, userinfo0_.validfriendcount as validfr18_0_0_, userinfo0_.balance as balance0_0_, userinfo0_.qrcodeurl as qrcodeurl0_0_, userinfo0_.yluserid as yluserid0_0_, userinfo0_.directbuscount as directb22_0_0_, userinfo0_.directbuscount1 as directb23_0_0_ FROM tbl_userinfo userinfo0_ with (updlock, rowlock) WHERE userinfo0_.id=?
+记录时间：2018-04-29 18:04:02,071 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity DataRepository.Entity.UserInfo: SELECT userinfo0_.id as id0_0_, userinfo0_.recommenduserid as recommen2_0_0_, userinfo0_.userid as userid0_0_, userinfo0_.username as username0_0_, userinfo0_.password as password0_0_, userinfo0_.mobile as mobile0_0_, userinfo0_.ylmobile as ylmobile0_0_, userinfo0_.bankname as bankname0_0_, userinfo0_.cardid as cardid0_0_, userinfo0_.grade as grade0_0_, userinfo0_.gpno as gpno0_0_, userinfo0_.ordertime as ordertime0_0_, userinfo0_.upgradetime as upgrade13_0_0_, userinfo0_.createtime as createtime0_0_, userinfo0_.status as status0_0_, userinfo0_.receivetype as receive16_0_0_, userinfo0_.friendcount as friendc17_0_0_, userinfo0_.validfriendcount as validfr18_0_0_, userinfo0_.balance as balance0_0_, userinfo0_.qrcodeurl as qrcodeurl0_0_, userinfo0_.yluserid as yluserid0_0_, userinfo0_.directbuscount as directb22_0_0_, userinfo0_.directbuscount1 as directb23_0_0_ FROM tbl_userinfo userinfo0_ WHERE userinfo0_.id=?
+记录时间：2018-04-29 18:04:02,071 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity DataRepository.Entity.UserInfo: SELECT userinfo0_.id as id0_0_, userinfo0_.recommenduserid as recommen2_0_0_, userinfo0_.userid as userid0_0_, userinfo0_.username as username0_0_, userinfo0_.password as password0_0_, userinfo0_.mobile as mobile0_0_, userinfo0_.ylmobile as ylmobile0_0_, userinfo0_.bankname as bankname0_0_, userinfo0_.cardid as cardid0_0_, userinfo0_.grade as grade0_0_, userinfo0_.gpno as gpno0_0_, userinfo0_.ordertime as ordertime0_0_, userinfo0_.upgradetime as upgrade13_0_0_, userinfo0_.createtime as createtime0_0_, userinfo0_.status as status0_0_, userinfo0_.receivetype as receive16_0_0_, userinfo0_.friendcount as friendc17_0_0_, userinfo0_.validfriendcount as validfr18_0_0_, userinfo0_.balance as balance0_0_, userinfo0_.qrcodeurl as qrcodeurl0_0_, userinfo0_.yluserid as yluserid0_0_, userinfo0_.directbuscount as directb22_0_0_, userinfo0_.directbuscount1 as directb23_0_0_ FROM tbl_userinfo userinfo0_ WHERE userinfo0_.id=?
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Static SQL for entity: DataRepository.Entity.Reward
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Version select: SELECT id FROM tbl_reward WHERE id = ?
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Snapshot select: SELECT reward_.id, reward_.userid as userid1_, reward_.remark as remark1_, reward_.rewardtype as rewardtype1_, reward_.status as status1_, reward_.createtime as createtime1_, reward_.amount as amount1_ FROM tbl_reward reward_ WHERE reward_.id=?
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Insert 0: INSERT INTO tbl_reward (userid, remark, rewardtype, status, createtime, amount, id) VALUES (?, ?, ?, ?, ?, ?, ?)
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Update 0: UPDATE tbl_reward SET userid = ?, remark = ?, rewardtype = ?, status = ?, createtime = ?, amount = ? WHERE id = ?
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Delete 0: DELETE FROM tbl_reward WHERE id = ?
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Identity insert: INSERT INTO tbl_reward (userid, remark, rewardtype, status, createtime, amount) VALUES (?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.Reward: SELECT reward0_.id as id1_0_, reward0_.userid as userid1_0_, reward0_.remark as remark1_0_, reward0_.rewardtype as rewardtype1_0_, reward0_.status as status1_0_, reward0_.createtime as createtime1_0_, reward0_.amount as amount1_0_ FROM tbl_reward reward0_ WHERE reward0_.id=?
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.Reward: SELECT reward0_.id as id1_0_, reward0_.userid as userid1_0_, reward0_.remark as remark1_0_, reward0_.rewardtype as rewardtype1_0_, reward0_.status as status1_0_, reward0_.createtime as createtime1_0_, reward0_.amount as amount1_0_ FROM tbl_reward reward0_ WHERE reward0_.id=?
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.Reward: SELECT reward0_.id as id1_0_, reward0_.userid as userid1_0_, reward0_.remark as remark1_0_, reward0_.rewardtype as rewardtype1_0_, reward0_.status as status1_0_, reward0_.createtime as createtime1_0_, reward0_.amount as amount1_0_ FROM tbl_reward reward0_ with (updlock, rowlock) WHERE reward0_.id=?
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.Reward: SELECT reward0_.id as id1_0_, reward0_.userid as userid1_0_, reward0_.remark as remark1_0_, reward0_.rewardtype as rewardtype1_0_, reward0_.status as status1_0_, reward0_.createtime as createtime1_0_, reward0_.amount as amount1_0_ FROM tbl_reward reward0_ with (updlock, rowlock, nowait) WHERE reward0_.id=?
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.Reward: SELECT reward0_.id as id1_0_, reward0_.userid as userid1_0_, reward0_.remark as remark1_0_, reward0_.rewardtype as rewardtype1_0_, reward0_.status as status1_0_, reward0_.createtime as createtime1_0_, reward0_.amount as amount1_0_ FROM tbl_reward reward0_ with (updlock, rowlock) WHERE reward0_.id=?
+记录时间：2018-04-29 18:04:02,072 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity DataRepository.Entity.Reward: SELECT reward0_.id as id1_0_, reward0_.userid as userid1_0_, reward0_.remark as remark1_0_, reward0_.rewardtype as rewardtype1_0_, reward0_.status as status1_0_, reward0_.createtime as createtime1_0_, reward0_.amount as amount1_0_ FROM tbl_reward reward0_ WHERE reward0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity DataRepository.Entity.Reward: SELECT reward0_.id as id1_0_, reward0_.userid as userid1_0_, reward0_.remark as remark1_0_, reward0_.rewardtype as rewardtype1_0_, reward0_.status as status1_0_, reward0_.createtime as createtime1_0_, reward0_.amount as amount1_0_ FROM tbl_reward reward0_ WHERE reward0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Static SQL for entity: DataRepository.Entity.SmsVerifyCode
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Version select: SELECT id FROM tbl_verifycode WHERE id = ?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Snapshot select: SELECT smsverifyc_.id, smsverifyc_.codetype as codetype2_, smsverifyc_.mobile as mobile2_, smsverifyc_.currentdate as currentd4_2_, smsverifyc_.sendamount as sendamount2_, smsverifyc_.isused as isused2_, smsverifyc_.code as code2_, smsverifyc_.timeout as timeout2_, smsverifyc_.nextsendtime as nextsend9_2_, smsverifyc_.createdate as createdate2_, smsverifyc_.updatedate as updatedate2_ FROM tbl_verifycode smsverifyc_ WHERE smsverifyc_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Insert 0: INSERT INTO tbl_verifycode (codetype, mobile, currentdate, sendamount, isused, code, timeout, nextsendtime, createdate, updatedate, id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Update 0: UPDATE tbl_verifycode SET codetype = ?, mobile = ?, currentdate = ?, sendamount = ?, isused = ?, code = ?, timeout = ?, nextsendtime = ?, createdate = ?, updatedate = ? WHERE id = ?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Delete 0: DELETE FROM tbl_verifycode WHERE id = ?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Identity insert: INSERT INTO tbl_verifycode (codetype, mobile, currentdate, sendamount, isused, code, timeout, nextsendtime, createdate, updatedate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.SmsVerifyCode: SELECT smsverifyc0_.id as id2_0_, smsverifyc0_.codetype as codetype2_0_, smsverifyc0_.mobile as mobile2_0_, smsverifyc0_.currentdate as currentd4_2_0_, smsverifyc0_.sendamount as sendamount2_0_, smsverifyc0_.isused as isused2_0_, smsverifyc0_.code as code2_0_, smsverifyc0_.timeout as timeout2_0_, smsverifyc0_.nextsendtime as nextsend9_2_0_, smsverifyc0_.createdate as createdate2_0_, smsverifyc0_.updatedate as updatedate2_0_ FROM tbl_verifycode smsverifyc0_ WHERE smsverifyc0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.SmsVerifyCode: SELECT smsverifyc0_.id as id2_0_, smsverifyc0_.codetype as codetype2_0_, smsverifyc0_.mobile as mobile2_0_, smsverifyc0_.currentdate as currentd4_2_0_, smsverifyc0_.sendamount as sendamount2_0_, smsverifyc0_.isused as isused2_0_, smsverifyc0_.code as code2_0_, smsverifyc0_.timeout as timeout2_0_, smsverifyc0_.nextsendtime as nextsend9_2_0_, smsverifyc0_.createdate as createdate2_0_, smsverifyc0_.updatedate as updatedate2_0_ FROM tbl_verifycode smsverifyc0_ WHERE smsverifyc0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.SmsVerifyCode: SELECT smsverifyc0_.id as id2_0_, smsverifyc0_.codetype as codetype2_0_, smsverifyc0_.mobile as mobile2_0_, smsverifyc0_.currentdate as currentd4_2_0_, smsverifyc0_.sendamount as sendamount2_0_, smsverifyc0_.isused as isused2_0_, smsverifyc0_.code as code2_0_, smsverifyc0_.timeout as timeout2_0_, smsverifyc0_.nextsendtime as nextsend9_2_0_, smsverifyc0_.createdate as createdate2_0_, smsverifyc0_.updatedate as updatedate2_0_ FROM tbl_verifycode smsverifyc0_ with (updlock, rowlock) WHERE smsverifyc0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.SmsVerifyCode: SELECT smsverifyc0_.id as id2_0_, smsverifyc0_.codetype as codetype2_0_, smsverifyc0_.mobile as mobile2_0_, smsverifyc0_.currentdate as currentd4_2_0_, smsverifyc0_.sendamount as sendamount2_0_, smsverifyc0_.isused as isused2_0_, smsverifyc0_.code as code2_0_, smsverifyc0_.timeout as timeout2_0_, smsverifyc0_.nextsendtime as nextsend9_2_0_, smsverifyc0_.createdate as createdate2_0_, smsverifyc0_.updatedate as updatedate2_0_ FROM tbl_verifycode smsverifyc0_ with (updlock, rowlock, nowait) WHERE smsverifyc0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.SmsVerifyCode: SELECT smsverifyc0_.id as id2_0_, smsverifyc0_.codetype as codetype2_0_, smsverifyc0_.mobile as mobile2_0_, smsverifyc0_.currentdate as currentd4_2_0_, smsverifyc0_.sendamount as sendamount2_0_, smsverifyc0_.isused as isused2_0_, smsverifyc0_.code as code2_0_, smsverifyc0_.timeout as timeout2_0_, smsverifyc0_.nextsendtime as nextsend9_2_0_, smsverifyc0_.createdate as createdate2_0_, smsverifyc0_.updatedate as updatedate2_0_ FROM tbl_verifycode smsverifyc0_ with (updlock, rowlock) WHERE smsverifyc0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity DataRepository.Entity.SmsVerifyCode: SELECT smsverifyc0_.id as id2_0_, smsverifyc0_.codetype as codetype2_0_, smsverifyc0_.mobile as mobile2_0_, smsverifyc0_.currentdate as currentd4_2_0_, smsverifyc0_.sendamount as sendamount2_0_, smsverifyc0_.isused as isused2_0_, smsverifyc0_.code as code2_0_, smsverifyc0_.timeout as timeout2_0_, smsverifyc0_.nextsendtime as nextsend9_2_0_, smsverifyc0_.createdate as createdate2_0_, smsverifyc0_.updatedate as updatedate2_0_ FROM tbl_verifycode smsverifyc0_ WHERE smsverifyc0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity DataRepository.Entity.SmsVerifyCode: SELECT smsverifyc0_.id as id2_0_, smsverifyc0_.codetype as codetype2_0_, smsverifyc0_.mobile as mobile2_0_, smsverifyc0_.currentdate as currentd4_2_0_, smsverifyc0_.sendamount as sendamount2_0_, smsverifyc0_.isused as isused2_0_, smsverifyc0_.code as code2_0_, smsverifyc0_.timeout as timeout2_0_, smsverifyc0_.nextsendtime as nextsend9_2_0_, smsverifyc0_.createdate as createdate2_0_, smsverifyc0_.updatedate as updatedate2_0_ FROM tbl_verifycode smsverifyc0_ WHERE smsverifyc0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Static SQL for entity: DataRepository.Entity.UserTree
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Version select: SELECT id FROM tbl_userchain WHERE id = ?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Snapshot select: SELECT usertree_.id, usertree_.userchain as userchain3_, usertree_.userid as userid3_, usertree_.previoususerid as previous4_3_, usertree_.isleaf as isleaf3_, usertree_.createtime as createtime3_ FROM tbl_userchain usertree_ WHERE usertree_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Insert 0: INSERT INTO tbl_userchain (userchain, userid, previoususerid, isleaf, createtime, id) VALUES (?, ?, ?, ?, ?, ?)
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Update 0: UPDATE tbl_userchain SET userchain = ?, userid = ?, previoususerid = ?, isleaf = ?, createtime = ? WHERE id = ?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Delete 0: DELETE FROM tbl_userchain WHERE id = ?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Identity insert: INSERT INTO tbl_userchain (userchain, userid, previoususerid, isleaf, createtime) VALUES (?, ?, ?, ?, ?); select SCOPE_IDENTITY()
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserTree: SELECT usertree0_.id as id3_0_, usertree0_.userchain as userchain3_0_, usertree0_.userid as userid3_0_, usertree0_.previoususerid as previous4_3_0_, usertree0_.isleaf as isleaf3_0_, usertree0_.createtime as createtime3_0_ FROM tbl_userchain usertree0_ WHERE usertree0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserTree: SELECT usertree0_.id as id3_0_, usertree0_.userchain as userchain3_0_, usertree0_.userid as userid3_0_, usertree0_.previoususerid as previous4_3_0_, usertree0_.isleaf as isleaf3_0_, usertree0_.createtime as createtime3_0_ FROM tbl_userchain usertree0_ WHERE usertree0_.id=?
+记录时间：2018-04-29 18:04:02,073 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserTree: SELECT usertree0_.id as id3_0_, usertree0_.userchain as userchain3_0_, usertree0_.userid as userid3_0_, usertree0_.previoususerid as previous4_3_0_, usertree0_.isleaf as isleaf3_0_, usertree0_.createtime as createtime3_0_ FROM tbl_userchain usertree0_ with (updlock, rowlock) WHERE usertree0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserTree: SELECT usertree0_.id as id3_0_, usertree0_.userchain as userchain3_0_, usertree0_.userid as userid3_0_, usertree0_.previoususerid as previous4_3_0_, usertree0_.isleaf as isleaf3_0_, usertree0_.createtime as createtime3_0_ FROM tbl_userchain usertree0_ with (updlock, rowlock, nowait) WHERE usertree0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserTree: SELECT usertree0_.id as id3_0_, usertree0_.userchain as userchain3_0_, usertree0_.userid as userid3_0_, usertree0_.previoususerid as previous4_3_0_, usertree0_.isleaf as isleaf3_0_, usertree0_.createtime as createtime3_0_ FROM tbl_userchain usertree0_ with (updlock, rowlock) WHERE usertree0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity DataRepository.Entity.UserTree: SELECT usertree0_.id as id3_0_, usertree0_.userchain as userchain3_0_, usertree0_.userid as userid3_0_, usertree0_.previoususerid as previous4_3_0_, usertree0_.isleaf as isleaf3_0_, usertree0_.createtime as createtime3_0_ FROM tbl_userchain usertree0_ WHERE usertree0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity DataRepository.Entity.UserTree: SELECT usertree0_.id as id3_0_, usertree0_.userchain as userchain3_0_, usertree0_.userid as userid3_0_, usertree0_.previoususerid as previous4_3_0_, usertree0_.isleaf as isleaf3_0_, usertree0_.createtime as createtime3_0_ FROM tbl_userchain usertree0_ WHERE usertree0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Static SQL for entity: DataRepository.Entity.UserOrderSummary
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Version select: SELECT id FROM tbl_userordersummary WHERE id = ?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Snapshot select: SELECT userorders_.id, userorders_.TotalConfirmOrderUserCount as TotalCon2_4_, userorders_.OutOrderUserCount as OutOrder3_4_, userorders_.OutOrderUserCount1 as OutOrder4_4_ FROM tbl_userordersummary userorders_ WHERE userorders_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Insert 0: INSERT INTO tbl_userordersummary (TotalConfirmOrderUserCount, OutOrderUserCount, OutOrderUserCount1, id) VALUES (?, ?, ?, ?)
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Update 0: UPDATE tbl_userordersummary SET TotalConfirmOrderUserCount = ?, OutOrderUserCount = ?, OutOrderUserCount1 = ? WHERE id = ?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Delete 0: DELETE FROM tbl_userordersummary WHERE id = ?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Identity insert: INSERT INTO tbl_userordersummary (TotalConfirmOrderUserCount, OutOrderUserCount, OutOrderUserCount1) VALUES (?, ?, ?); select SCOPE_IDENTITY()
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserOrderSummary: SELECT userorders0_.id as id4_0_, userorders0_.TotalConfirmOrderUserCount as TotalCon2_4_0_, userorders0_.OutOrderUserCount as OutOrder3_4_0_, userorders0_.OutOrderUserCount1 as OutOrder4_4_0_ FROM tbl_userordersummary userorders0_ WHERE userorders0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserOrderSummary: SELECT userorders0_.id as id4_0_, userorders0_.TotalConfirmOrderUserCount as TotalCon2_4_0_, userorders0_.OutOrderUserCount as OutOrder3_4_0_, userorders0_.OutOrderUserCount1 as OutOrder4_4_0_ FROM tbl_userordersummary userorders0_ WHERE userorders0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserOrderSummary: SELECT userorders0_.id as id4_0_, userorders0_.TotalConfirmOrderUserCount as TotalCon2_4_0_, userorders0_.OutOrderUserCount as OutOrder3_4_0_, userorders0_.OutOrderUserCount1 as OutOrder4_4_0_ FROM tbl_userordersummary userorders0_ with (updlock, rowlock) WHERE userorders0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserOrderSummary: SELECT userorders0_.id as id4_0_, userorders0_.TotalConfirmOrderUserCount as TotalCon2_4_0_, userorders0_.OutOrderUserCount as OutOrder3_4_0_, userorders0_.OutOrderUserCount1 as OutOrder4_4_0_ FROM tbl_userordersummary userorders0_ with (updlock, rowlock, nowait) WHERE userorders0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.UserOrderSummary: SELECT userorders0_.id as id4_0_, userorders0_.TotalConfirmOrderUserCount as TotalCon2_4_0_, userorders0_.OutOrderUserCount as OutOrder3_4_0_, userorders0_.OutOrderUserCount1 as OutOrder4_4_0_ FROM tbl_userordersummary userorders0_ with (updlock, rowlock) WHERE userorders0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity DataRepository.Entity.UserOrderSummary: SELECT userorders0_.id as id4_0_, userorders0_.TotalConfirmOrderUserCount as TotalCon2_4_0_, userorders0_.OutOrderUserCount as OutOrder3_4_0_, userorders0_.OutOrderUserCount1 as OutOrder4_4_0_ FROM tbl_userordersummary userorders0_ WHERE userorders0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity DataRepository.Entity.UserOrderSummary: SELECT userorders0_.id as id4_0_, userorders0_.TotalConfirmOrderUserCount as TotalCon2_4_0_, userorders0_.OutOrderUserCount as OutOrder3_4_0_, userorders0_.OutOrderUserCount1 as OutOrder4_4_0_ FROM tbl_userordersummary userorders0_ WHERE userorders0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Static SQL for entity: DataRepository.Entity.CanOutOrderUser
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Version select: SELECT id FROM tbl_canoutorderuser WHERE id = ?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Snapshot select: SELECT canoutorde_.id, canoutorde_.UserId as UserId5_, canoutorde_.UserName as UserName5_, canoutorde_.GPNO as GPNO5_, canoutorde_.OrderTime as OrderTime5_, canoutorde_.createtime as createtime5_ FROM tbl_canoutorderuser canoutorde_ WHERE canoutorde_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Insert 0: INSERT INTO tbl_canoutorderuser (UserId, UserName, GPNO, OrderTime, createtime, id) VALUES (?, ?, ?, ?, ?, ?)
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Update 0: UPDATE tbl_canoutorderuser SET UserId = ?, UserName = ?, GPNO = ?, OrderTime = ?, createtime = ? WHERE id = ?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Delete 0: DELETE FROM tbl_canoutorderuser WHERE id = ?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Identity insert: INSERT INTO tbl_canoutorderuser (UserId, UserName, GPNO, OrderTime, createtime) VALUES (?, ?, ?, ?, ?); select SCOPE_IDENTITY()
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.CanOutOrderUser: SELECT canoutorde0_.id as id5_0_, canoutorde0_.UserId as UserId5_0_, canoutorde0_.UserName as UserName5_0_, canoutorde0_.GPNO as GPNO5_0_, canoutorde0_.OrderTime as OrderTime5_0_, canoutorde0_.createtime as createtime5_0_ FROM tbl_canoutorderuser canoutorde0_ WHERE canoutorde0_.id=?
+记录时间：2018-04-29 18:04:02,074 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.CanOutOrderUser: SELECT canoutorde0_.id as id5_0_, canoutorde0_.UserId as UserId5_0_, canoutorde0_.UserName as UserName5_0_, canoutorde0_.GPNO as GPNO5_0_, canoutorde0_.OrderTime as OrderTime5_0_, canoutorde0_.createtime as createtime5_0_ FROM tbl_canoutorderuser canoutorde0_ WHERE canoutorde0_.id=?
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.CanOutOrderUser: SELECT canoutorde0_.id as id5_0_, canoutorde0_.UserId as UserId5_0_, canoutorde0_.UserName as UserName5_0_, canoutorde0_.GPNO as GPNO5_0_, canoutorde0_.OrderTime as OrderTime5_0_, canoutorde0_.createtime as createtime5_0_ FROM tbl_canoutorderuser canoutorde0_ with (updlock, rowlock) WHERE canoutorde0_.id=?
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.CanOutOrderUser: SELECT canoutorde0_.id as id5_0_, canoutorde0_.UserId as UserId5_0_, canoutorde0_.UserName as UserName5_0_, canoutorde0_.GPNO as GPNO5_0_, canoutorde0_.OrderTime as OrderTime5_0_, canoutorde0_.createtime as createtime5_0_ FROM tbl_canoutorderuser canoutorde0_ with (updlock, rowlock, nowait) WHERE canoutorde0_.id=?
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.CanOutOrderUser: SELECT canoutorde0_.id as id5_0_, canoutorde0_.UserId as UserId5_0_, canoutorde0_.UserName as UserName5_0_, canoutorde0_.GPNO as GPNO5_0_, canoutorde0_.OrderTime as OrderTime5_0_, canoutorde0_.createtime as createtime5_0_ FROM tbl_canoutorderuser canoutorde0_ with (updlock, rowlock) WHERE canoutorde0_.id=?
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity DataRepository.Entity.CanOutOrderUser: SELECT canoutorde0_.id as id5_0_, canoutorde0_.UserId as UserId5_0_, canoutorde0_.UserName as UserName5_0_, canoutorde0_.GPNO as GPNO5_0_, canoutorde0_.OrderTime as OrderTime5_0_, canoutorde0_.createtime as createtime5_0_ FROM tbl_canoutorderuser canoutorde0_ WHERE canoutorde0_.id=?
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity DataRepository.Entity.CanOutOrderUser: SELECT canoutorde0_.id as id5_0_, canoutorde0_.UserId as UserId5_0_, canoutorde0_.UserName as UserName5_0_, canoutorde0_.GPNO as GPNO5_0_, canoutorde0_.OrderTime as OrderTime5_0_, canoutorde0_.createtime as createtime5_0_ FROM tbl_canoutorderuser canoutorde0_ WHERE canoutorde0_.id=?
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Static SQL for entity: DataRepository.Entity.SystemLog
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Version select: SELECT id FROM tbl_systemlog WHERE id = ?
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Snapshot select: SELECT systemlog_.id, systemlog_.ip as ip6_, systemlog_.action as action6_, systemlog_.createtime as createtime6_ FROM tbl_systemlog systemlog_ WHERE systemlog_.id=?
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Insert 0: INSERT INTO tbl_systemlog (ip, action, createtime, id) VALUES (?, ?, ?, ?)
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Update 0: UPDATE tbl_systemlog SET ip = ?, action = ?, createtime = ? WHERE id = ?
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Delete 0: DELETE FROM tbl_systemlog WHERE id = ?
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述： Identity insert: INSERT INTO tbl_systemlog (ip, action, createtime) VALUES (?, ?, ?); select SCOPE_IDENTITY()
+记录时间：2018-04-29 18:04:02,075 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.SystemLog: SELECT systemlog0_.id as id6_0_, systemlog0_.ip as ip6_0_, systemlog0_.action as action6_0_, systemlog0_.createtime as createtime6_0_ FROM tbl_systemlog systemlog0_ WHERE systemlog0_.id=?
+记录时间：2018-04-29 18:04:02,076 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.SystemLog: SELECT systemlog0_.id as id6_0_, systemlog0_.ip as ip6_0_, systemlog0_.action as action6_0_, systemlog0_.createtime as createtime6_0_ FROM tbl_systemlog systemlog0_ WHERE systemlog0_.id=?
+记录时间：2018-04-29 18:04:02,076 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.SystemLog: SELECT systemlog0_.id as id6_0_, systemlog0_.ip as ip6_0_, systemlog0_.action as action6_0_, systemlog0_.createtime as createtime6_0_ FROM tbl_systemlog systemlog0_ with (updlock, rowlock) WHERE systemlog0_.id=?
+记录时间：2018-04-29 18:04:02,076 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.SystemLog: SELECT systemlog0_.id as id6_0_, systemlog0_.ip as ip6_0_, systemlog0_.action as action6_0_, systemlog0_.createtime as createtime6_0_ FROM tbl_systemlog systemlog0_ with (updlock, rowlock, nowait) WHERE systemlog0_.id=?
+记录时间：2018-04-29 18:04:02,076 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for entity DataRepository.Entity.SystemLog: SELECT systemlog0_.id as id6_0_, systemlog0_.ip as ip6_0_, systemlog0_.action as action6_0_, systemlog0_.createtime as createtime6_0_ FROM tbl_systemlog systemlog0_ with (updlock, rowlock) WHERE systemlog0_.id=?
+记录时间：2018-04-29 18:04:02,076 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity DataRepository.Entity.SystemLog: SELECT systemlog0_.id as id6_0_, systemlog0_.ip as ip6_0_, systemlog0_.action as action6_0_, systemlog0_.createtime as createtime6_0_ FROM tbl_systemlog systemlog0_ WHERE systemlog0_.id=?
+记录时间：2018-04-29 18:04:02,076 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Entity.AbstractEntityLoader property:[(null)] - 日志描述：Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity DataRepository.Entity.SystemLog: SELECT systemlog0_.id as id6_0_, systemlog0_.ip as ip6_0_, systemlog0_.action as action6_0_, systemlog0_.createtime as createtime6_0_ FROM tbl_systemlog systemlog0_ WHERE systemlog0_.id=?
+记录时间：2018-04-29 18:04:02,076 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionFactoryObjectFactory property:[(null)] - 日志描述：initializing class SessionFactoryObjectFactory
+记录时间：2018-04-29 18:04:02,077 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionFactoryObjectFactory property:[(null)] - 日志描述：registered: cd496bde6cd34d77a72b39ba0b59899c(unnamed)
+记录时间：2018-04-29 18:04:02,077 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Impl.SessionFactoryObjectFactory property:[(null)] - 日志描述：no name configured
+记录时间：2018-04-29 18:04:02,077 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionFactoryImpl property:[(null)] - 日志描述：Instantiated session factory
+记录时间：2018-04-29 18:04:02,081 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionFactoryImpl property:[(null)] - 日志描述：Checking 0 named HQL queries
+记录时间：2018-04-29 18:04:02,081 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionFactoryImpl property:[(null)] - 日志描述：Checking 0 named SQL queries
+记录时间：2018-04-29 18:04:02,091 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：[session-id=4b47a79e-132b-4d4e-a6e5-63d25ad54734] opened session at timestamp: 636606218420, for session factory: [/cd496bde6cd34d77a72b39ba0b59899c]
+记录时间：2018-04-29 18:04:02,114 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Linq property:[(null)] - 日志描述：Expression (partially evaluated): value(NHibernate.Linq.NhQueryable`1[DataRepository.Entity.UserInfo]).Count()
+记录时间：2018-04-29 18:04:02,127 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：unable to locate HQL query plan in cache; generating (.Count[DataRepository.Entity.UserInfo](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.UserInfo], ))
+记录时间：2018-04-29 18:04:02,414 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select << begin [level=1, statement=select]
+记录时间：2018-04-29 18:04:02,430 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：FromClause{level=1} :  DataRepository.Entity.UserInfo (<generated>_1) -> userinfo0_
+记录时间：2018-04-29 18:04:02,454 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：attempting to resolve property [integer] as a non-qualified ref
+记录时间：2018-04-29 18:04:02,464 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select : finishing up [level=1, statement=select]
+记录时间：2018-04-29 18:04:02,467 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：processQuery() : ( SELECT ( {select clause} ( method cast ( expr_list ( count * ) integer ) ) ) ( FromClause{level=1} tbl_userinfo userinfo0_ ) )
+记录时间：2018-04-29 18:04:02,489 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Util.JoinProcessor property:[(null)] - 日志描述：Using FROM fragment [tbl_userinfo userinfo0_]
+记录时间：2018-04-29 18:04:02,491 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select >> end [level=1, statement=select]
+记录时间：2018-04-29 18:04:02,492 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:02,546 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlGenerator property:[(null)] - 日志描述：SQL: select cast(count(*) as INT) as col_0_0_ from tbl_userinfo userinfo0_
+记录时间：2018-04-29 18:04:02,546 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:02,571 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：located HQL query plan in cache (.Count[DataRepository.Entity.UserInfo](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.UserInfo], ))
+记录时间：2018-04-29 18:04:02,574 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.HQLQueryPlan property:[(null)] - 日志描述：find: .Count[DataRepository.Entity.UserInfo](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.UserInfo], )
+记录时间：2018-04-29 18:04:02,575 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.QueryParameters property:[(null)] - 日志描述：named parameters: {}
+记录时间：2018-04-29 18:04:02,603 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened new IDbCommand, open IDbCommands: 1
+记录时间：2018-04-29 18:04:02,603 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Building an IDbCommand object for the SqlString: select cast(count(*) as INT) as col_0_0_ from tbl_userinfo userinfo0_
+记录时间：2018-04-29 18:04:02,613 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：select cast(count(*) as INT) as col_0_0_ from tbl_userinfo userinfo0_
+记录时间：2018-04-29 18:04:02,619 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Connection.DriverConnectionProvider property:[(null)] - 日志描述：Obtaining IDbConnection from Driver
+记录时间：2018-04-29 18:04:03,217 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：ExecuteReader took 170 ms
+记录时间：2018-04-29 18:04:03,218 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened IDataReader, open IDataReaders: 1
+记录时间：2018-04-29 18:04:03,220 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：processing result set
+记录时间：2018-04-29 18:04:03,220 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 0
+记录时间：2018-04-29 18:04:03,224 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: 
+记录时间：2018-04-29 18:04:03,227 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '8' as column: col_0_0_
+记录时间：2018-04-29 18:04:03,227 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：done processing result set (1 rows)
+记录时间：2018-04-29 18:04:03,228 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Driver.NHybridDataReader property:[(null)] - 日志描述：running NHybridDataReader.Dispose()
+记录时间：2018-04-29 18:04:03,229 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDataReader, open IDataReaders :0
+记录时间：2018-04-29 18:04:03,229 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：DataReader was closed after 181 ms
+记录时间：2018-04-29 18:04:03,229 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDbCommand, open IDbCommands: 0
+记录时间：2018-04-29 18:04:03,231 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:03,231 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Connection.ConnectionProvider property:[(null)] - 日志描述：Closing connection
+记录时间：2018-04-29 18:04:03,233 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.StatefulPersistenceContext property:[(null)] - 日志描述：initializing non-lazy collections
+记录时间：2018-04-29 18:04:03,236 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：after autocommit
+记录时间：2018-04-29 18:04:03,236 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：transaction completion
+记录时间：2018-04-29 18:04:03,236 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:03,243 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Linq property:[(null)] - 日志描述：Expression (partially evaluated): value(NHibernate.Linq.NhQueryable`1[DataRepository.Entity.UserInfo]).OrderByDescending(e => e.Id).Skip(0).Take(20)
+记录时间：2018-04-29 18:04:03,245 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：unable to locate HQL query plan in cache; generating (.Take[DataRepository.Entity.UserInfo](.Skip[DataRepository.Entity.UserInfo](.OrderByDescending[DataRepository.Entity.UserInfo,System.Int32](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.UserInfo], Quote((e, ) => (e.Id)), ), p1, ), p2, ))
+记录时间：2018-04-29 18:04:03,268 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select << begin [level=1, statement=select]
+记录时间：2018-04-29 18:04:03,268 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：FromClause{level=1} :  DataRepository.Entity.UserInfo (e) -> userinfo0_
+记录时间：2018-04-29 18:04:03,274 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e -> userinfo0_.id
+记录时间：2018-04-29 18:04:03,280 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e -> userinfo0_.id
+记录时间：2018-04-29 18:04:03,284 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：handling property dereference [DataRepository.Entity.UserInfo (e) -> Id (Class)]
+记录时间：2018-04-29 18:04:03,286 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.DotNode property:[(null)] - 日志描述：getDataType() : Id -> NHibernate.Type.Int32Type
+记录时间：2018-04-29 18:04:03,289 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e.Id -> userinfo0_.id
+记录时间：2018-04-29 18:04:03,297 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select : finishing up [level=1, statement=select]
+记录时间：2018-04-29 18:04:03,297 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：processQuery() : ( SELECT ( {select clause} userinfo0_.id ) ( FromClause{level=1} tbl_userinfo userinfo0_ ) ( order by ( userinfo0_.id userinfo0_.id Id ) desc ) ( skip ? ) ( take ? ) )
+记录时间：2018-04-29 18:04:03,302 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Util.JoinProcessor property:[(null)] - 日志描述：Using FROM fragment [tbl_userinfo userinfo0_]
+记录时间：2018-04-29 18:04:03,302 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select >> end [level=1, statement=select]
+记录时间：2018-04-29 18:04:03,302 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:03,338 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlGenerator property:[(null)] - 日志描述：SQL: SELECT TOP (?) id0_, recommen2_0_, userid0_, username0_, password0_, mobile0_, ylmobile0_, bankname0_, cardid0_, grade0_, gpno0_, ordertime0_, upgrade13_0_, createtime0_, status0_, receive16_0_, friendc17_0_, validfr18_0_, balance0_, qrcodeurl0_, yluserid0_, directb22_0_, directb23_0_ FROM (select userinfo0_.id as id0_, userinfo0_.recommenduserid as recommen2_0_, userinfo0_.userid as userid0_, userinfo0_.username as username0_, userinfo0_.password as password0_, userinfo0_.mobile as mobile0_, userinfo0_.ylmobile as ylmobile0_, userinfo0_.bankname as bankname0_, userinfo0_.cardid as cardid0_, userinfo0_.grade as grade0_, userinfo0_.gpno as gpno0_, userinfo0_.ordertime as ordertime0_, userinfo0_.upgradetime as upgrade13_0_, userinfo0_.createtime as createtime0_, userinfo0_.status as status0_, userinfo0_.receivetype as receive16_0_, userinfo0_.friendcount as friendc17_0_, userinfo0_.validfriendcount as validfr18_0_, userinfo0_.balance as balance0_, userinfo0_.qrcodeurl as qrcodeurl0_, userinfo0_.yluserid as yluserid0_, userinfo0_.directbuscount as directb22_0_, userinfo0_.directbuscount1 as directb23_0_, ROW_NUMBER() OVER(ORDER BY userinfo0_.id DESC) as __hibernate_sort_row from tbl_userinfo userinfo0_) as query WHERE query.__hibernate_sort_row > ? ORDER BY query.__hibernate_sort_row
+记录时间：2018-04-29 18:04:03,338 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:03,343 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：located HQL query plan in cache (.Take[DataRepository.Entity.UserInfo](.Skip[DataRepository.Entity.UserInfo](.OrderByDescending[DataRepository.Entity.UserInfo,System.Int32](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.UserInfo], Quote((e, ) => (e.Id)), ), p1, ), p2, ))
+记录时间：2018-04-29 18:04:03,343 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.HQLQueryPlan property:[(null)] - 日志描述：find: .Take[DataRepository.Entity.UserInfo](.Skip[DataRepository.Entity.UserInfo](.OrderByDescending[DataRepository.Entity.UserInfo,System.Int32](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.UserInfo], Quote((e, ) => (e.Id)), ), p1, ), p2, )
+记录时间：2018-04-29 18:04:03,344 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.QueryParameters property:[(null)] - 日志描述：named parameters: {'p1'='0', 'p2'='20'}
+记录时间：2018-04-29 18:04:03,351 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened new IDbCommand, open IDbCommands: 1
+记录时间：2018-04-29 18:04:03,351 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Building an IDbCommand object for the SqlString: SELECT TOP (?) id0_, recommen2_0_, userid0_, username0_, password0_, mobile0_, ylmobile0_, bankname0_, cardid0_, grade0_, gpno0_, ordertime0_, upgrade13_0_, createtime0_, status0_, receive16_0_, friendc17_0_, validfr18_0_, balance0_, qrcodeurl0_, yluserid0_, directb22_0_, directb23_0_ FROM (select userinfo0_.id as id0_, userinfo0_.recommenduserid as recommen2_0_, userinfo0_.userid as userid0_, userinfo0_.username as username0_, userinfo0_.password as password0_, userinfo0_.mobile as mobile0_, userinfo0_.ylmobile as ylmobile0_, userinfo0_.bankname as bankname0_, userinfo0_.cardid as cardid0_, userinfo0_.grade as grade0_, userinfo0_.gpno as gpno0_, userinfo0_.ordertime as ordertime0_, userinfo0_.upgradetime as upgrade13_0_, userinfo0_.createtime as createtime0_, userinfo0_.status as status0_, userinfo0_.receivetype as receive16_0_, userinfo0_.friendcount as friendc17_0_, userinfo0_.validfriendcount as validfr18_0_, userinfo0_.balance as balance0_, userinfo0_.qrcodeurl as qrcodeurl0_, userinfo0_.yluserid as yluserid0_, userinfo0_.directbuscount as directb22_0_, userinfo0_.directbuscount1 as directb23_0_, ROW_NUMBER() OVER(ORDER BY userinfo0_.id DESC) as __hibernate_sort_row from tbl_userinfo userinfo0_) as query WHERE query.__hibernate_sort_row > ? ORDER BY query.__hibernate_sort_row
+记录时间：2018-04-29 18:04:03,353 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：binding '0' to parameter: 1
+记录时间：2018-04-29 18:04:03,354 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：binding '20' to parameter: 0
+记录时间：2018-04-29 18:04:03,354 线程ID:[13] 日志级别：INFO  操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：SELECT TOP (@p0) id0_, recommen2_0_, userid0_, username0_, password0_, mobile0_, ylmobile0_, bankname0_, cardid0_, grade0_, gpno0_, ordertime0_, upgrade13_0_, createtime0_, status0_, receive16_0_, friendc17_0_, validfr18_0_, balance0_, qrcodeurl0_, yluserid0_, directb22_0_, directb23_0_ FROM (select userinfo0_.id as id0_, userinfo0_.recommenduserid as recommen2_0_, userinfo0_.userid as userid0_, userinfo0_.username as username0_, userinfo0_.password as password0_, userinfo0_.mobile as mobile0_, userinfo0_.ylmobile as ylmobile0_, userinfo0_.bankname as bankname0_, userinfo0_.cardid as cardid0_, userinfo0_.grade as grade0_, userinfo0_.gpno as gpno0_, userinfo0_.ordertime as ordertime0_, userinfo0_.upgradetime as upgrade13_0_, userinfo0_.createtime as createtime0_, userinfo0_.status as status0_, userinfo0_.receivetype as receive16_0_, userinfo0_.friendcount as friendc17_0_, userinfo0_.validfriendcount as validfr18_0_, userinfo0_.balance as balance0_, userinfo0_.qrcodeurl as qrcodeurl0_, userinfo0_.yluserid as yluserid0_, userinfo0_.directbuscount as directb22_0_, userinfo0_.directbuscount1 as directb23_0_, ROW_NUMBER() OVER(ORDER BY userinfo0_.id DESC) as __hibernate_sort_row from tbl_userinfo userinfo0_) as query WHERE query.__hibernate_sort_row > @p1 ORDER BY query.__hibernate_sort_row
+记录时间：2018-04-29 18:04:03,356 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Connection.DriverConnectionProvider property:[(null)] - 日志描述：Obtaining IDbConnection from Driver
+记录时间：2018-04-29 18:04:03,485 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：ExecuteReader took 127 ms
+记录时间：2018-04-29 18:04:03,485 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened IDataReader, open IDataReaders: 1
+记录时间：2018-04-29 18:04:03,486 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：processing result set
+记录时间：2018-04-29 18:04:03,486 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 0
+记录时间：2018-04-29 18:04:03,486 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '13' as column: id0_
+记录时间：2018-04-29 18:04:03,489 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.UserInfo#13]
+记录时间：2018-04-29 18:04:03,496 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.UserInfo#13]
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.UserInfo#13]
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: recommen2_0_
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '4df23f' as column: userid0_
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '444' as column: username0_
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '674477b54c72a0bc12135b6d7337f724' as column: password0_
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13444444445' as column: mobile0_
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: ylmobile0_
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: bankname0_
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: cardid0_
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '2' as column: grade0_
+记录时间：2018-04-29 18:04:03,501 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'GP3331' as column: gpno0_
+记录时间：2018-04-29 18:04:03,502 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/24 19:41:00' as column: ordertime0_
+记录时间：2018-04-29 18:04:03,502 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: upgrade13_0_
+记录时间：2018-04-29 18:04:03,502 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/23 9:20:12' as column: createtime0_
+记录时间：2018-04-29 18:04:03,502 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status0_
+记录时间：2018-04-29 18:04:03,502 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: receive16_0_
+记录时间：2018-04-29 18:04:03,502 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: friendc17_0_
+记录时间：2018-04-29 18:04:03,502 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning null as column: validfr18_0_
+记录时间：2018-04-29 18:04:03,503 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '48100.00' as column: balance0_
+记录时间：2018-04-29 18:04:03,503 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: qrcodeurl0_
+记录时间：2018-04-29 18:04:03,503 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: yluserid0_
+记录时间：2018-04-29 18:04:03,503 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '255' as column: directb22_0_
+记录时间：2018-04-29 18:04:03,503 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '10' as column: directb23_0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 1
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '12' as column: id0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.UserInfo#12]
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.UserInfo#12]
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.UserInfo#12]
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: recommen2_0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '15666666666' as column: userid0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'dddd' as column: username0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '99a99e79ea8ef354dbfae85e432bf49c' as column: password0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '15666666666' as column: mobile0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '15666666666' as column: ylmobile0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: bankname0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: cardid0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: grade0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'a2234' as column: gpno0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/23 1:02:00' as column: ordertime0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: upgrade13_0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/22 23:09:39' as column: createtime0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: receive16_0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: friendc17_0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning null as column: validfr18_0_
+记录时间：2018-04-29 18:04:03,504 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '0.00' as column: balance0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: qrcodeurl0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '15666666666' as column: yluserid0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb22_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb23_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 2
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '11' as column: id0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.UserInfo#11]
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.UserInfo#11]
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.UserInfo#11]
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13444444444' as column: recommen2_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13555555555' as column: userid0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '管理员' as column: username0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'c481c18efa1acdae0ff9fa0efe748c16' as column: password0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13555555555' as column: mobile0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: ylmobile0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: bankname0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: cardid0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: grade0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: gpno0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: ordertime0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: upgrade13_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/21 23:00:53' as column: createtime0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: status0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: receive16_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: friendc17_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning null as column: validfr18_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '0.00' as column: balance0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: qrcodeurl0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13555555555' as column: yluserid0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb22_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb23_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 3
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '10' as column: id0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.UserInfo#10]
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.UserInfo#10]
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.UserInfo#10]
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: recommen2_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13444444444' as column: userid0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '张大仙' as column: username0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'aa859a5c19fb16e06c72d72cc34d412e' as column: password0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13444444444' as column: mobile0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: ylmobile0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: bankname0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: cardid0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: grade0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: gpno0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: ordertime0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: upgrade13_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/21 22:59:19' as column: createtime0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: status0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: receive16_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: friendc17_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning null as column: validfr18_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '0.00' as column: balance0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: qrcodeurl0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13444444444' as column: yluserid0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb22_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb23_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 4
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '4' as column: id0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.UserInfo#4]
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.UserInfo#4]
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.UserInfo#4]
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: recommen2_0_
+记录时间：2018-04-29 18:04:03,505 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13000000000' as column: userid0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '张大仙' as column: username0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '91818dabe7079ab036d416c5b8939bd5' as column: password0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13000000000' as column: mobile0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: ylmobile0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: bankname0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: cardid0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '2' as column: grade0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '2222222' as column: gpno0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2017/1/1 1:01:00' as column: ordertime0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/1/1 1:01:00' as column: upgrade13_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/19 15:46:11' as column: createtime0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '4' as column: status0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '2' as column: receive16_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: friendc17_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning null as column: validfr18_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '0.00' as column: balance0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'http://localhost:25926/QrCodeImages/20180419/13000000000.png' as column: qrcodeurl0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: yluserid0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb22_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb23_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 5
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '3' as column: id0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.UserInfo#3]
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.UserInfo#3]
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.UserInfo#3]
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: recommen2_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '222222222' as column: userid0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: username0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '674477b54c72a0bc12135b6d7337f724' as column: password0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13444444444' as column: mobile0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: ylmobile0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: bankname0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: cardid0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: grade0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: gpno0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: ordertime0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: upgrade13_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/16 10:11:47' as column: createtime0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: status0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: receive16_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: friendc17_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning null as column: validfr18_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '0.00' as column: balance0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: qrcodeurl0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: yluserid0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb22_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb23_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 6
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '2' as column: id0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.UserInfo#2]
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.UserInfo#2]
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.UserInfo#2]
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcd' as column: recommen2_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: userid0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '张大仙' as column: username0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '14e1f0d40d4242b283f6299609fc8025' as column: password0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13444444444' as column: mobile0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13333333322' as column: ylmobile0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '中国人民银行' as column: bankname0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '333333333333' as column: cardid0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: grade0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: gpno0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: ordertime0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: upgrade13_0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/14 19:25:14' as column: createtime0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: status0_
+记录时间：2018-04-29 18:04:03,506 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: receive16_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '5' as column: friendc17_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning null as column: validfr18_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '118400.00' as column: balance0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'http://localhost:25926/QrCodeImages/20180420/abcdefg.png' as column: qrcodeurl0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '3333' as column: yluserid0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '464' as column: directb22_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '18' as column: directb23_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 7
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: id0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.UserInfo#1]
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.UserInfo#1]
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.UserInfo#1]
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: recommen2_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcd' as column: userid0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: username0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'ddddddddddd' as column: password0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13889900000' as column: mobile0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: ylmobile0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: bankname0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: cardid0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: grade0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: gpno0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: ordertime0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning null as column: upgrade13_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2019/1/2 0:00:00' as column: createtime0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: receive16_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '104' as column: friendc17_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning null as column: validfr18_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '100.00' as column: balance0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: qrcodeurl0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning null as column: yluserid0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb22_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: directb23_0_
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：done processing result set (8 rows)
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Driver.NHybridDataReader property:[(null)] - 日志描述：running NHybridDataReader.Dispose()
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDataReader, open IDataReaders :0
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：DataReader was closed after 149 ms
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDbCommand, open IDbCommands: 0
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Connection.ConnectionProvider property:[(null)] - 日志描述：Closing connection
+记录时间：2018-04-29 18:04:03,507 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：total objects hydrated: 8
+记录时间：2018-04-29 18:04:03,511 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.UserInfo#13]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.UserInfo#13]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.UserInfo#12]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.UserInfo#12]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.UserInfo#11]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.UserInfo#11]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.UserInfo#10]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.UserInfo#10]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.UserInfo#4]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.UserInfo#4]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.UserInfo#3]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.UserInfo#3]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.UserInfo#2]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.UserInfo#2]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.UserInfo#1]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.UserInfo#1]
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Engine.StatefulPersistenceContext property:[(null)] - 日志描述：initializing non-lazy collections
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：after autocommit
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：transaction completion
+记录时间：2018-04-29 18:04:03,519 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:03,521 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：closing session
+记录时间：2018-04-29 18:04:03,521 线程ID:[13] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：running BatcherImpl.Dispose(true)
+记录时间：2018-04-29 18:04:09,018 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：[session-id=20878916-2676-4b0b-9a67-edd11bc752a1] opened session at timestamp: 636606218490, for session factory: [/cd496bde6cd34d77a72b39ba0b59899c]
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Linq property:[(null)] - 日志描述：Expression (partially evaluated): value(NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward]).Count()
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：unable to locate HQL query plan in cache; generating (.Count[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], ))
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select << begin [level=1, statement=select]
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：FromClause{level=1} :  DataRepository.Entity.Reward (<generated>_6) -> reward0_
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：attempting to resolve property [integer] as a non-qualified ref
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select : finishing up [level=1, statement=select]
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：processQuery() : ( SELECT ( {select clause} ( method cast ( expr_list ( count * ) integer ) ) ) ( FromClause{level=1} tbl_reward reward0_ ) )
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Util.JoinProcessor property:[(null)] - 日志描述：Using FROM fragment [tbl_reward reward0_]
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select >> end [level=1, statement=select]
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlGenerator property:[(null)] - 日志描述：SQL: select cast(count(*) as INT) as col_0_0_ from tbl_reward reward0_
+记录时间：2018-04-29 18:04:09,019 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:09,020 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：located HQL query plan in cache (.Count[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], ))
+记录时间：2018-04-29 18:04:09,020 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.HQLQueryPlan property:[(null)] - 日志描述：find: .Count[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], )
+记录时间：2018-04-29 18:04:09,020 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.QueryParameters property:[(null)] - 日志描述：named parameters: {}
+记录时间：2018-04-29 18:04:09,020 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened new IDbCommand, open IDbCommands: 1
+记录时间：2018-04-29 18:04:09,020 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Building an IDbCommand object for the SqlString: select cast(count(*) as INT) as col_0_0_ from tbl_reward reward0_
+记录时间：2018-04-29 18:04:09,020 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：select cast(count(*) as INT) as col_0_0_ from tbl_reward reward0_
+记录时间：2018-04-29 18:04:09,020 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Connection.DriverConnectionProvider property:[(null)] - 日志描述：Obtaining IDbConnection from Driver
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：ExecuteReader took 93 ms
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened IDataReader, open IDataReaders: 1
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：processing result set
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 0
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: 
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '13' as column: col_0_0_
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：done processing result set (1 rows)
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Driver.NHybridDataReader property:[(null)] - 日志描述：running NHybridDataReader.Dispose()
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDataReader, open IDataReaders :0
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：DataReader was closed after 93 ms
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDbCommand, open IDbCommands: 0
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Connection.ConnectionProvider property:[(null)] - 日志描述：Closing connection
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.StatefulPersistenceContext property:[(null)] - 日志描述：initializing non-lazy collections
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：after autocommit
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：transaction completion
+记录时间：2018-04-29 18:04:09,113 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:09,117 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Linq property:[(null)] - 日志描述：Expression (partially evaluated): value(NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward]).Sum(e => e.Amount)
+记录时间：2018-04-29 18:04:09,117 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：unable to locate HQL query plan in cache; generating (.Sum[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (e.Amount)), ))
+记录时间：2018-04-29 18:04:09,121 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select << begin [level=1, statement=select]
+记录时间：2018-04-29 18:04:09,121 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：FromClause{level=1} :  DataRepository.Entity.Reward (e) -> reward0_
+记录时间：2018-04-29 18:04:09,122 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e -> reward0_.id
+记录时间：2018-04-29 18:04:09,122 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：handling property dereference [DataRepository.Entity.Reward (e) -> Amount (Class)]
+记录时间：2018-04-29 18:04:09,123 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.DotNode property:[(null)] - 日志描述：getDataType() : Amount -> NHibernate.Type.DecimalType
+记录时间：2018-04-29 18:04:09,123 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：handling property dereference [DataRepository.Entity.Reward (e) -> Amount (Class)]
+记录时间：2018-04-29 18:04:09,123 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e.Amount -> reward0_.amount
+记录时间：2018-04-29 18:04:09,123 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：attempting to resolve property [decimal] as a non-qualified ref
+记录时间：2018-04-29 18:04:09,123 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select : finishing up [level=1, statement=select]
+记录时间：2018-04-29 18:04:09,123 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：processQuery() : ( SELECT ( {select clause} ( method cast ( expr_list ( sum ( reward0_.amount reward0_.id Amount ) ) decimal ) ) ) ( FromClause{level=1} tbl_reward reward0_ ) )
+记录时间：2018-04-29 18:04:09,123 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Util.JoinProcessor property:[(null)] - 日志描述：Using FROM fragment [tbl_reward reward0_]
+记录时间：2018-04-29 18:04:09,123 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select >> end [level=1, statement=select]
+记录时间：2018-04-29 18:04:09,123 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:09,124 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlGenerator property:[(null)] - 日志描述：SQL: select cast(sum(reward0_.amount) as DECIMAL(19,5)) as col_0_0_ from tbl_reward reward0_
+记录时间：2018-04-29 18:04:09,124 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:09,126 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：located HQL query plan in cache (.Sum[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (e.Amount)), ))
+记录时间：2018-04-29 18:04:09,126 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.HQLQueryPlan property:[(null)] - 日志描述：find: .Sum[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (e.Amount)), )
+记录时间：2018-04-29 18:04:09,126 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.QueryParameters property:[(null)] - 日志描述：named parameters: {}
+记录时间：2018-04-29 18:04:09,126 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened new IDbCommand, open IDbCommands: 1
+记录时间：2018-04-29 18:04:09,126 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Building an IDbCommand object for the SqlString: select cast(sum(reward0_.amount) as DECIMAL(19,5)) as col_0_0_ from tbl_reward reward0_
+记录时间：2018-04-29 18:04:09,126 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：select cast(sum(reward0_.amount) as DECIMAL(19,5)) as col_0_0_ from tbl_reward reward0_
+记录时间：2018-04-29 18:04:09,126 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Connection.DriverConnectionProvider property:[(null)] - 日志描述：Obtaining IDbConnection from Driver
+记录时间：2018-04-29 18:04:09,233 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：ExecuteReader took 106 ms
+记录时间：2018-04-29 18:04:09,233 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened IDataReader, open IDataReaders: 1
+记录时间：2018-04-29 18:04:09,233 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：processing result set
+记录时间：2018-04-29 18:04:09,233 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 0
+记录时间：2018-04-29 18:04:09,233 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: 
+记录时间：2018-04-29 18:04:09,233 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '226100.00000' as column: col_0_0_
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：done processing result set (1 rows)
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Driver.NHybridDataReader property:[(null)] - 日志描述：running NHybridDataReader.Dispose()
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDataReader, open IDataReaders :0
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：DataReader was closed after 107 ms
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDbCommand, open IDbCommands: 0
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Connection.ConnectionProvider property:[(null)] - 日志描述：Closing connection
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.StatefulPersistenceContext property:[(null)] - 日志描述：initializing non-lazy collections
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：after autocommit
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：transaction completion
+记录时间：2018-04-29 18:04:09,234 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Linq property:[(null)] - 日志描述：Expression (partially evaluated): value(NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward]).OrderByDescending(e => e.Id).Skip(0).Take(20)
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：unable to locate HQL query plan in cache; generating (.Take[DataRepository.Entity.Reward](.Skip[DataRepository.Entity.Reward](.OrderByDescending[DataRepository.Entity.Reward,System.Int32](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (e.Id)), ), p1, ), p2, ))
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select << begin [level=1, statement=select]
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：FromClause{level=1} :  DataRepository.Entity.Reward (e) -> reward0_
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e -> reward0_.id
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e -> reward0_.id
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：handling property dereference [DataRepository.Entity.Reward (e) -> Id (Class)]
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.DotNode property:[(null)] - 日志描述：getDataType() : Id -> NHibernate.Type.Int32Type
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e.Id -> reward0_.id
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select : finishing up [level=1, statement=select]
+记录时间：2018-04-29 18:04:09,235 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：processQuery() : ( SELECT ( {select clause} reward0_.id ) ( FromClause{level=1} tbl_reward reward0_ ) ( order by ( reward0_.id reward0_.id Id ) desc ) ( skip ? ) ( take ? ) )
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Util.JoinProcessor property:[(null)] - 日志描述：Using FROM fragment [tbl_reward reward0_]
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select >> end [level=1, statement=select]
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlGenerator property:[(null)] - 日志描述：SQL: SELECT TOP (?) id1_, userid1_, remark1_, rewardtype1_, status1_, createtime1_, amount1_ FROM (select reward0_.id as id1_, reward0_.userid as userid1_, reward0_.remark as remark1_, reward0_.rewardtype as rewardtype1_, reward0_.status as status1_, reward0_.createtime as createtime1_, reward0_.amount as amount1_, ROW_NUMBER() OVER(ORDER BY reward0_.id DESC) as __hibernate_sort_row from tbl_reward reward0_) as query WHERE query.__hibernate_sort_row > ? ORDER BY query.__hibernate_sort_row
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：located HQL query plan in cache (.Take[DataRepository.Entity.Reward](.Skip[DataRepository.Entity.Reward](.OrderByDescending[DataRepository.Entity.Reward,System.Int32](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (e.Id)), ), p1, ), p2, ))
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.HQLQueryPlan property:[(null)] - 日志描述：find: .Take[DataRepository.Entity.Reward](.Skip[DataRepository.Entity.Reward](.OrderByDescending[DataRepository.Entity.Reward,System.Int32](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (e.Id)), ), p1, ), p2, )
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.QueryParameters property:[(null)] - 日志描述：named parameters: {'p1'='0', 'p2'='20'}
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened new IDbCommand, open IDbCommands: 1
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Building an IDbCommand object for the SqlString: SELECT TOP (?) id1_, userid1_, remark1_, rewardtype1_, status1_, createtime1_, amount1_ FROM (select reward0_.id as id1_, reward0_.userid as userid1_, reward0_.remark as remark1_, reward0_.rewardtype as rewardtype1_, reward0_.status as status1_, reward0_.createtime as createtime1_, reward0_.amount as amount1_, ROW_NUMBER() OVER(ORDER BY reward0_.id DESC) as __hibernate_sort_row from tbl_reward reward0_) as query WHERE query.__hibernate_sort_row > ? ORDER BY query.__hibernate_sort_row
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：binding '0' to parameter: 1
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：binding '20' to parameter: 0
+记录时间：2018-04-29 18:04:09,236 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：SELECT TOP (@p0) id1_, userid1_, remark1_, rewardtype1_, status1_, createtime1_, amount1_ FROM (select reward0_.id as id1_, reward0_.userid as userid1_, reward0_.remark as remark1_, reward0_.rewardtype as rewardtype1_, reward0_.status as status1_, reward0_.createtime as createtime1_, reward0_.amount as amount1_, ROW_NUMBER() OVER(ORDER BY reward0_.id DESC) as __hibernate_sort_row from tbl_reward reward0_) as query WHERE query.__hibernate_sort_row > @p1 ORDER BY query.__hibernate_sort_row
+记录时间：2018-04-29 18:04:09,237 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Connection.DriverConnectionProvider property:[(null)] - 日志描述：Obtaining IDbConnection from Driver
+记录时间：2018-04-29 18:04:09,337 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：ExecuteReader took 100 ms
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened IDataReader, open IDataReaders: 1
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：processing result set
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 0
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '14' as column: id1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#14]
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#14]
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#14]
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: userid1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '来自直通车奖励6000分' as column: remark1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '3' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/25 21:49:50' as column: createtime1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '6000.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 1
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '13' as column: id1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#13]
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#13]
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#13]
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: userid1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '来自直通车奖励102000分' as column: remark1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '3' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/25 21:43:02' as column: createtime1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '102000.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,338 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 2
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '12' as column: id1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#12]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#12]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#12]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '4df23f' as column: userid1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '来自直通车奖励30000分' as column: remark1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '3' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/25 18:14:02' as column: createtime1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '30000.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 3
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '11' as column: id1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#11]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#11]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#11]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '4df23f' as column: userid1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '【直通车满25奖励】置换云联惠5万白积分' as column: remark1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '2' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/25 16:53:34' as column: createtime1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '50000.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 4
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '10' as column: id1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#10]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#10]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#10]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '4df23f' as column: userid1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '【直通车满25奖励】参与团购1.5万元产品' as column: remark1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '2' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/25 16:52:18' as column: createtime1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '15000.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 5
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '9' as column: id1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#9]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#9]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#9]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '4df23f' as column: userid1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '【直通车满25奖励】6000元团购金' as column: remark1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '2' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/25 16:52:09' as column: createtime1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '6000.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 6
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '8' as column: id1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#8]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#8]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#8]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'ylmyadmin' as column: userid1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '【直通车满25奖励】6000元团购金' as column: remark1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '2' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/25 16:18:27' as column: createtime1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '6000.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 7
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '7' as column: id1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#7]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#7]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#7]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'ylmyadmin' as column: userid1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '【直通车满25奖励】6000元团购金' as column: remark1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '2' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/25 16:16:14' as column: createtime1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '6000.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 8
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '6' as column: id1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#6]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#6]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#6]
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: userid1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '来自:4df23f,团购奖励' as column: remark1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,339 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/24 19:41:53' as column: createtime1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '200.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 9
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '5' as column: id1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#5]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#5]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#5]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: userid1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '推荐好友:15666666666,奖励200' as column: remark1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/23 0:02:22' as column: createtime1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '200.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 10
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '3' as column: id1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#3]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#3]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#3]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '13000000000' as column: userid1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '奖励4500分期购物' as column: remark1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '3' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/19 17:11:52' as column: createtime1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '4500.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 11
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '2' as column: id1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#2]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#2]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#2]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: userid1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '推荐好友:13000000000,奖励100' as column: remark1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/19 17:04:17' as column: createtime1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '100.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 12
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: id1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: EntityKey[DataRepository.Entity.Reward#1]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：Initializing object from DataReader: [DataRepository.Entity.Reward#1]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Persister.Entity.AbstractEntityPersister property:[(null)] - 日志描述：Hydrating entity: [DataRepository.Entity.Reward#1]
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning 'abcdefg' as column: userid1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.StringType property:[(null)] - 日志描述：returning '提现' as column: remark1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: rewardtype1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '1' as column: status1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DateTimeType property:[(null)] - 日志描述：returning '2018/4/14 19:34:20' as column: createtime1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning '100.00' as column: amount1_
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：done processing result set (13 rows)
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Driver.NHybridDataReader property:[(null)] - 日志描述：running NHybridDataReader.Dispose()
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDataReader, open IDataReaders :0
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：DataReader was closed after 103 ms
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDbCommand, open IDbCommands: 0
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Connection.ConnectionProvider property:[(null)] - 日志描述：Closing connection
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：total objects hydrated: 13
+记录时间：2018-04-29 18:04:09,340 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#14]
+记录时间：2018-04-29 18:04:09,341 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#14]
+记录时间：2018-04-29 18:04:09,341 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#13]
+记录时间：2018-04-29 18:04:09,341 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#13]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#12]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#12]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#11]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#11]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#10]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#10]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#9]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#9]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#8]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#8]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#7]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#7]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#6]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#6]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#5]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#5]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#3]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#3]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#2]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#2]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：resolving associations for [DataRepository.Entity.Reward#1]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.TwoPhaseLoad property:[(null)] - 日志描述：done materializing entity [DataRepository.Entity.Reward#1]
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.StatefulPersistenceContext property:[(null)] - 日志描述：initializing non-lazy collections
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：after autocommit
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：transaction completion
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：closing session
+记录时间：2018-04-29 18:04:09,342 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：running BatcherImpl.Dispose(true)
+记录时间：2018-04-29 18:04:14,767 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：[session-id=267e1f83-2962-4547-8f76-5ffe137204a7] opened session at timestamp: 636606218547, for session factory: [/cd496bde6cd34d77a72b39ba0b59899c]
+记录时间：2018-04-29 18:04:14,769 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Linq property:[(null)] - 日志描述：Expression (partially evaluated): value(NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward]).Where(e => (e.Status == 0)).Count()
+记录时间：2018-04-29 18:04:14,769 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：unable to locate HQL query plan in cache; generating (.Count[DataRepository.Entity.Reward](.Where[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (Equal(e.Status, p1))), ), ))
+记录时间：2018-04-29 18:04:14,793 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select << begin [level=1, statement=select]
+记录时间：2018-04-29 18:04:14,793 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：FromClause{level=1} :  DataRepository.Entity.Reward (e) -> reward0_
+记录时间：2018-04-29 18:04:14,793 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：attempting to resolve property [integer] as a non-qualified ref
+记录时间：2018-04-29 18:04:14,813 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e -> reward0_.id
+记录时间：2018-04-29 18:04:14,813 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：handling property dereference [DataRepository.Entity.Reward (e) -> Status (Class)]
+记录时间：2018-04-29 18:04:14,813 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.DotNode property:[(null)] - 日志描述：getDataType() : Status -> NHibernate.Type.Int32Type
+记录时间：2018-04-29 18:04:14,813 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e.Status -> reward0_.status
+记录时间：2018-04-29 18:04:14,816 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select : finishing up [level=1, statement=select]
+记录时间：2018-04-29 18:04:14,816 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：processQuery() : ( SELECT ( {select clause} ( method cast ( expr_list ( count * ) integer ) ) ) ( FromClause{level=1} tbl_reward reward0_ ) ( where ( == ( reward0_.status reward0_.id Status ) ? ) ) )
+记录时间：2018-04-29 18:04:14,816 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Util.JoinProcessor property:[(null)] - 日志描述：Using FROM fragment [tbl_reward reward0_]
+记录时间：2018-04-29 18:04:14,816 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select >> end [level=1, statement=select]
+记录时间：2018-04-29 18:04:14,816 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:14,823 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlGenerator property:[(null)] - 日志描述：SQL: select cast(count(*) as INT) as col_0_0_ from tbl_reward reward0_ where reward0_.status=?
+记录时间：2018-04-29 18:04:14,823 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:14,823 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：located HQL query plan in cache (.Count[DataRepository.Entity.Reward](.Where[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (Equal(e.Status, p1))), ), ))
+记录时间：2018-04-29 18:04:14,823 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.HQLQueryPlan property:[(null)] - 日志描述：find: .Count[DataRepository.Entity.Reward](.Where[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (Equal(e.Status, p1))), ), )
+记录时间：2018-04-29 18:04:14,823 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.QueryParameters property:[(null)] - 日志描述：named parameters: {'p1'='0'}
+记录时间：2018-04-29 18:04:14,823 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened new IDbCommand, open IDbCommands: 1
+记录时间：2018-04-29 18:04:14,823 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Building an IDbCommand object for the SqlString: select cast(count(*) as INT) as col_0_0_ from tbl_reward reward0_ where reward0_.status=?
+记录时间：2018-04-29 18:04:14,823 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：binding '0' to parameter: 0
+记录时间：2018-04-29 18:04:14,823 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：select cast(count(*) as INT) as col_0_0_ from tbl_reward reward0_ where reward0_.status=@p0
+记录时间：2018-04-29 18:04:14,823 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Connection.DriverConnectionProvider property:[(null)] - 日志描述：Obtaining IDbConnection from Driver
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：ExecuteReader took 100 ms
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened IDataReader, open IDataReaders: 1
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：processing result set
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 0
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: 
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：returning '0' as column: col_0_0_
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：done processing result set (1 rows)
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Driver.NHybridDataReader property:[(null)] - 日志描述：running NHybridDataReader.Dispose()
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDataReader, open IDataReaders :0
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：DataReader was closed after 101 ms
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDbCommand, open IDbCommands: 0
+记录时间：2018-04-29 18:04:14,924 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:14,925 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Connection.ConnectionProvider property:[(null)] - 日志描述：Closing connection
+记录时间：2018-04-29 18:04:14,925 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.StatefulPersistenceContext property:[(null)] - 日志描述：initializing non-lazy collections
+记录时间：2018-04-29 18:04:14,925 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：after autocommit
+记录时间：2018-04-29 18:04:14,925 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：transaction completion
+记录时间：2018-04-29 18:04:14,925 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:14,925 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Linq property:[(null)] - 日志描述：Expression (partially evaluated): value(NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward]).Where(e => (e.Status == 0)).Sum(e => e.Amount)
+记录时间：2018-04-29 18:04:14,926 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：unable to locate HQL query plan in cache; generating (.Sum[DataRepository.Entity.Reward](.Where[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (Equal(e.Status, p1))), ), Quote((e, ) => (e.Amount)), ))
+记录时间：2018-04-29 18:04:14,926 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select << begin [level=1, statement=select]
+记录时间：2018-04-29 18:04:14,926 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：FromClause{level=1} :  DataRepository.Entity.Reward (e) -> reward0_
+记录时间：2018-04-29 18:04:14,926 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e -> reward0_.id
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：handling property dereference [DataRepository.Entity.Reward (e) -> Amount (Class)]
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.DotNode property:[(null)] - 日志描述：getDataType() : Amount -> NHibernate.Type.DecimalType
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：handling property dereference [DataRepository.Entity.Reward (e) -> Amount (Class)]
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e.Amount -> reward0_.amount
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：attempting to resolve property [decimal] as a non-qualified ref
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e -> reward0_.id
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromElement property:[(null)] - 日志描述：handling property dereference [DataRepository.Entity.Reward (e) -> Status (Class)]
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.DotNode property:[(null)] - 日志描述：getDataType() : Status -> NHibernate.Type.Int32Type
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode property:[(null)] - 日志描述：Resolved :  e.Status -> reward0_.status
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select : finishing up [level=1, statement=select]
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：processQuery() : ( SELECT ( {select clause} ( method cast ( expr_list ( sum ( reward0_.amount reward0_.id Amount ) ) decimal ) ) ) ( FromClause{level=1} tbl_reward reward0_ ) ( where ( == ( reward0_.status reward0_.id Status ) ? ) ) )
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.Util.JoinProcessor property:[(null)] - 日志描述：Using FROM fragment [tbl_reward reward0_]
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlWalker property:[(null)] - 日志描述：select >> end [level=1, statement=select]
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.HqlSqlGenerator property:[(null)] - 日志描述：SQL: select cast(sum(reward0_.amount) as DECIMAL(19,5)) as col_0_0_ from tbl_reward reward0_ where reward0_.status=?
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Hql.Ast.ANTLR.ErrorCounter property:[(null)] - 日志描述：throwQueryException() : no errors
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.QueryPlanCache property:[(null)] - 日志描述：located HQL query plan in cache (.Sum[DataRepository.Entity.Reward](.Where[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (Equal(e.Status, p1))), ), Quote((e, ) => (e.Amount)), ))
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.Query.HQLQueryPlan property:[(null)] - 日志描述：find: .Sum[DataRepository.Entity.Reward](.Where[DataRepository.Entity.Reward](NHibernate.Linq.NhQueryable`1[DataRepository.Entity.Reward], Quote((e, ) => (Equal(e.Status, p1))), ), Quote((e, ) => (e.Amount)), )
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.QueryParameters property:[(null)] - 日志描述：named parameters: {'p1'='0'}
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened new IDbCommand, open IDbCommands: 1
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Building an IDbCommand object for the SqlString: select cast(sum(reward0_.amount) as DECIMAL(19,5)) as col_0_0_ from tbl_reward reward0_ where reward0_.status=?
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.Int32Type property:[(null)] - 日志描述：binding '0' to parameter: 0
+记录时间：2018-04-29 18:04:14,927 线程ID:[5] 日志级别：INFO  操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：select cast(sum(reward0_.amount) as DECIMAL(19,5)) as col_0_0_ from tbl_reward reward0_ where reward0_.status=@p0
+记录时间：2018-04-29 18:04:14,928 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Connection.DriverConnectionProvider property:[(null)] - 日志描述：Obtaining IDbConnection from Driver
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：ExecuteReader took 104 ms
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Opened IDataReader, open IDataReaders: 1
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：processing result set
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result set row: 0
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：result row: 
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Type.DecimalType property:[(null)] - 日志描述：returning null as column: col_0_0_
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Loader.Loader property:[(null)] - 日志描述：done processing result set (1 rows)
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Driver.NHybridDataReader property:[(null)] - 日志描述：running NHybridDataReader.Dispose()
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDataReader, open IDataReaders :0
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：DataReader was closed after 105 ms
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.AbstractBatcher property:[(null)] - 日志描述：Closed IDbCommand, open IDbCommands: 0
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Connection.ConnectionProvider property:[(null)] - 日志描述：Closing connection
+记录时间：2018-04-29 18:04:15,033 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Engine.StatefulPersistenceContext property:[(null)] - 日志描述：initializing non-lazy collections
+记录时间：2018-04-29 18:04:15,044 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Util.ADOExceptionReporter property:[(null)] - 日志描述：Could not execute query
+[ SQL not available ]
+
+System.ArgumentNullException: 值不能为 null。
+参数名: item
+   在 System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   在 System.ThrowHelper.IfNullAndNullsAreIllegalThenThrow[T](Object value, ExceptionArgument argName)
+   在 System.Collections.Generic.List`1.System.Collections.IList.Add(Object item)
+   在 NHibernate.Util.ArrayHelper.AddAll(IList to, IList from) 位置 d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Util\ArrayHelper.cs:行号 99
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results) 位置 d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Query\HQLQueryPlan.cs:行号 113
+   在 NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results) 位置 d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:行号 629
+记录时间：2018-04-29 18:04:15,064 线程ID:[5] 日志级别：WARN  操作类：NHibernate.Util.ADOExceptionReporter property:[(null)] - 日志描述：System.ArgumentNullException: 值不能为 null。
+参数名: item
+   在 System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   在 System.ThrowHelper.IfNullAndNullsAreIllegalThenThrow[T](Object value, ExceptionArgument argName)
+   在 System.Collections.Generic.List`1.System.Collections.IList.Add(Object item)
+   在 NHibernate.Util.ArrayHelper.AddAll(IList to, IList from) 位置 d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Util\ArrayHelper.cs:行号 99
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results) 位置 d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Query\HQLQueryPlan.cs:行号 113
+   在 NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results) 位置 d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:行号 629
+记录时间：2018-04-29 18:04:15,064 线程ID:[5] 日志级别：ERROR 操作类：NHibernate.Util.ADOExceptionReporter property:[(null)] - 日志描述：值不能为 null。
+参数名: item
+记录时间：2018-04-29 18:04:27,220 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：after autocommit
+记录时间：2018-04-29 18:04:27,221 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.Impl.SessionImpl property:[(null)] - 日志描述：transaction completion
+记录时间：2018-04-29 18:04:27,221 线程ID:[5] 日志级别：DEBUG 操作类：NHibernate.AdoNet.ConnectionManager property:[(null)] - 日志描述：aggressively releasing database connection

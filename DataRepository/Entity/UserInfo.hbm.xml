@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DataRepository" namespace="DataRepository.Entity" default-lazy="false">
+  <class name="DataRepository.Entity.UserInfo, DataRepository" table="tbl_userinfo">
+    <id name="Id" type="Int32">
+      <column name="id" sql-type="int" not-null="true" unique="true"/>
+      <generator class="native" />
+    </id>
+    <property name="RecommendUserId" type="String">
+      <column name="recommenduserid" length="32" sql-type="varchar" not-null="false" />
+    </property>
+    <property name="UserId" type="String">
+      <column name="userid" length="32" sql-type="varchar" not-null="true" unique="true" />
+    </property>
+    <property name="UserName" type="String">
+      <column name="username"  sql-type="varchar" length="32" not-null="false" />
+    </property>
+    <property name="Password" type="String">
+      <column name="password" length="64" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="Mobile" type="String">
+      <column name="mobile" length="16" sql-type="varchar" not-null="true" />
+    </property>
+    
+    <property name="YlMobile" type="String">
+      <column name="ylmobile" length="16" sql-type="varchar" not-null="false" />
+    </property>
+    
+    <property name="BankName" type="String">
+      <column name="bankname" sql-type="varchar"  length="32" not-null="false"/>
+    </property>
+    <property name="CardId" type="String">
+      <column name="cardid" sql-type="varchar"  length="32" not-null="false"/>
+    </property>
+    <property name="Grade" type="Int32">
+      <column name="grade" sql-type="int"   not-null="true"/>
+    </property>
+    <property name="GPNo" type="String">
+      <column name="gpno" sql-type="varchar"  length="32" not-null="false"/>
+    </property>
+    
+    <property name="OrderTime">
+      <column name="ordertime" sql-type="datetime" not-null="false"/>
+    </property>
+    <property name="UpgradeTime">
+      <column name="upgradetime" sql-type="datetime" not-null="false"/>
+    </property>
+   
+    <property name="CreateTime" type="DateTime">
+      <column name="createtime" sql-type="datetime" not-null="true"/>
+    </property>
+    <property name="Status" type="Int32">
+      <column name="status"  sql-type="int" not-null="true" />
+    </property>
+
+    <property name="ReceiveType" type="Int32">
+      <column name="receivetype"  sql-type="int" not-null="true" />
+    </property>
+    
+    <property name="FriendCount" type="Int32">
+      <column name="friendcount"  sql-type="int" not-null="true" />
+    </property>
+    
+    <property name="ValidFriendCount" type="Int32">
+      <column name="validfriendcount"  sql-type="int" not-null="false" />
+    </property>
+    
+    <property name="Balance" type="Decimal">
+      <column name="balance"  sql-type="decimal" not-null="true" />
+    </property>
+    <property name="QrcodeUrl" type="String">
+      <column name="qrcodeurl" sql-type="varchar"  length="256" not-null="false"/>
+    </property>
+    
+    <property name="YlUserId" type="String">
+      <column name="yluserid" sql-type="varchar"  length="32" not-null="false"/>
+    </property>
+
+    <property name="DirectBusCount" type="Int32">
+      <column name="directbuscount"  sql-type="int" not-null="true" />
+    </property>
+    <property name="DirectBusCount1" type="Int32">
+      <column name="directbuscount1"  sql-type="int" not-null="true" />
+    </property>
+    <property name="IsActive" type="Boolean">
+      <column name="isactive"  sql-type="tinyint"  not-null="true"/>
+    </property>
+    <property name="IsPackage" type="Boolean">
+      <column name="ispackage"  sql-type="tinyint"  not-null="true"/>
+    </property>
+    
+  </class>
+</hibernate-mapping>

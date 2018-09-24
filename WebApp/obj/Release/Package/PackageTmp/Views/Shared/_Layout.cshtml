@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Resource/css/style.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Resource/css/color.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Resource/css/framework.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Resource/css/yellowtips.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Resource/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Resource/css/mycss.css" rel="stylesheet" type="text/css">
+    
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+    @RenderSection("css", required: false)
+
+</head>
+<body style="">
+
+    <div class="wrapBox">
+        <header>
+            <div class="headBox">
+                <h2>@ViewBag.Title</h2>
+                <a class="aBlock aBack" href="javascript:history.back()"><i class="fa fa-chevron-left"></i></a>
+                <!--
+                <a class="aBlock aHome" href="#"><i class="fa fa-home"></i></a>
+                -->
+            </div>
+        </header>
+        @RenderBody()
+        
+        <footer>
+            <ul class="clearfix">
+                <li>
+                    <a href="~/Member/Index">
+                        <span><i class="f1"></i>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/Member/Market">
+                        <span><i class="f11"></i>市场</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/Member/Finance">
+                        <span><i class="f9"></i>财务</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/Member/My">
+                        <span><i class="f4"></i>我的</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

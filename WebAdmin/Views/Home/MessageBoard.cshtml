@@ -1,0 +1,127 @@
+﻿@using BaseClasses.Extensions
+@using WebAdmin.Models
+@model WebAdmin.Models.AdminModel.MessageBoardViewModel
+
+@{
+	ViewBag.CurrentMenuLabel = new LeftMenuModel
+	{
+		Label = "系统",
+		Children = new List<LeftMenuModel>
+		{
+			new LeftMenuModel
+			{
+				Label = "留言板",
+				Url = "MessageBoard"
+			}
+		}
+	};
+}
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<form id="searchForm">
+					<input name="text" style="height: 40px; padding: 10px; margin: 30px 30px 10px 50px;" value="@Model.Text" placeholder="请输入标题" />
+					@*					<input name="pagesize" value="2" type="hidden"/>*@
+					<button class="btn btn-warning btn-fill btn-wd" type="submit">搜索</button>
+				</form>
+				<table class="table">
+					<thead>
+						<tr>
+							<td class="text-center">ID</td>
+							<td class="text-center">时间</td>
+							<td class="text-center">用户</td>
+							<td class="text-center">标题</td>
+							<td class="text-center">状态</td>
+							<td class="td-actions text-center">操作</td>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model.MessageBoards.List)
+						{
+						<tr>
+							<td class="text-center">@item.Id</td>
+							<td class="text-center">@item.CreatedAt</td>
+							<td class="text-center">@item.MemberUserName</td>
+							<td class="text-center" style="max-width: 100px;">@item.Title</td>
+							<td class="text-center">@(item.Reply.IsNullOrEmpty()?"未回复":"已回复")</td>
+							<td><a class="item_edit" href="#" data-toggle="modal" data-target="#myModal" data-id="@item.Id" data-title="@item.Title" data-content="@item.Content" data-reply="@item.Reply">回复</a></td>
+						</tr>
+						}
+					</tbody>
+					<tfoot>
+						<tr>
+							<th colspan="8">
+								@Html.PageRender(Model.PageIndex, Model.PageSize, Model.MessageBoards.Count)
+							</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">
+					回复
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form id="editform">
+					<input type="hidden" name="Id" id="id" />
+					<div class="form-group">
+						<label for="title">标题</label>
+						<input type="text" class="form-control" id="title" readonly="readonly">
+					</div>
+					<div class="form-group">
+						<label for="content">内容</label>
+						<textarea type="text" class="form-control" id="content" readonly="readonly" name="content" style="resize: none; height: 180px;"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="reply">回复</label>
+						<textarea type="text" class="form-control" id="reply" placeholder="请输入回复内容" name="reply" style=" height: 180px;"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">提交更改</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+@section Scripts
+{
+	<script type="text/javascript">
+		$('#myModal').on('show.bs.modal',
+			function (event) {
+				var btnThis = $(event.relatedTarget); //触发事件的按钮
+				var modal = $(this); //当前模态框
+				modal.find('#title').val(btnThis.data('title'));
+				modal.find('#content').val(btnThis.data('content'));
+				modal.find('#reply').val(btnThis.data('reply'));
+				modal.find('#id').val(btnThis.data('id'));
+			});
+
+		$(".btn-primary").on("click",
+			function () {
+				$rpc("/home/messageboard",
+					$("#editform").serializeArray(),
+					function () {
+						$('#myModal').modal('hide');
+						window.location.reload();
+					},
+					function (data) {
+						swal(data.Message);
+					});
+			});
+	</script>
+}

@@ -1,0 +1,299 @@
+﻿@using BaseClasses.Extensions
+@using DataRepository.Enums
+@using WebAdmin.Models
+@model WebAdmin.Models.AdminModel.MemberViewModel
+@{
+	ViewBag.CurrentMenuLabel = new LeftMenuModel
+	{
+		Label = "用户",
+		Children = new List<LeftMenuModel>
+{
+	new LeftMenuModel
+	{
+		Label = "用户列表",
+		Url = "Member"
+	}
+}
+	};
+}
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<form id="searchForm" style="padding-left: 20px;">
+					<input name="UserName" style="height: 40px; padding: 10px; margin: 30px 30px 10px 10px;" value="@Model.UserName" placeholder="请输入用户名" />
+					<input name="Chain" style="height: 40px; padding: 10px; margin: 30px 30px 10px 10px;" value="@Model.Chain" placeholder="请输入推荐人用户名" />
+					注册时间：<input name="CreatedAtFrom" style="height: 40px; padding: 10px; margin: 30px 0px 10px 0px;" value="@(Model.CreatedAtFrom)" type="text" class="datetimepicker" placeholder="开始时间">
+					-<input name="CreatedAtTo" style="height: 40px; padding: 10px; margin: 30px 30px 10px 0px;" value="@Model.CreatedAtTo" type="text" class="datetimepicker" placeholder="结束时间">
+					<br />
+					金：<input name="GoldBalanceFrom" style="height: 40px; width: 80px; padding: 10px; margin: 30px 0px 10px 0px;" value="@(Model.GoldBalanceFrom)" type="text">
+					-<input name="GoldBalanceTo" style="height: 40px; width: 80px;  padding: 10px; margin: 30px 30px 10px 0px;" value="@Model.GoldBalanceTo" type="text">
+					银：<input name="SilverBalanceFrom" style="height: 40px; width: 80px; padding: 10px; margin: 30px 0px 10px 0px;" value="@(Model.SilverBalanceFrom)" type="text">
+					-<input name="SilverBalanceTo" style="height: 40px; width: 80px;  padding: 10px; margin: 30px 30px 10px 0px;" value="@Model.SilverBalanceTo" type="text">
+					铜：<input name="CopperBalanceFrom" style="height: 40px; width: 80px; padding: 10px; margin: 30px 0px 10px 0px;" value="@(Model.CopperBalanceFrom)" type="text">
+					-<input name="CopperBalanceTo" style="height: 40px; width: 80px;  padding: 10px; margin: 30px 30px 10px 0px;" value="@Model.CopperBalanceTo" type="text">
+					矿渣：<input name="SlagBalanceFrom" style="height: 40px; width: 80px; padding: 10px; margin: 30px 0px 10px 0px;" value="@(Model.SlagBalanceFrom)" type="text">
+					-<input name="SlagBalanceTo" style="height: 40px; width: 80px;  padding: 10px; margin: 30px 30px 10px 0px;" value="@Model.SlagBalanceTo" type="text">
+					<button class="btn btn-warning btn-fill btn-wd" type="submit">搜索</button>
+					<button class="btn btn-warning btn-fill btn-wd" type="button" data-toggle="modal" data-target="#addMemberModal">新增</button>
+				</form>
+				<table class="table">
+					<thead>
+						<tr>
+							<td class="text-center">用户名</td>
+							<td class="text-center">昵称</td>
+							<td class="text-center">用户状态</td>
+							<td class="text-center">用户类型</td>
+							<td class="text-center">推荐人用户名</td>
+							<td class="text-center">金</td>
+							<td class="text-center">银</td>
+							<td class="text-center">铜</td>
+							<td class="text-center">矿渣</td>
+							<td class="text-center">钻石</td>
+							<td class="text-center">荣誉值</td>
+							<td class="text-center">邀请回馈</td>
+							<td class="td-actions text-center">操作</td>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model.Members.List)
+						{
+							var memberType = (int)(item.MemberType);
+							<tr>
+								<td class="text-center">@item.UserName</td>
+								<td class="text-center">@item.NickName</td>
+								<td class="text-center">@item.Status.GetDescription()</td>
+								<td class="text-center">@item.MemberType.GetDescription()</td>
+								<td class="text-center">@item.RecommendUserName</td>
+								<td class="text-center">@item.GoldBalance</td>
+								<td class="text-center">@item.SilverBalance</td>
+								<td class="text-center">@item.CopperBalance</td>
+								<td class="text-center">@item.RawStoneBalance</td>
+								<td class="text-center">@item.DiamondBalance</td>
+								<td class="text-center">@item.Honor</td>
+								<td class="text-center">@item.FeedBackAmount</td>
+								<td>
+									<a href="#" data-toggle="modal" data-target="#myModal" data-username="@item.UserName" data-memberType="@memberType">编辑</a>
+									<a href="#" data-toggle="modal" data-target="#resetPasswordModal" data-username="@item.UserName">重置密码</a>
+									@if (item.Status != MemberStatus.SealUp)
+	{
+								<a href="#" onclick="sealup(this);" data-username="@item.UserName">查封</a>
+}
+									@if (item.Status == MemberStatus.Freezing || item.Status == MemberStatus.Locking || item.Status == MemberStatus.SealUp)
+	{
+								<a href="#" onclick="relieve(this);" data-username="@item.UserName">解除</a>
+}
+								</td>
+							</tr>
+						}
+					</tbody>
+					<tfoot>
+						<tr>
+							<th colspan="8">
+								@Html.PageRender(Model.PageIndex, Model.PageSize, Model.Members.Count)
+							</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">
+					重置密码
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form id="resetPasswordForm">
+					<input type="hidden" name="Id" id="id" />
+					<div class="form-group">
+						<label for="username">用户名</label>
+						<input type="text" class="form-control" id="username" name="username" readonly="readonly">
+					</div>
+					<div class="form-group">
+						<label for="password">密码</label>
+						<input type="text" class="form-control" id="password" name="password" />
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary" id="resetPasswordModalSub">提交更改</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="addMemberModal" tabindex="-1" role="dialog" aria-labelledby="addMemberModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="addMemberModalLabel">
+					新增用户
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form id="addMemberForm">
+					<div class="form-group">
+						<label for="username">用户名</label>
+						<input type="text" class="form-control" name="username">
+					</div>
+					<div class="form-group">
+						<label>用户名</label>
+						<input type="text" class="form-control" name="nickname">
+					</div>
+					<div class="form-group">
+						<label for="password">密码</label>
+						<input type="text" class="form-control" name="password" />
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary" id="addMemberFormSub">提交更改</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabelUpdate" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabelUpdate">
+					用户修改
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form id="editform">
+					<input type="hidden" name="Id"/>
+					<div class="form-group">
+						<label for="username">用户名</label>
+						<input type="text" class="form-control" id="username" name="username" readonly="readonly">
+					</div>
+					<div class="form-group">
+						<label for="membertype1">类型</label>
+						<label><input type="radio" name="MemberType" value="1" checked id="membertype1" />@MemberType.Normal.GetDescription()</label>
+						<label><input type="radio" name="MemberType" value="2"  id="membertype2" />@MemberType.CallCenter.GetDescription()</label>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary" id="updateMemberFormSub">提交更改</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+@section Scripts
+{
+	<script type="text/javascript">
+
+		$('.datetimepicker').datetimepicker({
+			format: 'YYYY-MM-DD HH:mm:ss',
+			icons: {
+				time: "fa fa-clock-o",
+				date: "fa fa-calendar",
+				up: "fa fa-chevron-up",
+				down: "fa fa-chevron-down",
+				previous: 'fa fa-chevron-left',
+				next: 'fa fa-chevron-right',
+				today: 'fa fa-screenshot',
+				clear: 'fa fa-trash',
+				close: 'fa fa-remove'
+			}
+		});
+		$('#resetPasswordModal').on('show.bs.modal',
+			function (event) {
+				var btnThis = $(event.relatedTarget); //触发事件的按钮
+				var modal = $(this); //当前模态框
+				modal.find('#username').val(btnThis.data('username'));
+			});
+
+		$("#addMemberFormSub").on("click",
+			function () {
+				$rpc("/home/Member",
+					$("#addMemberForm").serializeArray(),
+					function () {
+						$('#resetPasswordModal').modal('hide');
+						window.location.reload();
+					},
+					function (data) {
+						swal(data.Message);
+					});
+			});
+		$("#resetPasswordModalSub").on("click",
+			function () {
+				$rpc("/home/MemberResetPassword",
+					$("#resetPasswordForm").serializeArray(),
+					function () {
+						$('#resetPasswordModal').modal('hide');
+						window.location.reload();
+					},
+					function (data) {
+						swal(data.Message);
+					});
+			});
+		function relieve(item) {
+			var that = $(item);
+
+			swal({
+				title: "提醒",
+				text: "确认解除这个用户的状态么？",
+				type: "warning",
+				showCancelButton: true,
+				confirmButtonClass: "btn btn-info btn-fill",
+				confirmButtonText: "确认",
+				cancelButtonClass: "btn btn-danger btn-fill",
+				closeOnConfirm: false,
+				cancelButtonText: "取消"
+			},
+				function () {
+
+					$rpc("/home/MemberRelieve",
+						{ username: that.data("username") },
+						function () {
+							swal("解除成功");
+							window.location.reload();
+						},
+						function (data) {
+							swal(data.Message);
+						});
+				});
+		}
+		$('#myModal').on('show.bs.modal',
+			function (event) {
+				var btnThis = $(event.relatedTarget); //触发事件的按钮
+				var modal = $(this); //当前模态框
+				modal.find('#username').val(btnThis.data('username'));
+				var membertype = btnThis.data('membertype');
+//				modal.find('#membertype1').removeAttr('checked');
+//				modal.find('#membertype2').removeAttr('checked');
+//				modal.find('#membertype1').attr('checked', membertype == '1' ? "" : "false");
+//				modal.find('#membertype2').attr('checked', membertype == '2' ? "" : "false");
+				$("input[name='MemberType']").attr("checked", false);
+				$("input[name='MemberType'][value='" + membertype + "']").prop("checked", true);
+			});
+
+		$("#updateMemberFormSub").on("click",
+			function () {
+				$rpc("/home/MemberUpdateInfo",
+					$("#editform").serializeArray(),
+					function () {
+						$('#myModal').modal('hide');
+						window.location.reload();
+					},
+					function (data) {
+						swal(data.Message);
+					});
+			});
+	</script>
+}

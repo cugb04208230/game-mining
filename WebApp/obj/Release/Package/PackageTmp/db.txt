@@ -1,0 +1,9 @@
+﻿maoyi12345
+yiA9c7bo82n6v3M1z
+
+insert into tbl_userinfo(userid,password,mobile,grade,createtime,status,friendcount,balance)
+values('abcd','14e1f0d40d4242b283f6299609fc8025','13889900000',1,'2019-1-2',1,100,100)
+
+
+ylmy0932
+s*3c2b4Rm0v5EC8X92y3B
