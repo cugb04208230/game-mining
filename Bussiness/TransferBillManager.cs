@@ -499,7 +499,7 @@ namespace Bussiness
 				ITransaction iTransaction = session.BeginTransaction(IsolationLevel.ReadCommitted);
 				try
 				{
-					var amount = queryable.First(e => e.Key == member.UserName).Value;
+					var amount = queryable.First(e => e.Key == member.UserName).Value * 0.03m;
 					//新增采集收益记录
 					var memberIncomeRecord = new MemberIncomeRecord
 					{

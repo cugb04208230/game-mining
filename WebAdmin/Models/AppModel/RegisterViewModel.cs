@@ -54,7 +54,7 @@ namespace WebAdmin.Models.AppModel
 		/// 手机号
 		/// </summary>
 		[Required(ErrorMessage = "MobileCanNotBeEmpty")]
-		[RegularExpression(@"^[1][\d]{10}$", ErrorMessage = "MobileRegexError")]
+		[RegularExpression(@"^[\d]{6,20}$", ErrorMessage = "MobileRegexError")]
 		public string Mobile { set; get; }
 
 		/// <summary>

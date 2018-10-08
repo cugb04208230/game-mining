@@ -135,6 +135,13 @@ namespace WebAdmin.Controllers
 		public CommonResult Register(RegisterModel model)
 		{
 			CheckVerifyCode(model.Code);
+			if (model.GlobalAreaCode == "86")
+			{
+				if (model.Mobile.Length != 11 || !model.Mobile.StartsWith("1"))
+				{
+					throw new PlatformException(ErrorCode.MobileRegexError);
+				}
+			}
 			MiddleTier.MemberManager.Register(model.RecommondUserName,model.UserName,model.Password,model.Mobile,model.WeChat??"",model.Alipay??"",model.BitCoin??"",model.Name??"");
 			return this.Success();
 		}
@@ -175,12 +182,12 @@ namespace WebAdmin.Controllers
 			var viewModel = new HomeViewModel { Member = ModelMapUtil.AutoMap(member, new HomeViewMemberModel()),GlobalGoldPrice = MiddleTier.BusinessConfig.GlobalGoldPrice};
 			Parallel.Invoke(() =>
 			{
-//				viewModel.InUseMemberCount = MiddleTier.MemberManager.InUseMemberCount();//矿主数量
-				viewModel.InUseMemberCount = MiddleTier.MemberManager.ActiveMemberCount();//排队矿主数量
+				viewModel.InUseMemberCount = MiddleTier.MemberManager.InUseMemberCount();//矿主数量
+//				viewModel.InUseMemberCount = MiddleTier.MemberManager.ActiveMemberCount();//排队矿主数量
 			}, () =>
 			{
-				viewModel.ActiveMemberCount = MiddleTier.MemberManager.InUseMemberCount();//矿主数量
-//				viewModel.ActiveMemberCount = MiddleTier.MemberManager.ActiveMemberCount();//排队矿主数量
+//				viewModel.ActiveMemberCount = MiddleTier.MemberManager.InUseMemberCount();//矿主数量
+				viewModel.ActiveMemberCount = MiddleTier.MemberManager.ActiveMemberCount();//排队矿主数量
 			}, () =>
 			{
 				viewModel.EquipmentCount = MiddleTier.EquipmentManager.MemberMiningEquipmentCount(viewModel.Member.UserName);//劳工数量
@@ -209,7 +216,11 @@ namespace WebAdmin.Controllers
 			partner.List.ForEach(e => e.EquipmentCount = memberEquipmentCount[e.UserName]);
 			partner.List.ForEach(e => e.ActiveCost = MiddleTier.BusinessConfig.ActivePartnerNeedAmount);
 			var member = MiddleTier.Instance.MemberManager.GetMember(UserName);
-			partner.Title = $"分红收益：金{member.FeedBackGoldAmount}$,矿渣{member.FeedBackSlagAmount}$";
+			var language = LanguageHelper.GetLanguage();
+			if (language == LanguageType.SimplifiedChinese)
+				partner.Title = $"分红收益：金{member.FeedBackGoldAmount}$,矿渣{member.FeedBackSlagAmount}$";
+			else
+				partner.Title = $"dividend：{member.FeedBackGoldAmount}$ gold,{member.FeedBackSlagAmount}$ slag";
 			return this.Success(partner);
 		}
 

@@ -179,7 +179,7 @@ namespace WebAdmin.Models.AppModel
 				switch (language)
 				{
 					case LanguageType.English:
-						content = MemberType==MemberType.CallCenter?"服务中心":"普通用户";
+						content = MemberType==MemberType.CallCenter? "Service centre" : "Normal user";
 						break;
 					case LanguageType.SimplifiedChinese:
 						content = MemberType.GetDescription();

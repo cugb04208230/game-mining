@@ -295,5 +295,33 @@
 						swal(data.Message);
 					});
 			});
+		
+		function sealup(item) {
+			var that = $(item);
+
+			swal({
+					title: "提醒",
+					text: "确认查封这个账号么？",
+					type: "warning",
+					showCancelButton: true,
+					confirmButtonClass: "btn btn-info btn-fill",
+					confirmButtonText: "确认",
+					cancelButtonClass: "btn btn-danger btn-fill",
+					closeOnConfirm: false,
+					cancelButtonText: "取消"
+				},
+				function () {
+
+					$rpc("/home/MemberSealUp",
+						{ username: that.data("username") },
+						function () {
+							swal("查封成功");
+							window.location.reload();
+						},
+						function (data) {
+							swal(data.Message);
+						});
+				});
+		}
 	</script>
 }

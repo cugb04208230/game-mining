@@ -40,6 +40,7 @@ namespace BaseClasses
 		[Description("手机号已存在")] MobileIsExisted = 1033,
 		[Description("必须购买完采矿设备才可以发起求购")] MustBuyMiningEquipment = 1034,
 		[Description("当前求购次数达到上限")] CurrentToBuyTimeLimit = 1035,
-		[Description("验证码错误")] VerifyCodeError = 1036
+		[Description("验证码错误")] VerifyCodeError = 1036,
+		[Description("")] MobileRegexError=1307
 	}
 }

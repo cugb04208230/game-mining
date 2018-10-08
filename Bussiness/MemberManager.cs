@@ -391,7 +391,7 @@ namespace Bussiness
 				//				DataBase.Save(fffMemberIncomeRecord, session);
 				if (toMember.RecommendUserName.IsNotNullOrEmpty())
 				{
-					var recommendCount = DataBase.Count<Member>(e => e.RecommendUserName == toMember.RecommendUserName, session);
+					var recommendCount = DataBase.Count<Member>(e => e.RecommendUserName == toMember.RecommendUserName&&new []{MemberStatus.Actived, MemberStatus.InUse, MemberStatus.SealUp}.Contains(e.Status), session);
 					var slagEquipmentCount = DataBase.Count<SlagRefiningEquipment>(e => e.MemberUserName == toMember.RecommendUserName && e.SourceType == SlagRefiningEquipmentSourceType.InvitingAwards, session);
 					if (slagEquipmentCount < MiddleTier.BusinessConfig.SlagRefiningEquipmentCountLimit && (int)(recommendCount / MiddleTier.BusinessConfig.SlagRefiningEquipmentRewardInviteMemberCount) > slagEquipmentCount)//每个推荐人精炼设备上限&&达到发放奖励的推荐人数
 					{
