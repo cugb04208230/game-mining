@@ -54,7 +54,7 @@ namespace WebAdmin
 			}
 			else
 			{
-				message = "打盹儿了，请稍后重试";
+				message = error.Message;
 			}
 			filterContext.ExceptionHandled = true;
 			filterContext.Controller.ViewBag.Message = message;

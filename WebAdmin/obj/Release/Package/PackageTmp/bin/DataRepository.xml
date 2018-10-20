@@ -1398,7 +1398,7 @@
         </member>
         <member name="P:DataRepository.ZhCn.AccountIsSealUp">
             <summary>
-              查找类似 账号已查封，请联系管理人员 的本地化字符串。
+              查找类似 违规经营遭查封，请联系管理员 的本地化字符串。
             </summary>
         </member>
         <member name="P:DataRepository.ZhCn.AccountIsUnActived">
