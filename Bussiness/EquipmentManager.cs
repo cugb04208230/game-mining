@@ -361,11 +361,11 @@ namespace Bussiness
 			decimal percentage = 0;
 			//获取设备变动记录
 			var changeRecords = DataBase.GetList<MiningEquipmentChangeRecord>(e=>e.Type== equipment.Type);
-			for (int i = 0; i < collectTerm; i++)
+			for (int i = 1; i <= collectTerm; i++)
 			{
 				var day = DateTime.Now.AddDays(0 - i);
-				if (day.DayOfWeek == DayOfWeek.Sunday)
-					continue;
+//				if (day.DayOfWeek == DayOfWeek.Sunday)
+//					continue;
 				var changeRecord = changeRecords.Where(e => e.CreatedAt.Date <= day).OrderByDescending(e=>e.Id).FirstOrDefault();
 				percentage += (changeRecord?.Percentage ?? equipment.Type.GetMiningEquipment().Percentage);
 			}

@@ -785,6 +785,16 @@
             扣减百分比
             </summary>
         </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPartnerManageModel.CoinType">
+            <summary>
+            币种类型
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberPartnerManageModel.Area">
+            <summary>
+            范围
+            </summary>
+        </member>
         <member name="T:WebAdmin.Models.AdminModel.MiningEquipmentViewModel">
             <summary>
             系统采矿设备查询

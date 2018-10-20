@@ -630,7 +630,7 @@ namespace Bussiness
 	    /// <summary>
 	    /// 获取直接邀请用户
 	    /// </summary>
-	    public void ManageAllInvitedMembers(string userName, decimal gold, decimal percent)
+	    public void ManageAllInvitedMembers(string userName, decimal gold, decimal percent, AccountType coinType,int area)
 	    {
 		    var user = DataBase.Get<Member>(e => e.UserName == userName);
 		    if (user == null)
@@ -642,13 +642,50 @@ namespace Bussiness
 			try
 			{
 				var query = session.Query<Member>();
-				query = query.Where(e =>
-					e.Chain.EndsWith($"{ChainStr}{userName}") || e.Chain.Contains($"{ChainStr}{userName}{ChainStr}"));
-				query = query.Where(e => e.GoldBalance >= gold);
+				switch (area)
+				{
+					case 1:
+						query = query.Where(e => e.UserName == userName);
+						break;
+					case 2:
+						query = query.Where(e =>
+							e.Chain.EndsWith($"{ChainStr}{userName}") || e.Chain.Contains($"{ChainStr}{userName}{ChainStr}")|| e.UserName == userName);
+						break;
+				}
+
+				switch (coinType)
+				{
+					case AccountType.Gold:
+						query = query.Where(e => e.GoldBalance >= gold);
+						break;
+					case AccountType.Silver:
+						query = query.Where(e => e.SilverBalance >= gold);
+						break;
+					case AccountType.Copper:
+						query = query.Where(e => e.CopperBalance >= gold);
+						break;
+					case AccountType.Slag:
+						query = query.Where(e => e.SlagBalance >= gold);
+						break;
+				}
 				var members = query.ToList();
 				members.ForEach(member =>
 				{
-					member.GoldBalance = member.GoldBalance - (member.GoldBalance - gold) * percent;
+					switch (coinType)
+					{
+						case AccountType.Gold:
+							member.GoldBalance = member.GoldBalance - (member.GoldBalance - gold) * percent;
+							break;
+						case AccountType.Silver:
+							member.SilverBalance = member.SilverBalance - (member.SilverBalance - gold) * percent;
+							break;
+						case AccountType.Copper:
+							member.CopperBalance = member.CopperBalance - (member.CopperBalance - gold) * percent;
+							break;
+						case AccountType.Slag:
+							member.SlagBalance = member.SlagBalance - (member.SlagBalance - gold) * percent;
+							break;
+					}
 					DataBase.Update(member,session);
 				});
 				iTransaction.Commit();

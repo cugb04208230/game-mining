@@ -475,6 +475,24 @@ namespace Bussiness
 		[ConfigTypeCode(ConfigTypes.Integer)]
 		public int CallCenterToBuyLimitTime { set; get; }
 
+
+
+		/// <summary>
+		/// 普通用户同时求购笔数限制
+		/// </summary>
+		[DefaultValue(1)]
+		[Description("普通用户同时求购笔数限制）")]
+		[ConfigTypeCode(ConfigTypes.Integer)]
+		public int CurrentNormalToBuyLimitTime { set; get; }
+		/// <summary>
+		/// 求购中心同时求购笔数限制
+		/// </summary>
+		[DefaultValue(3)]
+		[Description("求购中心同时求购笔数限制）")]
+		[ConfigTypeCode(ConfigTypes.Integer)]
+		public int CurrentCallToBuyLimitTime { set; get; }
+
+
 		//		/// <summary>
 		//		/// 赠送有效次数限制
 		//		/// </summary>
@@ -508,6 +526,14 @@ namespace Bussiness
 		[Description("转账赠送者的信誉值）")]
 		[ConfigTypeCode(ConfigTypes.Integer)]
 		public int TransferGiveHonor { set; get; }
+
+		/// <summary>
+		/// 求购金额上限
+		/// </summary>
+		[DefaultValue(1000)]
+		[Description("求购金额上限）")]
+		[ConfigTypeCode(ConfigTypes.Integer)]
+		public int ToBuyAmountLimit { set; get; }
 	}
 
 	/// <summary>

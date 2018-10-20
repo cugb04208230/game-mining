@@ -271,4 +271,7 @@
   <data name="WalletCanNotBeEmpty" xml:space="preserve">
     <value>Wallet can not be empty.</value>
   </data>
+  <data name="ToBuyAmountLimitError" xml:space="preserve">
+    <value>To-buy limit error</value>
+  </data>
 </root>

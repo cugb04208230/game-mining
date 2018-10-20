@@ -88,7 +88,7 @@ namespace DataRepository {
         }
         
         /// <summary>
-        ///   查找类似 账号已查封，请联系管理人员 的本地化字符串。
+        ///   查找类似 违规经营遭查封，请联系管理员 的本地化字符串。
         /// </summary>
         public static string AccountIsSealUp {
             get {
@@ -399,6 +399,15 @@ namespace DataRepository {
         public static string SystemError {
             get {
                 return ResourceManager.GetString("SystemError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 求购金额错误 的本地化字符串。
+        /// </summary>
+        public static string ToBuyAmountLimitError {
+            get {
+                return ResourceManager.GetString("ToBuyAmountLimitError", resourceCulture);
             }
         }
         

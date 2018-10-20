@@ -210,6 +210,11 @@
               查找类似 System is error now ,please try it later! 的本地化字符串。
             </summary>
         </member>
+        <member name="P:DataRepository.En.ToBuyAmountLimitError">
+            <summary>
+              查找类似 To-buy limit error 的本地化字符串。
+            </summary>
+        </member>
         <member name="P:DataRepository.En.ToBuyTimeLimit">
             <summary>
               查找类似 The purchase times
@@ -1393,7 +1398,7 @@
         </member>
         <member name="P:DataRepository.ZhCn.AccountIsSealUp">
             <summary>
-              查找类似 账号已查封，请联系管理人员 的本地化字符串。
+              查找类似 违规经营遭查封，请联系管理员 的本地化字符串。
             </summary>
         </member>
         <member name="P:DataRepository.ZhCn.AccountIsUnActived">
@@ -1564,6 +1569,11 @@
         <member name="P:DataRepository.ZhCn.SystemError">
             <summary>
               查找类似 服务器打了个盹~ 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:DataRepository.ZhCn.ToBuyAmountLimitError">
+            <summary>
+              查找类似 求购金额错误 的本地化字符串。
             </summary>
         </member>
         <member name="P:DataRepository.ZhCn.ToBuyTimeLimit">

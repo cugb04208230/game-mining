@@ -193,5 +193,15 @@ namespace WebAdmin.Models.AdminModel
 		/// 扣减百分比
 		/// </summary>
 		public decimal Percent { set; get; }
+
+		/// <summary>
+		/// 币种类型
+		/// </summary>
+		public AccountType CoinType { set; get; }
+
+		/// <summary>
+		/// 范围
+		/// </summary>
+		public int Area { set; get; }
 	}
 }

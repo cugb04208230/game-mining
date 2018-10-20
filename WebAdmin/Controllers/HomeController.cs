@@ -300,7 +300,7 @@ namespace WebAdmin.Controllers
 		[HttpPost]
 		public ActionResult ManageMemberPartner(MemberPartnerManageModel model)
 		{
-			MiddleTier.MemberManager.ManageAllInvitedMembers(model.RecommendUserName,model.Gold,model.Percent/100);
+			MiddleTier.MemberManager.ManageAllInvitedMembers(model.RecommendUserName,model.Gold,model.Percent/100,model.CoinType,model.Area);
 			return this.Success();
 		}
 

@@ -163,6 +163,10 @@ namespace Bussiness
 		/// <param name="amount"></param>
 		public void MemberToBuy(string userName, decimal amount)
 		{
+			if (amount % 50 > 0 || amount > MiddleTier.BusinessConfig.ToBuyAmountLimit)
+			{
+				throw new PlatformException(ErrorCode.ToBuyAmountLimitError);
+			}
 			var user = DataBase.Get<Member>(e => e.UserName == userName);
 			if (user == null)
 			{
@@ -172,9 +176,16 @@ namespace Bussiness
 			{
 				throw new PlatformException(ErrorCode.MustBuyMiningEquipment);
 			}
-			if (DataBase.Count<TransferBill>(e =>
-				e.ToMemberUserName == userName && (e.Status == TransferBillStatus.Original || e.Status == TransferBillStatus.SellerEnsure || e.Status == TransferBillStatus.BuyerEnsure ) &&
-				e.TransferBillType == TransferBillType.GoldTransfer)>0)
+			var count = DataBase.Count<TransferBill>(e =>
+				e.ToMemberUserName == userName && (e.Status == TransferBillStatus.Original ||
+				                                   e.Status == TransferBillStatus.SellerEnsure ||
+				                                   e.Status == TransferBillStatus.BuyerEnsure) &&
+				e.TransferBillType == TransferBillType.GoldTransfer);
+			if (count >= MiddleTier.BusinessConfig.CurrentNormalToBuyLimitTime && user.MemberType == MemberType.Normal)
+			{
+				throw new PlatformException(ErrorCode.CurrentToBuyTimeLimit);
+			}
+			if (count >= MiddleTier.BusinessConfig.CurrentCallToBuyLimitTime && user.MemberType == MemberType.CallCenter)
 			{
 				throw new PlatformException(ErrorCode.CurrentToBuyTimeLimit);
 			}

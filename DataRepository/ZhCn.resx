@@ -130,7 +130,7 @@
     <comment>Account has been locked, please contact the administrator.</comment>
   </data>
   <data name="AccountIsSealUp" xml:space="preserve">
-    <value>账号已查封，请联系管理人员</value>
+    <value>违规经营遭查封，请联系管理员</value>
     <comment>Account has been sealed, please contact the administrator.</comment>
   </data>
   <data name="AccountIsUnActived" xml:space="preserve">
@@ -321,5 +321,9 @@
   <data name="WalletCanNotBeEmpty" xml:space="preserve">
     <value>钱包不能为空</value>
     <comment>Wallet can not be empty.</comment>
+  </data>
+  <data name="ToBuyAmountLimitError" xml:space="preserve">
+    <value>求购金额错误</value>
+    <comment>To-buy amount error</comment>
   </data>
 </root>

@@ -1,4 +1,5 @@
 ﻿@using BaseClasses.Extensions
+@using DataRepository.Enums
 @using WebAdmin.Models
 @model WebAdmin.Models.AdminModel.MemberPartnerViewModel
 @{
@@ -21,7 +22,6 @@
 			<div class="card">
 				<form id="searchForm" style="padding-left: 20px;">
 					<input id="sRecommendUserName" name="RecommendUserName" style="height: 40px; padding: 10px; margin: 30px 30px 10px 10px;" value="@Model.RecommendUserName" placeholder="用户id" />
-					<input id="sGold" name="Gold" style="height: 40px; padding: 10px; margin: 30px 30px 10px 10px;" value="@((Model.Gold??0).ToString())" placeholder="余额上限" />
 					<button class="btn btn-warning btn-fill btn-wd" type="submit">搜索</button>
 					<button class="btn btn-warning btn-fill btn-wd" type="button" data-toggle="modal" data-target="#resetPasswordModal">扣减</button>
 				</form>
@@ -52,7 +52,7 @@
 								<td class="text-center">@item.GoldBalance</td>
 								<td class="text-center">@item.SilverBalance</td>
 								<td class="text-center">@item.CopperBalance</td>
-								<td class="text-center">@item.RawStoneBalance</td>
+								<td class="text-center">@item.SlagBalance</td>
 								<td class="text-center">@item.DiamondBalance</td>
 								<td class="text-center">@item.Honor</td>
 								<td class="text-center">@item.FeedBackAmount</td>
@@ -78,7 +78,7 @@
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 				<h4 class="modal-title" id="myModalLabel">
-					重置密码
+					扣减
 				</h4>
 			</div>
 			<div class="modal-body">
@@ -90,7 +90,19 @@
 					</div>
 					<div class="form-group">
 						<label for="Gold">余额上限</label>
-						<input type="text" class="form-control" id="Gold" name="Gold"  readonly="readonly"/>
+						<input type="text" class="form-control" id="Gold" name="Gold" />
+					</div>
+					<div class="form-group">
+						<label for="CoinType">类型</label>
+						<label><input type="radio" name="CoinType" value="2" checked id="CoinType2" />@AccountType.Gold.GetDescription()</label>
+						<label><input type="radio" name="CoinType" value="3" id="CoinType3" />@AccountType.Silver.GetDescription()</label>
+						<label><input type="radio" name="CoinType" value="4" id="CoinType4" />@AccountType.Copper.GetDescription()</label>
+						<label><input type="radio" name="CoinType" value="5" id="CoinType5" />@AccountType.Slag.GetDescription()</label>
+					</div>
+					<div class="form-group">
+						<label for="Area">范围</label>
+							<label><input type="radio" name="Area" value="1" checked id="Area1" />个人</label>
+							<label><input type="radio" name="Area" value="2" id="Area2" />团队</label>
 					</div>
 					<div class="form-group">
 						<label for="Percent"> 折扣率</label>
@@ -113,11 +125,6 @@
 			function(event) {
 				var modal = $(this); //当前模态框
 				modal.find('#RecommendUserName').val($('#sRecommendUserName').val());
-				if ($('#sGold').val().length == 0) {
-					modal.find('#Gold').val(0);
-				} else {
-					modal.find('#Gold').val($('#sGold').val());
-				}
 			});
 		$("#resetPasswordModalSub").on("click",
 			function() {

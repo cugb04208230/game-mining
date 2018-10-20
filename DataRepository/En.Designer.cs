@@ -403,6 +403,15 @@ namespace DataRepository {
         }
         
         /// <summary>
+        ///   查找类似 To-buy limit error 的本地化字符串。
+        /// </summary>
+        internal static string ToBuyAmountLimitError {
+            get {
+                return ResourceManager.GetString("ToBuyAmountLimitError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 The purchase times
         /// reaches the upper limit. 的本地化字符串。
         /// </summary>
