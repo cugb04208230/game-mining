@@ -1,1 +1,15 @@
 /.vs
+/BaseClasses/obj
+/BaseClasses/bin
+/Bussiness/obj
+/Bussiness/bin
+/DataRepository/obj
+/DataRepository/bin
+/MvcPager/obj
+/MvcPager/bin
+/WebAdmin/obj
+/WebAdmin/bin
+/WebApp/obj
+/WebApp/bin
+/WebClasses/bin
+/WebClasses/obj
