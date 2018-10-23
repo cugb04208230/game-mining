@@ -371,7 +371,7 @@ namespace WebAdmin.Controllers
 		/// <returns></returns>
 		public ActionResult MemberMiningEquipment(MemberMiningEquipmentViewModel model)
 		{
-			var queryRst = MiddleTier.EquipmentManager.SysMemberMiningEquipmentQuery(model.Text??"", model.PageSize??1,model.PageIndex??10);
+			var queryRst = MiddleTier.EquipmentManager.SysMemberMiningEquipmentQuery(model.Text??"", model.PageIndex ?? 1, model.PageSize??10);
 			model.MemberMiningEquipments = queryRst;
 			return View(model);
 		}

@@ -18,7 +18,7 @@ namespace BaseClasses.Util
 		/// <returns></returns>
 		public static bool ProcessStr(this string str)
 		{
-			var dangerousStr = "exec |insert |select |delete |update |count |chr |mid |master |truncate |char |declare |and|exec|insert|select|delete|update|count|*|chr|mid|master|truncate|char|declare|script";
+			var dangerousStr = "exec | insert | select | delete | update | count | chr | mid | master | truncate | char | declare | and | exec | insert | select | delete | update | count | * | chr | mid | master | truncate | char | declare |script";
 			bool returnValue = true;
 			try
 			{

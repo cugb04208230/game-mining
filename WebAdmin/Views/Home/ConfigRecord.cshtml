@@ -44,13 +44,20 @@
 					@foreach (var configRecord in Model.ConfigRecords.List)
 					{
 						<tr>
-@*							<td class="text-center">@configRecord.Id</td>*@
-@*							<td class="text-center">@configRecord.Catalog</td>*@
-@*							<td class="text-center">@configRecord.Name</td>*@
-@*							<td class="text-center">@configRecord.FriendlyName</td>*@
+							@*							<td class="text-center">@configRecord.Id</td>*@
+							@*							<td class="text-center">@configRecord.Catalog</td>*@
+							@*							<td class="text-center">@configRecord.Name</td>*@
+							@*							<td class="text-center">@configRecord.FriendlyName</td>*@
 							<td class="text-center">@configRecord.Description</td>
-@*							<td class="text-center">@configRecord.ValueTypeCode</td>*@
-							<td class="text-center">@configRecord.Value</td>
+							@*							<td class="text-center">@configRecord.ValueTypeCode</td>*@
+							@if (configRecord.Name == "BackEndUserName" || configRecord.Name == "BackEndPassword")
+							{
+								<td class="text-center">*****</td>
+							}
+							else
+							{
+								<td class="text-center">@configRecord.Value</td>
+							}
 							<td class="text-center"><a class="item_edit" href="#" data-toggle="modal" data-target="#myModal" data-id="@configRecord.Id" data-desc="@configRecord.Description" data-value="@configRecord.Value">编辑</a></td>
 						</tr>
 					}

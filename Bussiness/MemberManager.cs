@@ -78,7 +78,7 @@ namespace Bussiness
 			    throw new PlatformException(ErrorCode.AccountIsSealUp);
 		    }
 			DataBase.Update(member);
-		    FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, member.UserName,DateTime.Now,DateTime.Now.AddDays(1),true, member.SerializeObject());
+		    FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, member.UserName,DateTime.Now,DateTime.Now.AddHours(3),true, member.SerializeObject());
 		    HttpCookie cookie = new HttpCookie(FormsAuthentication.FormsCookieName,FormsAuthentication.Encrypt(ticket))
 		    {
 			    HttpOnly = true,
@@ -456,7 +456,7 @@ namespace Bussiness
 			{
 				throw new PlatformException(ErrorCode.ErrorUserNameOrPassword);
 			}
-			FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, userName, DateTime.Now, DateTime.Now.AddDays(1), true, "");
+			FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, userName, DateTime.Now, DateTime.Now.AddHours(3), true, "");
 			HttpCookie cookie = new HttpCookie(FormsAuthentication.FormsCookieName, FormsAuthentication.Encrypt(ticket))
 			{
 				HttpOnly = true,
@@ -732,7 +732,6 @@ namespace Bussiness
 			    throw new PlatformException(ErrorCode.UserNameIsNotExisted);
 		    }
 		    member.BitCoin = bitCoin;
-		    member.GlobalAreaCode = arecCode;
 		    DataBase.Update(member);
 	    }
 

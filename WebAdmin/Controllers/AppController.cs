@@ -142,7 +142,7 @@ namespace WebAdmin.Controllers
 					throw new PlatformException(ErrorCode.MobileRegexError);
 				}
 			}
-			MiddleTier.MemberManager.Register(model.RecommondUserName,model.UserName,model.Password,model.Mobile,model.WeChat??"",model.Alipay??"",model.BitCoin??"",model.Name??"");
+			MiddleTier.MemberManager.Register(model.RecommondUserName,model.UserName,model.Password,model.Mobile,model.BankName,model.BankCode,model.GlobalAreaCode,model.WeChat??"",model.Alipay??"",model.BitCoin??"",model.Name??"");
 			return this.Success();
 		}
 
