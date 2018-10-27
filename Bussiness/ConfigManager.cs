@@ -534,6 +534,14 @@ namespace Bussiness
 		[Description("求购金额上限）")]
 		[ConfigTypeCode(ConfigTypes.Integer)]
 		public int ToBuyAmountLimit { set; get; }
+
+		/// <summary>
+		/// 管理后台确认密码
+		/// </summary>
+		[DefaultValue("admin")]
+		[Description("管理后台确认密码")]
+		[ConfigTypeCode(ConfigTypes.Text)]
+		public string BackEndConfirmPassword { set; get; }
 	}
 
 	/// <summary>

@@ -378,6 +378,7 @@
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Home\Error.cshtml" />
     <Content Include="Views\Home\MemberPartner.cshtml" />
+    <Content Include="Views\Home\MemberBalanceUpdateInfo.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -41,6 +41,7 @@ namespace BaseClasses
 		[Description("必须购买完采矿设备才可以发起求购")] MustBuyMiningEquipment = 1034,
 		[Description("当前求购次数达到上限")] CurrentToBuyTimeLimit = 1035,
 		[Description("验证码错误")] VerifyCodeError = 1036,
+		[Description("确认密码错误")] ConfirmCodeError = 1037,
 		[Description("")] MobileRegexError=1307,
 		[Description("求购金额限制错误")] ToBuyAmountLimitError = 1308
 	}

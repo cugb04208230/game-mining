@@ -510,7 +510,7 @@ namespace Bussiness
 			DataBase.Update(member);
 		}
 
-	    public void SysMemberUpdateInfo(string userName, MemberType memberType)
+	    public void SysMemberUpdateInfo(string userName,string name,string mobile, string alipay, string weChat,string bitCoin, string globalAreaCode,string bankName, string bankCode, MemberType memberType)
 	    {
 		    var member = DataBase.Get<Member>(e => e.UserName == userName);
 		    if (member == null)
@@ -518,7 +518,15 @@ namespace Bussiness
 			    throw new PlatformException(ErrorCode.UserNameIsNotExisted);
 		    }
 		    member.MemberType = memberType;
-		    DataBase.Update(member);
+		    member.Name = name;
+		    member.Mobile = mobile;
+		    member.Alipay = alipay;
+		    member.WeChat = weChat;
+		    member.BitCoin = bitCoin;
+		    member.GlobalAreaCode = globalAreaCode;
+		    member.BankName = bankName;
+		    member.BankCode = bankCode;
+			DataBase.Update(member);
 	    }
 
 		public void SysMemberRelieve(string userName)
@@ -561,6 +569,11 @@ namespace Bussiness
 		    return DataBase.Query(query);
 	    }
 
+
+	    public QueryResult<MemberBalanceUpdateInfo> SysMemberQuery(MemberBalanceUpdateInfoQuery query)
+	    {
+		    return DataBase.Query(query);
+	    }
 		public QueryResult<MemberIncomeRecord> SysMemberIncomeQuery(MemberIncomeRecordQuery query)
 		{
 			return DataBase.Query(query);
@@ -734,6 +747,48 @@ namespace Bussiness
 		    member.BitCoin = bitCoin;
 		    DataBase.Update(member);
 	    }
+
+	    public void UpdateBalance(string userName, decimal goldBalance = 0, decimal silverBalance = 0,
+		    decimal copperBalance = 0, decimal slagBalance = 0)
+		{
+			ISession session = DataBase.Session;
+			ITransaction iTransaction = session.BeginTransaction(IsolationLevel.ReadCommitted); try
+			{
+				var member = DataBase.Get<Member>(e => e.UserName == userName, session);
+				var info = new MemberBalanceUpdateInfo
+				{
+					UserName = userName,
+					Gold = goldBalance,
+					Silver = silverBalance,
+					Copper = copperBalance,
+					Slag = slagBalance,
+					GoldBalanceFrom = member.GoldBalance,
+					SilverBalanceFrom = member.SilverBalance,
+					CopperBalanceFrom = member.CopperBalance,
+					SlagBalanceFrom = member.SlagBalance
+				};
+				DataBase.Save(info, session);
+				var sql = GetUpdateBalanceSql(userName, goldBalance, silverBalance, copperBalance, slagBalance);
+				DataBase.ExecuteBySql(sql,session);
+				DataBase.ExecuteBySql(
+					$" UPDATE MemberBalanceUpdateInfos set GoldBalanceTo=m.GoldBalance,SilverBalanceTo=m.SilverBalance,CopperBalanceTo=m.CopperBalance,SlagBalanceTo=m.SlagBalance from MemberBalanceUpdateInfos info INNER join Members m on m.UserName=info.UserName WHERE info.Id={info.Id};", session);
+				iTransaction.Commit();
+			}
+			catch (Exception ex)
+			{
+				iTransaction.Rollback();
+				MiddleTier.LogManager.Error(ex);
+				if (ex is PlatformException platformException)
+				{
+					throw platformException;
+				}
+				throw new PlatformException(ErrorCode.SystemError);
+			}
+			finally
+			{
+				session.Close();
+			}
+		}
 
 	    public string GetUpdateBalanceSql(string userName, decimal goldBalance = 0, decimal silverBalance = 0,
 		    decimal copperBalance = 0, decimal slagBalance = 0, decimal collectAmount = 0)

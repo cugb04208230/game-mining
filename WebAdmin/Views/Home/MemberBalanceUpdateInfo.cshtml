@@ -1,0 +1,84 @@
+﻿@using BaseClasses.Extensions
+@using DataRepository.Enums
+@using WebAdmin.Models
+@model WebAdmin.Models.AdminModel.MemberBalanceUpdateViewModel
+@{
+	ViewBag.CurrentMenuLabel = new LeftMenuModel
+	{
+		Label = "用户",
+		Children = new List<LeftMenuModel>
+{
+	new LeftMenuModel
+	{
+		Label = "余额变动记录",
+		Url = "MemberBalanceUpdateInfo"
+	}
+}
+	};
+}
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<form id="searchForm" style="padding-left: 20px;">
+					<input name="UserName" style="height: 40px; padding: 10px; margin: 30px 30px 10px 10px;" value="@Model.UserName" placeholder="请输入用户名" />
+					注册时间：<input name="CreatedAtFrom" style="height: 40px; padding: 10px; margin: 30px 0px 10px 0px;" value="@(Model.CreatedAtFrom)" type="text" class="datetimepicker" placeholder="开始时间">
+					-<input name="CreatedAtTo" style="height: 40px; padding: 10px; margin: 30px 30px 10px 0px;" value="@Model.CreatedAtTo" type="text" class="datetimepicker" placeholder="结束时间">
+					<button class="btn btn-warning btn-fill btn-wd" type="submit">搜索</button>
+				</form>
+				<table class="table">
+					<thead>
+						<tr>
+							<td class="text-center">用户名</td>
+							<td class="text-center">时间</td>
+							<td class="text-center">金</td>
+							<td class="text-center">银</td>
+							<td class="text-center">铜</td>
+							<td class="text-center">矿渣</td>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model.MemberBalanceUpdateInfos.List)
+						{
+							<tr>
+								<td class="text-center">@item.UserName</td>
+								<td class="text-center">@item.CreatedAt</td>
+								<td class="text-center">@item.Gold (@item.GoldBalanceFrom -> @item.GoldBalanceTo)</td>
+								<td class="text-center">@item.Silver (@item.SilverBalanceFrom -> @item.SilverBalanceTo)</td>
+								<td class="text-center">@item.Copper (@item.CopperBalanceFrom->@item.CopperBalanceTo)</td>
+								<td class="text-center">@item.Slag (@item.SlagBalanceFrom -> @item.SlagBalanceTo)</td>
+							</tr>
+						}
+					</tbody>
+					<tfoot>
+						<tr>
+							<th colspan="8">
+								@Html.PageRender(Model.PageIndex, Model.PageSize, Model.MemberBalanceUpdateInfos.Count)
+							</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+@section Scripts
+{
+	<script type="text/javascript">
+
+		$('.datetimepicker').datetimepicker({
+			format: 'YYYY-MM-DD HH:mm:ss',
+			icons: {
+				time: "fa fa-clock-o",
+				date: "fa fa-calendar",
+				up: "fa fa-chevron-up",
+				down: "fa fa-chevron-down",
+				previous: 'fa fa-chevron-left',
+				next: 'fa fa-chevron-right',
+				today: 'fa fa-screenshot',
+				clear: 'fa fa-trash',
+				close: 'fa fa-remove'
+			}
+		});
+	</script>
+}

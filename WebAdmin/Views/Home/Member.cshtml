@@ -8,11 +8,11 @@
 		Label = "用户",
 		Children = new List<LeftMenuModel>
 {
-	new LeftMenuModel
-	{
-		Label = "用户列表",
-		Url = "Member"
-	}
+new LeftMenuModel
+{
+Label = "用户列表",
+Url = "Member"
+}
 }
 	};
 }
@@ -61,28 +61,29 @@
 							var memberType = (int)(item.MemberType);
 							<tr>
 								<td class="text-center">@item.UserName</td>
-								<td class="text-center">@item.NickName</td>
+								<td class="text-center">@item.Name</td>
 								<td class="text-center">@item.Status.GetDescription()</td>
 								<td class="text-center">@item.MemberType.GetDescription()</td>
 								<td class="text-center">@item.RecommendUserName</td>
 								<td class="text-center">@item.GoldBalance</td>
 								<td class="text-center">@item.SilverBalance</td>
 								<td class="text-center">@item.CopperBalance</td>
-								<td class="text-center">@item.RawStoneBalance</td>
+								<td class="text-center">@item.SlagBalance</td>
 								<td class="text-center">@item.DiamondBalance</td>
 								<td class="text-center">@item.Honor</td>
 								<td class="text-center">@item.FeedBackAmount</td>
 								<td>
-									<a href="#" data-toggle="modal" data-target="#myModal" data-username="@item.UserName" data-memberType="@memberType">编辑</a>
+									<a href="#" data-toggle="modal" data-target="#myModal" data-username="@item.UserName" data-name="@item.Name" data-globalareacode="@item.GlobalAreaCode" data-mobile="@item.Mobile" data-alipay="@item.Alipay" data-wechat="@item.WeChat" data-bitcoin="@item.BitCoin" data-bankname="@item.BankName" data-bankcode="@item.BankCode" data-memberType="@memberType">编辑</a>
+									<a href="#" data-toggle="modal" data-target="#changeBalanceModal" data-username="@item.UserName" data-goldbalance="@item.GoldBalance" data-silverbalance="@item.SilverBalance" data-copperbalance="@item.CopperBalance" data-slagbalance="@item.SlagBalance" data-diamondbalance="@item.DiamondBalance">余额调整</a>
 									<a href="#" data-toggle="modal" data-target="#resetPasswordModal" data-username="@item.UserName">重置密码</a>
 									@if (item.Status != MemberStatus.SealUp)
-	{
-								<a href="#" onclick="sealup(this);" data-username="@item.UserName">查封</a>
-}
+									{
+										<a href="#" onclick="sealup(this);" data-username="@item.UserName">查封</a>
+									}
 									@if (item.Status == MemberStatus.Freezing || item.Status == MemberStatus.Locking || item.Status == MemberStatus.SealUp)
-	{
-								<a href="#" onclick="relieve(this);" data-username="@item.UserName">解除</a>
-}
+									{
+										<a href="#" onclick="relieve(this);" data-username="@item.UserName">解除</a>
+									}
 								</td>
 							</tr>
 						}
@@ -174,21 +175,130 @@
 			</div>
 			<div class="modal-body">
 				<form id="editform">
-					<input type="hidden" name="Id"/>
+					<input type="hidden" name="Id" />
 					<div class="form-group">
 						<label for="username">用户名</label>
 						<input type="text" class="form-control" id="username" name="username" readonly="readonly">
 					</div>
 					<div class="form-group">
+						<label for="username">姓名</label>
+						<input type="text" class="form-control" id="name" name="name">
+					</div>
+					<div class="form-group">
+						<label for="username">国际区号</label>
+						<input type="text" class="form-control" id="globalareacode" name="globalareacode">
+					</div>
+					<div class="form-group">
+						<label for="username">手机号</label>
+						<input type="text" class="form-control" id="mobile" name="mobile">
+					</div>
+
+					<div class="form-group">
+						<label for="username">支付宝</label>
+						<input type="text" class="form-control" id="alipay" name="alipay">
+					</div>
+
+
+					<div class="form-group">
+						<label for="username">微信</label>
+						<input type="text" class="form-control" id="wechat" name="wechat">
+					</div>
+
+					<div class="form-group">
+						<label for="username">钱包</label>
+						<input type="text" class="form-control" id="bitcoin" name="bitcoin">
+					</div>
+					<div class="form-group">
+						<label for="username">银行名称</label>
+						<input type="text" class="form-control" id="bankname" name="bankname">
+					</div>
+					<div class="form-group">
+						<label for="username">银行卡号</label>
+						<input type="text" class="form-control" id="bankcode" name="bankcode">
+					</div>
+					<div class="form-group">
 						<label for="membertype1">类型</label>
 						<label><input type="radio" name="MemberType" value="1" checked id="membertype1" />@MemberType.Normal.GetDescription()</label>
-						<label><input type="radio" name="MemberType" value="2"  id="membertype2" />@MemberType.CallCenter.GetDescription()</label>
+						<label><input type="radio" name="MemberType" value="2" id="membertype2" />@MemberType.CallCenter.GetDescription()</label>
 					</div>
 				</form>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 				<button type="button" class="btn btn-primary" id="updateMemberFormSub">提交更改</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" id="changeBalanceModal" tabindex="-1" role="dialog" aria-labelledby="mychangeBalanceModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="mychangeBalanceModal">
+					用户余额调整
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form id="editbalanceform">
+					<div class="form-group">
+						<label for="username">用户名</label>
+						<input type="text" class="form-control" id="username" name="username" readonly="readonly">
+					</div>
+					<div class="form-group">
+						<label for="username">金</label>
+						<input type="text" class="form-control" id="gold" name="gold">
+					</div>
+					<div class="form-group">
+						<label for="username">银</label>
+						<input type="text" class="form-control" id="silver" name="silver">
+					</div>
+					<div class="form-group">
+						<label for="username">铜</label>
+						<input type="text" class="form-control" id="copper" name="copper">
+					</div>
+
+					<div class="form-group">
+						<label for="username">矿渣</label>
+						<input type="text" class="form-control" id="slag" name="slag">
+					</div>
+
+
+					@*					<div class="form-group">*@
+					@*						<label for="username">钻石</label>*@
+					@*						<input type="text" class="form-control" id="diamond" name="diamond">*@
+					@*					</div>*@
+
+
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary" id="updateMemberBalanceFormSub">提交更改</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="confirmModalLabel">
+					确认
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<label for="value">确认密码</label>
+					<input type="text" class="form-control" id="confirm_password" placeholder="" name="value">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary" id="confirm_sub">提交更改</button>
 			</div>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
@@ -274,11 +384,19 @@
 				var btnThis = $(event.relatedTarget); //触发事件的按钮
 				var modal = $(this); //当前模态框
 				modal.find('#username').val(btnThis.data('username'));
+				modal.find('#name').val(btnThis.data('name'));
+				modal.find('#mobile').val(btnThis.data('mobile'));
+				modal.find('#alipay').val(btnThis.data('alipay'));
+				modal.find('#wechat').val(btnThis.data('wechat'));
+				modal.find('#bitcoin').val(btnThis.data('bitcoin'));
+				modal.find('#globalareacode').val(btnThis.data('globalareacode'));
+				modal.find('#bankname').val(btnThis.data('bankname'));
+				modal.find('#bankcode').val(btnThis.data('bankcode'));
 				var membertype = btnThis.data('membertype');
-//				modal.find('#membertype1').removeAttr('checked');
-//				modal.find('#membertype2').removeAttr('checked');
-//				modal.find('#membertype1').attr('checked', membertype == '1' ? "" : "false");
-//				modal.find('#membertype2').attr('checked', membertype == '2' ? "" : "false");
+				//				modal.find('#membertype1').removeAttr('checked');
+				//				modal.find('#membertype2').removeAttr('checked');
+				//				modal.find('#membertype1').attr('checked', membertype == '1' ? "" : "false");
+				//				modal.find('#membertype2').attr('checked', membertype == '2' ? "" : "false");
 				$("input[name='MemberType']").attr("checked", false);
 				$("input[name='MemberType'][value='" + membertype + "']").prop("checked", true);
 			});
@@ -295,21 +413,21 @@
 						swal(data.Message);
 					});
 			});
-		
+
 		function sealup(item) {
 			var that = $(item);
 
 			swal({
-					title: "提醒",
-					text: "确认查封这个账号么？",
-					type: "warning",
-					showCancelButton: true,
-					confirmButtonClass: "btn btn-info btn-fill",
-					confirmButtonText: "确认",
-					cancelButtonClass: "btn btn-danger btn-fill",
-					closeOnConfirm: false,
-					cancelButtonText: "取消"
-				},
+				title: "提醒",
+				text: "确认查封这个账号么？",
+				type: "warning",
+				showCancelButton: true,
+				confirmButtonClass: "btn btn-info btn-fill",
+				confirmButtonText: "确认",
+				cancelButtonClass: "btn btn-danger btn-fill",
+				closeOnConfirm: false,
+				cancelButtonText: "取消"
+			},
 				function () {
 
 					$rpc("/home/MemberSealUp",
@@ -323,5 +441,52 @@
 						});
 				});
 		}
+
+
+		$('#changeBalanceModal').on('show.bs.modal',
+			function (event) {
+				var btnThis = $(event.relatedTarget); //触发事件的按钮
+				var modal = $(this); //当前模态框
+				modal.find('#username').val(btnThis.data('username'));
+			});
+
+//		$("#updateMemberBalanceFormSub").on("click",
+//			function () {
+//				$rpc("/home/MemberUpdateBalance",
+//					$("#editbalanceform").serializeArray(),
+//					function () {
+//						$('#myModal').modal('hide');
+//						window.location.reload();
+//					},
+//					function (data) {
+//						swal(data.Message);
+//					});
+//			});
+
+		$("#updateMemberBalanceFormSub").on("click",
+			function () {
+				$('#changeBalanceModal').modal('hide');
+				$('#confirmModal').modal('show');
+				$("#confirm_sub").on("click",
+					function () {
+						var password = $("#confirm_password").val();
+						$rpc("/home/confirm",
+							{ password: password },
+							function () {
+								$rpc("/home/MemberUpdateBalance",
+									$("#editbalanceform").serializeArray(),
+									function () {
+										$('#myModal').modal('hide');
+										window.location.reload();
+									},
+									function (data) {
+										swal(data.Message);
+									});
+							},
+							function (data) {
+								swal(data.Message);
+							});
+					});
+			});
 	</script>
 }

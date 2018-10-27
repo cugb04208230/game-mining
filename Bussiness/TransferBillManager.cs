@@ -338,6 +338,7 @@ namespace Bussiness
 				switch (transferBill.Status)
 				{
 					case TransferBillStatus.Original://卖家可以确认,卖家确认修改交易单状态为卖家确认，并且减掉卖家金额
+						transferBill.FromMemberUserName = userName;
 						GetTransferBillToAmount(transferBill);
 						if (member.GoldBalance < (transferBill.Amount + transferBill.ServiceCharge))
 						{
@@ -347,7 +348,6 @@ namespace Bussiness
 						{
 							throw new PlatformException(ErrorCode.ErrorId);
 						}
-						transferBill.FromMemberUserName = userName;
 						transferBill.Status = TransferBillStatus.SellerEnsure;
 						transferBill.GivedAt=DateTime.Now;
 						member.GoldBalance -= (transferBill.Amount + transferBill.ServiceCharge);
@@ -442,12 +442,12 @@ namespace Bussiness
 			//Todo 手续费收买家还是卖家
 			var feePercent = 0.1m;
 			var equipmentCount = DataBase.Count<MemberMiningEquipment>(e =>
-				e.MemberUserName == transferBill.ToMemberUserName && e.Type == MiningEquipmentType.Smelter);
-			if (equipmentCount >= 5)
-			{
-				feePercent = 0;
-			}
-			else if(equipmentCount>=2)
+				e.MemberUserName == transferBill.FromMemberUserName && e.Type == MiningEquipmentType.Smelter);
+//			if (equipmentCount >= 5)
+//			{
+//				feePercent = 0;
+//			}
+			if(equipmentCount>=3)
 			{
 				feePercent = 0.05m;
 			}

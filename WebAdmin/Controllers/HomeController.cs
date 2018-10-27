@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Web.Mvc;
+using BaseClasses;
 using BaseClasses.Extensions;
+using BaseClasses.Filters;
 using Common.Util;
 using DataRepository.Entities;
 using WebAdmin.Models;
@@ -107,6 +109,21 @@ namespace WebAdmin.Controllers
 		public ActionResult Synchronize()
 		{
 			MiddleTier.ConfigManager.Synchronize();
+			return this.Success();
+		}
+
+
+		/// <summary>
+		/// 确认二级密码
+		/// </summary>
+		/// <returns></returns>
+		[HttpPost]
+		public ActionResult Confirm(string password)
+		{
+			if (MiddleTier.BusinessConfig.BackEndConfirmPassword != password)
+			{
+				throw new PlatformException(ErrorCode.ConfirmCodeError);
+			}
 			return this.Success();
 		}
 
@@ -249,8 +266,30 @@ namespace WebAdmin.Controllers
 			{
 				return this.Fail(ModelState.Values.First(e => e.Errors.Count > 0).Errors[0].ErrorMessage);
 			}
-			MiddleTier.MemberManager.SysMemberUpdateInfo(model.UserName, model.MemberType);
+			MiddleTier.MemberManager.SysMemberUpdateInfo(model.UserName, model.Name,model.Mobile,model.Alipay,model.WeChat,model.BitCoin,model.GlobalAreaCode,model.BankName,model.BankCode, model.MemberType);
 			return this.Success();
+		}
+		/// <summary>
+		/// 用户更新余额
+		/// </summary>
+		/// <param name="model"></param>
+		/// <returns></returns>
+		[HttpPost]
+		public ActionResult MemberUpdateBalance(MemberUpdateBalanceModel model)
+		{
+			if (!ModelState.IsValid)
+			{
+				return this.Fail(ModelState.Values.First(e => e.Errors.Count > 0).Errors[0].ErrorMessage);
+			}
+			MiddleTier.MemberManager.UpdateBalance(model.UserName, model.Gold??0, model.Silver??0, model.Copper??0, model.Slag??0);
+			return this.Success();
+		}
+
+		public ActionResult MemberBalanceUpdateInfo(MemberBalanceUpdateViewModel model)
+		{
+			var queryrst = MiddleTier.MemberManager.SysMemberQuery(ModelMapUtil.AutoMap(model, new MemberBalanceUpdateInfoQuery()));
+			model.MemberBalanceUpdateInfos = queryrst;
+			return View(model);
 		}
 
 

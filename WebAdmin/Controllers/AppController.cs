@@ -194,7 +194,7 @@ namespace WebAdmin.Controllers
 			}, () =>
 			{
 				viewModel.Notices = MiddleTier.NoticeManager
-					.Query(new NoticeQuery { PageSize = 5, OrderBys = new List<OrderField> { new OrderField() } }).List;//通知列表
+					.Query(new NoticeQuery { PageSize = Int32.MaxValue, OrderBys = new List<OrderField> { new OrderField() } }).List;//通知列表
 			}, () =>
 			{
 				viewModel.QrCode = MiddleTier.MemberManager.InviterQrCodeUrl(viewModel.Member.UserName);//邀请二维码

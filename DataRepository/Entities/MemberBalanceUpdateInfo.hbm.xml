@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DataRepository" namespace="DataRepository.Entities" default-lazy="false">
+  <class name="DataRepository.Entities.MemberBalanceUpdateInfo, DataRepository" table="MemberBalanceUpdateInfos">
+    <id name="Id" type="Int64">
+      <column name="Id" sql-type="bigint" not-null="true" />
+      <generator class="native"/>
+    </id>
+    <property name="IsEnabled" type="Boolean">
+      <column name="IsEnabled"  sql-type="tinyint"  not-null="true"/>
+    </property>
+    <property name="CreatedAt" type="DateTime">
+      <column name="CreatedAt" sql-type="datetime" not-null="true"/>
+    </property>
+    <property name="LastModifiedAt" type="DateTime">
+      <column name="LastModifiedAt" sql-type="datetime" not-null="true"/>
+    </property>
+
+    <property name="UserName" type="String">
+      <column name="UserName" sql-type="nvarchar(max)" not-null="true"/>
+    </property>
+    <property name="Gold" type="Decimal">
+      <column name="Gold" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="Silver" type="Decimal">
+      <column name="Silver" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="Copper" type="Decimal">
+      <column name="Copper" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="Slag" type="Decimal">
+      <column name="Slag" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="GoldBalanceFrom" type="Decimal">
+      <column name="GoldBalanceFrom" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="SilverBalanceFrom" type="Decimal">
+      <column name="SilverBalanceFrom" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="CopperBalanceFrom" type="Decimal">
+      <column name="CopperBalanceFrom" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="SlagBalanceFrom" type="Decimal">
+      <column name="SlagBalanceFrom" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="GoldBalanceTo" type="Decimal">
+      <column name="GoldBalanceTo" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="SilverBalanceTo" type="Decimal">
+      <column name="SilverBalanceTo" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="CopperBalanceTo" type="Decimal">
+      <column name="CopperBalanceTo" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="SlagBalanceTo" type="Decimal">
+      <column name="SlagBalanceTo" sql-type="decimal" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

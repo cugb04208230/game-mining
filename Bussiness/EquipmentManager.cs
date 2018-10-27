@@ -231,7 +231,7 @@ namespace Bussiness
 				DataBase.Save(memberMiningEquipment, session);
 //				2.用户购买矿工后，给她的直接上级奖励矿工价值的25 %（这25 % 中30 % 是金，70 % 是狂渣），她的间接推荐人（上级的上级）拿矿工价值的10 %。
 //				限制条件：每种类型矿工的前30个，第31个开始就不给上面的奖励了。
-				if (DataBase.Count<MemberMiningEquipment>(e => e.MemberUserName == member.UserName && e.Type == type,session) < 30)
+				if (DataBase.Count<MemberMiningEquipment>(e => e.MemberUserName == member.UserName && e.Type == type,session) <= 30)
 				{
 					if (member.RecommendUserName.IsNotNullOrEmpty())
 					{

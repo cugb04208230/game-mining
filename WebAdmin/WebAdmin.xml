@@ -333,6 +333,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:WebAdmin.Controllers.HomeController.Confirm(System.String)">
+            <summary>
+            确认二级密码
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:WebAdmin.Controllers.HomeController.MessageBoard(WebAdmin.Models.AdminModel.MessageBoardViewModel)">
             <summary>
             留言板页
@@ -392,6 +398,13 @@
         <member name="M:WebAdmin.Controllers.HomeController.MemberUpdateInfo(WebAdmin.Models.AdminModel.MemberUpdateInfoModel)">
             <summary>
             用户更新信息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAdmin.Controllers.HomeController.MemberUpdateBalance(WebAdmin.Models.AdminModel.MemberUpdateBalanceModel)">
+            <summary>
+            用户更新余额
             </summary>
             <param name="model"></param>
             <returns></returns>
@@ -740,6 +753,46 @@
             用户名
             </summary>
         </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.Name">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.Alipay">
+            <summary>
+            支付宝账号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.WeChat">
+            <summary>
+            微信账号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.BitCoin">
+            <summary>
+            钱包地址
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.GlobalAreaCode">
+            <summary>
+            国际区号
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.BankName">
+            <summary>
+            银行名称
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.BankCode">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
         <member name="P:WebAdmin.Models.AdminModel.MemberUpdateInfoModel.MemberType">
             <summary>
             用户类型
@@ -793,6 +846,51 @@
         <member name="P:WebAdmin.Models.AdminModel.MemberPartnerManageModel.Area">
             <summary>
             范围
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MemberUpdateBalanceModel">
+            <summary>
+            用户重置密码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberUpdateBalanceModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="T:WebAdmin.Models.AdminModel.MemberBalanceUpdateViewModel">
+            <summary>
+            用户列表查询
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberBalanceUpdateViewModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberBalanceUpdateViewModel.PageIndex">
+            <summary>
+            分页参数-页码
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberBalanceUpdateViewModel.PageSize">
+            <summary>
+            分页参数-数量
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberBalanceUpdateViewModel.CreatedAtFrom">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberBalanceUpdateViewModel.CreatedAtTo">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="P:WebAdmin.Models.AdminModel.MemberBalanceUpdateViewModel.MemberBalanceUpdateInfos">
+            <summary>
+            用户列表
             </summary>
         </member>
         <member name="T:WebAdmin.Models.AdminModel.MiningEquipmentViewModel">

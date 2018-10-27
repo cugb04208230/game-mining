@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="Entities\ConfigRecord.cs" />
     <Compile Include="Entities\Member.cs" />
+    <Compile Include="Entities\MemberBalanceUpdateInfo.cs" />
     <Compile Include="Entities\MemberIncomeRecord.cs" />
     <Compile Include="Entities\MemberMiningEquipment.cs" />
     <Compile Include="Entities\MessageBoard.cs" />
@@ -146,6 +147,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Entities\MiningEquipmentChangeRecord.hbm.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Entities\MemberBalanceUpdateInfo.hbm.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

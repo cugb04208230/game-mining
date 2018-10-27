@@ -575,6 +575,88 @@
             矿渣账户余额-用于精炼
             </summary>
         </member>
+        <member name="T:DataRepository.Entities.MemberBalanceUpdateInfo">
+            <inheritdoc />
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.Gold">
+            <summary>
+            金账户余额-交易赠送/转银和铜
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.Silver">
+            <summary>
+            银账户余额-购买挖矿装备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.Copper">
+            <summary>
+            铜账户余额-招募玩家
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.Slag">
+            <summary>
+            矿渣账户余额-用于精炼
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.GoldBalanceFrom">
+            <summary>
+            金账户余额-交易赠送/转银和铜
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.SilverBalanceFrom">
+            <summary>
+            银账户余额-购买挖矿装备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.CopperBalanceFrom">
+            <summary>
+            铜账户余额-招募玩家
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.SlagBalanceFrom">
+            <summary>
+            矿渣账户余额-用于精炼
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.GoldBalanceTo">
+            <summary>
+            金账户余额-交易赠送/转银和铜
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.SilverBalanceTo">
+            <summary>
+            银账户余额-购买挖矿装备
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.CopperBalanceTo">
+            <summary>
+            铜账户余额-招募玩家
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfo.SlagBalanceTo">
+            <summary>
+            矿渣账户余额-用于精炼
+            </summary>
+        </member>
+        <member name="T:DataRepository.Entities.MemberBalanceUpdateInfoQuery">
+            <inheritdoc />
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:DataRepository.Entities.MemberBalanceUpdateInfoQuery.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
         <member name="T:DataRepository.Entities.MemberIncomeRecord">
             <inheritdoc />
             <summary>
